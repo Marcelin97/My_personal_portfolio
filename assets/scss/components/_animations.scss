@@ -1,0 +1,40 @@
+/*spinner loader*/
+
+@keyframes hidden {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+      visibility: hidden;
+    }
+  }
+  /*apparition des bulles icones*/
+  @keyframes bubble {
+    from {
+      opacity: 1;
+      transform: translateY(50px);
+      color: $tertiary-color;
+    }
+    to {
+      opacity: 0;
+      transform: translateY(0);
+      color: $secondary-color;
+    }
+  }
+@keyframes move {
+    0%{
+        transform: translate(-30%, 0);
+    }
+    50%{
+        text-shadow:0 25px 50px rgba(0, 0, 0, 0.75);
+    }
+    100%{
+        transform: translate(30%, 0);
+    }
+}
+
+/*spinner loader*/

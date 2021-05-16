@@ -1,2 +1,143 @@
 @import "./main.scss";
 
+/*spinner loader*/
+@import "./main.scss";
+
+/*spinner loading*/
+
+#spinner_loader {
+    width: 100%;
+    height: 100%;
+    background-color: $dark-grey;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    animation: hidden 4s ease-in-out forwards;
+    position: fixed;
+    z-index: 9999;
+    top: 0px;
+    left: 0px;
+    .container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+    }
+    .fa-code {
+      position: absolute;
+      top: -80px;
+      animation: bubble 2.4s $courbe infinite;
+      font-size: 1.6rem;
+    }
+    .fa-code-branch {
+      position: absolute;
+      left: 20px;
+      bottom: 210px;
+      animation: bubble 2.2s $courbe infinite;
+      font-size: 2.8rem;
+    }
+    .fa-html5 {
+      position: absolute;
+      top: 150px;
+      left: -30px;
+      animation: bubble 1.8s $courbe infinite;
+      font-size: 1.4rem;
+    }
+    .fa-css3 {
+      position: absolute;
+      top: 40px;
+      left: -70px;
+      animation: bubble 1.7s $courbe infinite;
+      font-size: 1.7rem;
+    }
+    .fa-sass {
+      position: absolute;
+      bottom: -15px;
+      right: 30px;
+      animation: bubble 2.4s $courbe infinite;
+      font-size: 1.4rem;
+    }
+    .fa-node-js {
+      position: absolute;
+      right: -40px;
+      animation: bubble 1.7s $courbe infinite;
+      font-size: 1.4rem;
+    }
+    .fa-github {
+      position: absolute;
+      top: -50px;
+      right: -30px;
+      animation: bubble 1.9s $courbe infinite;
+      font-size: 1.9rem;
+    }
+    .fa-gitkraken {
+      position: absolute;
+      top: 160px;
+      left: 40px;
+      animation: bubble 2.1s $courbe infinite;
+      font-size: 2.2rem;
+    }
+    .fa-discord {
+      position: absolute;
+      top: 40px;
+      right: -90px;
+      animation: bubble 1.7s $courbe infinite;
+      font-size: 2.4rem;
+    }
+    .fa-js-square {
+        position: absolute;
+        top: 40px;
+        right: -90px;
+        animation: bubble 1.7s $courbe infinite;
+        font-size: 2.4rem;
+      }
+      .fa-bootstrap {
+        position: absolute;
+        top: 40px;
+        right: -90px;
+        animation: bubble 1.7s $courbe infinite;
+        font-size: 2.4rem;
+      }
+      .fa-vuejs {
+        position: absolute;
+        top: 40px;
+        right: -90px;
+        animation: bubble 1.7s $courbe infinite;
+        font-size: 2.4rem;
+      }
+  }
+/*name spinner loading*/  
+.words {
+    color: #8db596;
+    font-weight: bold;
+    line-height: 1.5em;
+    
+}
+.words span {
+    font-size: 3em;
+    display: inline-block;
+    animation: move 3s ease-in-out infinite;
+}
+.words span:nth-child(2){
+    animation-delay: 0.5s;
+}
+.words span:nth-child(3){
+    animation-delay: 1s;
+}
+.words span:nth-child(4){
+    animation-delay: 1.5s;
+}
+.words span:nth-child(5){
+    animation-delay: 2s;
+}
+.words span:nth-child(6){
+    animation-delay: 2.5s;
+}
+.words span:nth-child(7){
+    animation-delay: 3s;
+}
+.words span:nth-child(8){
+    animation-delay: 3.5s;
+}
+/*spinner loader*/
