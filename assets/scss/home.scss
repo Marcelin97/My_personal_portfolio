@@ -12,7 +12,7 @@
     justify-content: center;
     align-items: center;
     display: flex;
-    animation: hidden 4s ease-in-out forwards;
+    animation: hidden 30000s ease-in-out forwards;
     position: fixed;
     z-index: 9999;
     top: 0px;
@@ -35,14 +35,14 @@
       left: 20px;
       bottom: 210px;
       animation: bubble 2.2s $courbe infinite;
-      font-size: 2.8rem;
+      font-size: 2.6rem;
     }
     .fa-html5 {
       position: absolute;
       top: 150px;
       left: -30px;
       animation: bubble 1.8s $courbe infinite;
-      font-size: 1.4rem;
+      font-size: 1.7rem;
     }
     .fa-css3 {
       position: absolute;
@@ -53,10 +53,10 @@
     }
     .fa-sass {
       position: absolute;
-      bottom: -15px;
+      bottom: -55px;
       right: 30px;
       animation: bubble 2.4s $courbe infinite;
-      font-size: 1.4rem;
+      font-size: 1.7rem;
     }
     .fa-node-js {
       position: absolute;
@@ -66,7 +66,7 @@
     }
     .fa-github {
       position: absolute;
-      top: -50px;
+      top: -100px;
       right: -30px;
       animation: bubble 1.9s $courbe infinite;
       font-size: 1.9rem;
@@ -80,31 +80,31 @@
     }
     .fa-discord {
       position: absolute;
-      top: 40px;
-      right: -90px;
-      animation: bubble 1.7s $courbe infinite;
+      top: -70px;
+      left: -140px;
+      animation: bubble 2.1s $courbe infinite;
       font-size: 2.4rem;
     }
     .fa-js-square {
         position: absolute;
-        top: 40px;
+        top: 100px;
         right: -90px;
-        animation: bubble 1.7s $courbe infinite;
-        font-size: 2.4rem;
+        animation: bubble 2s $courbe infinite;
+        font-size: 2.1rem;
       }
       .fa-bootstrap {
         position: absolute;
-        top: 40px;
-        right: -90px;
-        animation: bubble 1.7s $courbe infinite;
+        top: -70px;
+        right: -130px;
+        animation: bubble 1.8s $courbe infinite;
         font-size: 2.4rem;
       }
       .fa-vuejs {
         position: absolute;
-        top: 40px;
-        right: -90px;
-        animation: bubble 1.7s $courbe infinite;
-        font-size: 2.4rem;
+        top: 170px;
+        right: -50px;
+        animation: bubble 1.9s $courbe infinite;
+        font-size: 2.7rem;
       }
   }
 /*name spinner loading*/  
