@@ -16,24 +16,26 @@
   @keyframes bubble {
     from {
       opacity: 1;
-      transform: translateY(50px);
-      color: $tertiary-color;
+      transform: translateY(70px);
+      color: $Explosion-of-colored-2-hsla;
     }
     to {
       opacity: 0;
       transform: translateY(0);
-      color: $secondary-color;
+      color: $Explosion-of-colored-3-hsla;
     }
   }
 @keyframes move {
     0%{
         transform: translate(-30%, 0);
+        text-shadow:0 25px 50px $Explosion-of-colored-4-hsla;
     }
     50%{
-        text-shadow:0 25px 50px rgba(0, 0, 0, 0.75);
+        text-shadow:0 25px 50px $Explosion-of-colored-3-hsla;
     }
     100%{
         transform: translate(30%, 0);
+        text-shadow:0 25px 50px $Explosion-of-colored-2-hsla;
     }
 }
 
