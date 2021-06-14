@@ -6,6 +6,7 @@ module.exports = {
    entry: {
     	home: ["/assets/scss/home.scss"],
     	realisation: ["/assets/scss/realisation.scss"],
+		cv: ["/assets/scss/curriculum-vitae.scss"],
 	},
 	module: {
     	rules: [
