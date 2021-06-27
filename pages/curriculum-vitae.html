@@ -1,38 +1,87 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta 
-        name="desciption"
-        content="Mon curriculum vitae"
-    />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mon parcours</title>
-    <link rel="stylesheet" href="../assets/css/realisation.css">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="desciption" content="Mon curriculum vitae" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <link rel="stylesheet" href="../assets/css/curriculum-vitae.css" />
+    
+    <title>Mon parcours jusqu'à devenir développeuse web.</title>
+
+    <!--end of head-->
 </head>
 <body>
+
     <a href="../index.html"><!--add flèche retour--></a>
             <figure>
                 Loïs Marcelin
             </figure>
-    <div class="bloc_page">
-        <header>
-            <p>
-                <a href="../assets/images/Perso/Ma_photo_lois.png" target="_blank">
-                    <img id="photo"
-                        src="../assets/images/Perso/Ma_photo_lois.png"
-                        alt="Ma photo."
-                        title="Loïs Marcelin"
-                    />
-                </a>
-            </p>
-            <h1>Loïs Marcelin</h1>
-            <p class="dw">Développeur web</p>
-        </header>
-            <main>
-                <div class="conteneur">
+            
+                <!-- main -->
+                <main class="page-container">
+                  <!-- header -->
+                  <header class="bloc bgc-white container" id="bloc-0">
+                    <div class="bloc-sm">
+                      <nav class="navbar row">
+                        <div class="navbar-header">
+                          <a
+                            role="button"
+                            class="navbar-brand"
+                            href="index.html"
+                          >    
+                          <!--add icon home-->
+                          </a>
+                          <button
+                            id="nav-toggle"
+                            type="button"
+                            class="navbar-toggle"
+                            data-toggle="collapse"
+                            data-target=".navbar-1"
+                          >
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"><!--add icon bar--></span>
+                            <span class="icon-bar"><!--add icon bar--></span>
+                            <span class="icon-bar"><!--add icon bar--></span>
+                            <span class="icon-bar"><!--add icon bar--></span>
+                          </button>
+                        </div>
+                        <div class="collapse navbar-collapse navbar-1">
+                          <ul class="site-navigation nav navbar-nav">
+                            <li>
+                              <a
+                                href="../index.html"
+                                >Home</a>
+                            </li>
+                            <li>
+                              <a
+                                href="./realisation.html"
+                                >Work</a>
+                            </li>
+                            <li>
+                                <a
+                                  href="./curriculum-vitae.html"
+                                  >About me</a>
+                              </li>
+                            <li>
+                              <a
+                                href="./Contact.html"
+                                >Contact</a>
+                            </li>
+                            <li>
+                              <a
+                                href="./accessibilite.html"
+                                >Accessibilité</a>
+                            </li>
+                          </ul>
+                        </div>
+                      </nav>
+                    </div>
+                  </header>
+                  <!-- header END -->
+
+        <div class="conteneur">
                 <section class="Expériences">
                 <h2>Mes expériences</h2>
                     <p>
@@ -127,8 +176,15 @@
                     </ul>
                 </section>
                 </div>
-            </main>
-    <!--enf of main-->
+
+        <!-- ScrollToTop Button -->
+        <a
+          href="#"
+          class="btn btn-d scrollToTop"
+          ><span class="fa fa-chevron-up"></span
+        ></a>
+        <!-- ScrollToTop Button END-->
+
     <!--footer-->
     <footer>
         <nav>
@@ -168,6 +224,8 @@
         </nav>
       </footer>
         <!--end of footer-->
+</main>
+<!--enf of main-->
 
 <!--Kits fontawesome pour les icônes-->
 
