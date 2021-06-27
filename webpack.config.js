@@ -7,6 +7,8 @@ module.exports = {
     	home: ["/assets/scss/home.scss"],
     	realisation: ["/assets/scss/realisation.scss"],
 		cv: ["/assets/scss/curriculum-vitae.scss"],
+		contact: ["/assets/scss/contact.scss"],
+		accessibilite: ["/assets/scss/accessibilite.scss"],
 	},
 	module: {
     	rules: [

@@ -1,71 +1,87 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta 
-        name="desciption"
-        content="Mon curriculum vitae"
-        />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="desciption" content="Mon curriculum vitae" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <meta name="robots" content="all">
-    <!--Cette instruction autorise l'indexation de la page et autorise les robots à suivre les liens de la page dans le cadre de l'exploration..-->
-
-<!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-NDXHCQ7');</script>
-    <!-- End Google Tag Manager -->
+    <link rel="stylesheet" href="../assets/css/curriculum-vitae.css" />
     
-    <meta property="og:url" content="https://marcelin97.github.io/LoisMarcelin_4_17052021-optimise/page2.html"/>
-    <meta property="og:type" content="website"/>
-    <meta property="og:title" content="Parcours de Loïs Marcelin - Mon curriculum vitae."/>
-    <meta property="og:description" content="Retrouver sur cette page tous mon parcours."/>
-    <meta property="og:image" content="https://marcelin97.github.io/LoisMarcelin_4_17052021-optimise/img/logo.png"/>
-
-
-    <meta name="twitter:card" content="website"/>
-    <meta name="twitter:site" content="@loïsmarcelin"/>
-    <meta name="twitter:creator" content="@loïsmarcelin"/>
-    <meta name="twitter:title" content="Parcours de Loïs Marcelin - Mon curriculum vitae."/>
-    <meta name="twitter:description" content="Retrouver sur cette page tous mon parcours."/>
-    <meta name="twitter:image" content="https://dimitriobin.github.io/lachouetteagence_optimise-/assets/img/logo.png"/>
-    
-
     <title>Mon parcours jusqu'à devenir développeuse web.</title>
-    <link rel="stylesheet" href="../assets/css/curriculum-vitae.css">
 
+    <!--end of head-->
 </head>
 <body>
-    
-    <!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NDXHCQ7"
-    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-    <!-- End Google Tag Manager (noscript) -->
 
     <a href="../index.html"><!--add flèche retour--></a>
             <figure>
                 Loïs Marcelin
             </figure>
-    <div class="bloc_page">
-        <header>
-            <p>
-                <a href="../assets/images/Perso/Ma_photo_lois.png" target="_blank">
-                    <img id="photo"
-                        src="../assets/images/Perso/Ma_photo_lois.png"
-                        alt="Ma photo."
-                        title="Loïs Marcelin"
-                    />
-                </a>
-            </p>
-            <h1>Loïs Marcelin</h1>
-            <p class="dw">Développeur web</p>
-        </header>
-            <main>
-                <div class="conteneur">
+            
+                <!-- main -->
+                <main class="page-container">
+                  <!-- header -->
+                  <header class="bloc bgc-white container" id="bloc-0">
+                    <div class="bloc-sm">
+                      <nav class="navbar row">
+                        <div class="navbar-header">
+                          <a
+                            role="button"
+                            class="navbar-brand"
+                            href="index.html"
+                          >    
+                          <!--add icon home-->
+                          </a>
+                          <button
+                            id="nav-toggle"
+                            type="button"
+                            class="navbar-toggle"
+                            data-toggle="collapse"
+                            data-target=".navbar-1"
+                          >
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"><!--add icon bar--></span>
+                            <span class="icon-bar"><!--add icon bar--></span>
+                            <span class="icon-bar"><!--add icon bar--></span>
+                            <span class="icon-bar"><!--add icon bar--></span>
+                          </button>
+                        </div>
+                        <div class="collapse navbar-collapse navbar-1">
+                          <ul class="site-navigation nav navbar-nav">
+                            <li>
+                              <a
+                                href="../index.html"
+                                >Home</a>
+                            </li>
+                            <li>
+                              <a
+                                href="./realisation.html"
+                                >Work</a>
+                            </li>
+                            <li>
+                                <a
+                                  href="./curriculum-vitae.html"
+                                  >About me</a>
+                              </li>
+                            <li>
+                              <a
+                                href="./Contact.html"
+                                >Contact</a>
+                            </li>
+                            <li>
+                              <a
+                                href="./accessibilite.html"
+                                >Accessibilité</a>
+                            </li>
+                          </ul>
+                        </div>
+                      </nav>
+                    </div>
+                  </header>
+                  <!-- header END -->
+
+        <div class="conteneur">
                 <section class="Expériences">
                 <h2>Mes expériences</h2>
                     <p>
@@ -160,8 +176,15 @@
                     </ul>
                 </section>
                 </div>
-            </main>
-    <!--enf of main-->
+
+        <!-- ScrollToTop Button -->
+        <a
+          href="#"
+          class="btn btn-d scrollToTop"
+          ><span class="fa fa-chevron-up"></span
+        ></a>
+        <!-- ScrollToTop Button END-->
+
     <!--footer-->
     <footer>
         <nav>
@@ -201,6 +224,8 @@
         </nav>
       </footer>
         <!--end of footer-->
+</main>
+<!--enf of main-->
 
 <!--Kits fontawesome pour les icônes-->
 
