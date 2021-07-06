@@ -1,21 +1,32 @@
 header {
-    @include dflex_col;
-    align-items: center;
-    padding-top: 15px;
-    background-color: white;
-    
-    a {
-        i {
-            /*flèche retour*/
-            color: red;
-            font-size: 1.3em;
-            left: 5%;
-            position: absolute;
-            top: 35%;
-          }
-  }
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
+.headernav {
+    background-color: #232323;
+    height: 50px;
+    width: 100%;
+    padding: 10px;
+    i{
+      color: white;
+      font-size: 2em;
+      margin-left: 15px;
+    }
+  }
+
+header figure {
+  background-color: #232323;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  height: 50px;
+  width: 100%;
+  font-size: 1.5em;
+  padding: 10px;
+}
 
 #menuToggle
 {
@@ -29,7 +40,6 @@ header {
 
 #menuToggle a
 {
-  text-decoration: none;
   color: #232323;
   transition: color 0.3s ease;
 }
@@ -38,7 +48,6 @@ header {
 {
   color: tomato;
 }
-
 
 #menuToggle input
 {
@@ -51,7 +60,7 @@ header {
   cursor: pointer;
   opacity: 0; /* hide this */
   z-index: 2; /* and place it over the hamburger */
-  }
+}
 
 /*
  * Just a quick hamburger
@@ -90,7 +99,7 @@ header {
 {
   opacity: 1;
   transform: rotate(45deg) translate(-2px, -1px);
-  background: red;
+  background: #232323;
 }
 
 /*
@@ -103,7 +112,7 @@ header {
 }
 
 /*
- * the last one should go the other direction
+ * Ohyeah and the last one should go the other direction
  */
 #menuToggle input:checked ~ span:nth-last-child(2)
 {
@@ -117,12 +126,11 @@ header {
 #menu
 {
   position: absolute;
-  width: 300px;
-  margin: -100px 0 0 -1200px;
+  width: 250px;
+  margin: -100px 0 0 -50px;
   padding: 50px;
   padding-top: 125px;
   background: #ededed;
-  list-style-type: none;
   transform-origin: 0% 0%;
   transform: translate(-100%, 0);
   transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
@@ -131,7 +139,7 @@ header {
 #menu li
 {
   padding: 10px 0;
-  font-size: 22px;
+  font-size: 1.5em;
 }
 
 /*
@@ -141,3 +149,13 @@ header {
 {
   transform: none;
 }
+
+.titlepage {
+  text-align: center;
+  margin-left: 100px;
+}
+@media only screen and (min-width: 340px ){
+      .titlepage {
+        margin-left: 100px;
+      }
+    }
