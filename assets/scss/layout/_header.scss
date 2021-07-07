@@ -32,8 +32,8 @@ header figure {
 {
   display: block;
   position: relative;
-  top: 50px;
-  left: 50px;
+  top: -40px;
+  left: 27px;
   z-index: 1;
   user-select: none;
 }
@@ -150,12 +150,3 @@ header figure {
   transform: none;
 }
 
-.titlepage {
-  text-align: center;
-  margin-left: 100px;
-}
-@media only screen and (min-width: 340px ){
-      .titlepage {
-        margin-left: 100px;
-      }
-    }
