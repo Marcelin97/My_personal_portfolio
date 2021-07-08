@@ -23,6 +23,7 @@ img {
 }
 .slider{
 	display:flex;
+    justify-items: center;
 	background:#000;
 	.slide{
 		height:100vh;

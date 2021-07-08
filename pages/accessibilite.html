@@ -1,82 +1,54 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
+<head>
     <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="description" content="Page d'informations sur l'accessibilité 
     et les aides à la navigation mises en place sur le site de Loïs Marcelin" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
-    <link rel="stylesheet" type="text/css" href="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <link rel="stylesheet" type="text/css" href="../assets/css/accessibilite.css" />
 
     <title>La Chouette Agence - Informations sur l'accessibilité.</title>
 <!--end of head-->
 </head>
 <body>           
-    <!-- main -->
-    <main class="page-container">
-        <!-- header -->
-        <header class="bloc bgc-white container" id="bloc-0">
-            <a href="../index.html"><!--add flèche retour--></a>
-                <figure>
-                    Loïs Marcelin
-                </figure>
+  <!-- main -->
+    <main>
 
-                    <div class="bloc-sm">
-                      <nav class="navbar row">
-                        <div class="navbar-header">
-                          <a
-                            role="button"
-                            class="navbar-brand"
-                            href="index.html"
-                          >    
-                          <!--add icon home-->
-                          </a>
-                          <button
-                            id="nav-toggle"
-                            type="button"
-                            class="navbar-toggle"
-                            data-toggle="collapse"
-                            data-target=".navbar-1"
-                          >
-                            <span class="sr-only">Toggle navigation</span>
-                            <span class="icon-bar"><!--add icon bar--></span>
-                            <span class="icon-bar"><!--add icon bar--></span>
-                            <span class="icon-bar"><!--add icon bar--></span>
-                            <span class="icon-bar"><!--add icon bar--></span>
-                          </button>
-                        </div>
-                        <div class="collapse navbar-collapse navbar-1">
-                          <ul class="site-navigation nav navbar-nav">
-                            <li>
-                              <a
-                                href="../index.html"
-                                >Home</a>
-                            </li>
-                            <li>
-                              <a
-                                href="./realisation.html"
-                                >Work</a>
-                            </li>
-                            <li>
-                                <a
-                                  href="./curriculum-vitae.html"
-                                  >About me</a>
-                              </li>
-                            <li>
-                              <a
-                                href="./Contact.html"
-                                >Contact</a>
-                            </li>
-                            <li>
-                              <a
-                                href="./accessibilite.html"
-                                >Accessibilité</a>
-                            </li>
-                          </ul>
-                        </div>
-                      </nav>
-                    </div>
-                  </header>
-                  <!-- header END -->
+  <!-- header -->
+    <header>
+      <a class="headernav" href="../index.html"><i class="fas fa-home"></i></a>
+      <figure>
+          LM
+      </figure> 
+          <nav class="navigation" role="navigation">
+            <div id="menuToggle">
+              <input type="checkbox">
+                <span></span>
+                <span></span>
+                <span></span>
+              <ul id="menu">
+                  <a
+                    href="../index.html"
+                    ><li>Home</li></a>
+                  <a
+                    href="./realisation.html"
+                    ><li>Work</li></a>
+                  <a
+                    href="./curriculum-vitae.html"
+                    ><li>About me</li></a>
+                  <a
+                    href="./Contact.html"
+                    ><li>Contact</li></a>
+                  <a
+                    href="./accessibilite.html"
+                    ><li>Accessibilité</li></a>
+              </ul>
+            </div>
+          </nav>
+    </header>
+  <!--en of page header-->
       <!-- bloc-0 END -->
 
       <section class="bloc">
