@@ -2,10 +2,12 @@ header {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  position: fixed;
+  width: 100%;
 }
 
 .headernav {
-    background-color: #232323;
+    background-color: $Explosion-of-colored-5-hsla;
     height: 50px;
     width: 100%;
     padding: 10px;
@@ -17,7 +19,7 @@ header {
   }
 
 header figure {
-  background-color: #232323;
+  background-color: $Colored-powder-explosion-5-hsla;
   color: white;
   display: flex;
   flex-direction: row;
@@ -38,19 +40,16 @@ header figure {
   user-select: none;
 }
 
-#menuToggle a
-{
-  color: #232323;
+#menu a li {
   transition: color 0.3s ease;
 }
 
-#menuToggle a:hover
-{
-  color: tomato;
+#menu a li:hover,
+ {
+  color: $Colored-powder-explosion-4-hsla;
 }
 
-#menuToggle input
-{
+#menuToggle input {
   display: block;
   width: 40px;
   height: 32px;
@@ -72,7 +71,7 @@ header figure {
   height: 4px;
   margin-bottom: 5px;
   position: relative;
-  background: #cdcdcd;
+  background: $Colored-powder-explosion-1-hsla;
   border-radius: 3px;
   z-index: 1;
   transform-origin: 4px 0px;
@@ -99,7 +98,7 @@ header figure {
 {
   opacity: 1;
   transform: rotate(45deg) translate(-2px, -1px);
-  background: #232323;
+  background: black;
 }
 
 /*
@@ -126,11 +125,12 @@ header figure {
 #menu
 {
   position: absolute;
-  width: 250px;
+  width: 410px;
   margin: -100px 0 0 -50px;
-  padding: 50px;
-  padding-top: 125px;
-  background: #ededed;
+  padding: 100px 250px 50px 45px;
+  border-bottom-right-radius: 400px;
+  border: 1px solid black;
+  background: $Colored-powder-explosion-1-hsla;
   transform-origin: 0% 0%;
   transform: translate(-100%, 0);
   transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
@@ -149,4 +149,5 @@ header figure {
 {
   transform: none;
 }
+
 

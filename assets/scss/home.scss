@@ -1,18 +1,68 @@
 @import "./main.scss";
 
+//présentation
 .titlepage {
     text-align: center;
     display: flex;
     flex-wrap: wrap;
-  }
-
-.services h2 {
-    display: flex;
-    flex-wrap: wrap;
-    text-align: justify;
-    padding-bottom: 20px;
-    
+    justify-content: center;
+    font-weight: bold;
+    font-size: 1.7em;
+    padding-top: 150px;
+    padding-bottom: 80px;
 }
+
+//services
+.skills {
+    margin-top: -1rem;
+    padding-bottom: 1rem;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    
+        h2 {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            text-align: center;
+            padding-bottom: 140px;
+            font-weight: lighter;
+            word-break: break-word;
+            font-size: 1.2em;
+            background-color: $Colored-powder-explosion-1-hsla;
+        }
+}
+
+.global-skills {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.skills-1 {
+    margin-top: -110px;
+    border-top-left-radius: 90px;
+    border-top-right-radius: 90px;
+
+}
+.skills-1, .skills-2 {
+    background-color: white;
+    max-width: 900px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    h3 {
+    font-size: 1em;
+    color: $Colored-powder-explosion-1-hsla;
+    }
+    .paint-icon {
+        font-size: 3em;
+    }
+}
+
+
+//portfolio
 img {
     height: 100vh;
     width: 30%;
