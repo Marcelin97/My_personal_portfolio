@@ -36,10 +36,26 @@
 }
 
 .icon-place-1 {
-  left: 135px;
-  top: 520px;
+  position: relative;
+  top: 20px;
+  right: 25px;
 }
+
 .icon-place-2 {
-  left: 130px;
-  top: 910px;
+  position: relative;
+  top: 20px;
+  right: 35px;
 }
+
+@keyframes social {
+ 	0% { 
+    width:0;
+  }
+  50% { 
+    width:30px;
+  }
+  100% { 
+    width: 70px;
+  }
+}
+

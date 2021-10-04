@@ -3,10 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="desciption" content="Loïs Marcelin, développeuse web." />
+    <meta name="description" content="Loïs Marcelin, développeuse web." />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="./assets/css/home.css" />
+    <link rel="stylesheet" href="./assets/dist/css/home.css" />
 
     <title>Créatrice de site internet à Soissons, Laon et Reims ❤️</title>
     <!--end of head-->
@@ -86,6 +86,8 @@
               <a href="./index.html"><li>Home</li></a>
               <a href="./pages/realisation.html"><li>Work</li></a>
               <a href="./pages/curriculum-vitae.html"><li>About me</li></a>
+              <a href="./pages/news.html"><li>News</li></a>
+              <a href="./pages/questions.html"><li>Questions</li></a>
               <a href="./pages/Contact.html"><li>Contact</li></a>
               <a href="./pages/accessibilite.html"><li>Accessibilité</li></a>
             </ul>
@@ -100,11 +102,12 @@
           <div>
             <div>
               <h1>
-                Hi, I'm Loïs Marcelin <br />
-                I'm new to the world of programming
-                <i class="far fa-hand-scissors"></i>
+                👋 <br>
+                Je suis Loïs Marcelin <br />
+                <p>Développeuse web junior</p>
               </h1>
             </div>
+            <div class="loader" id="loader"></div>
           </div>
         </div>
       </section>
@@ -125,14 +128,12 @@
             <p>
               Que vous ayez un site web qui a besoin d'un rafraîchissement ou
               que vous partiez de zéro, laissez-moi vous réaliser un design dont
-              vous serez fier. <br />
-              Mon objectif à terme est de rendre Internet plus facile
-              d’utilisation, accessible et plus ludique.
+              vous serez fier.
             </p>
           </article>
           <article class="skills-2">
             <h3>Stratégie</h3>
-            <span class="icon-place-2">
+            <span class="icon-place-1">
               <i class="fas fa-handshake paint-icon"></i>
               <i class="fas fa-handshake paint-icon"></i>
             </span>
@@ -142,9 +143,12 @@
               proposer le meilleur design possible.<br />
             </p>
           </article>
-          <article>
+          <article class="skills-2">
             <h3>Illustrations</h3>
-            <span></span>
+            <span class="icon-place-2">
+              <i class="fas fa-photo-video paint-icon"></i>
+              <i class="fas fa-photo-video paint-icon"></i>
+            </span>
             <p>
               Un bon design n'est rien sans de bonnes illustrations. Laissez
               faire notre équipe de graphistes talentueux pour donner à vos
@@ -155,22 +159,23 @@
       </section>
       <!--services END -->
       <!--what-i-do-->
-      <section role="doc-part">
+      <section role="doc-part" id="service">
         <div>
           <div>
             <div>
               <h2>
-                Nous souhaitons aider les entreprises de la région Lyonnaise à
-                se développer et à connaître le succès. Nous travaillons pour
-                aider les entreprises locales à attirer de nouveaux clients.
+                Je souhaite aider les entreprises à se développer et à connaître
+                le succès numérique. Je travailles pour aider les entreprises
+                locales à attirer de nouveaux clients.
               </h2>
               <p>
-                Nous aimons collaborer avec des entrepreneurs créatifs et des
+                J'aime collaborer avec des entrepreneurs créatifs et des
                 entreprises locale, qu’elles aient besoin de créer un site de A
-                à Z ou de donner un coup de jeune à leur site. Que vous ayez
-                besoin d’une identité visuelle complète ou d’une refonte de
-                votre site, n’hésitez pas à nous contacter. Nous travaillerons
-                ensemble pour créer des sites beau et bien structurés, qui
+                à Z ou de donner un coup de jeune à leur site. <br />
+                Que vous ayez besoin d’une identité visuelle complète ou d’une
+                refonte de votre site, n’hésitez pas à me contacter. Nous
+                travaillerons ensemble pour créer le
+                <span class="bold">SITE</span> beau et bien structurés, qui
                 seront facilement trouvable sur les moteurs de recherche.
               </p>
             </div>
@@ -180,7 +185,13 @@
       <!--what-i-do END -->
 
       <!--counter section -->
-      <section class="counter-section">
+      <section
+        id="counter"
+        class="counter-section paralax bg-image"
+        style="
+          background-image: url(./assets/images/background/computer-1873831.png);
+        "
+      >
         <div class="overlay"></div>
         <div class="counter-container">
           <div class="counter-row">
@@ -192,7 +203,7 @@
                   </span>
                 </div>
                 <div class="counter-num">
-                  <p>105</p>
+                  <p>12</p>
                   <span>PROJETS</span>
                 </div>
               </div>
@@ -206,7 +217,7 @@
                   </span>
                 </div>
                 <div class="counter-num">
-                  <p>105</p>
+                  <p>645</p>
                   <span>COMMITS</span>
                 </div>
               </div>
@@ -220,7 +231,7 @@
                   </span>
                 </div>
                 <div class="counter-num">
-                  <p>67</p>
+                  <p>87</p>
                   <span>NUITS BLANCHES</span>
                 </div>
               </div>
@@ -284,57 +295,35 @@
         <div>
           <div>
             <h2>Prêt pour donner vie à votre projet ?</h2>
-            <a href="./pages/Contact.html">Contact moi</a>
+            <p>
+              Je suis toujours ouverte à discuter de travaux de conception de
+              produits ou d'opportunités de partenariat.
+            </p>
+            <a href="./pages/Contact.html">Commencer une conversation</a>
           </div>
         </div>
       </section>
       <!--cta END -->
       <!--citation-->
-      <div class="row voffset-lg med-width-whitespace2">
-        <div class="col-sm-12">
-          <figure class="citation text-center">
-            <blockquote>
-              <p>
-                <q
-                  >Codez toujours comme si la personne qui devra maintenir ce
-                  code était un violent psychopathe qui sait où vous vivez.
-                </q>
-              </p>
-            </blockquote>
-            <figcaption>— John Woods</figcaption>
-          </figure>
-        </div>
-      </div>
-      <!--citation END-->
-
-      <section class="moreinformations">
-        <a href="./index.html"
-          ><i class="fas fa-shopping-cart panier-logo"></i>Orinoco</a
-        >
-        <div>
-          <div>
-            <h4>Mieux nous connaitre</h4>
-            <a href="#">À propos de Orinoco</a>
-          </div>
-          <div>
-            <h4>Gagnez de l'argent</h4>
-            <a href="#">Devenez partenaire</a><br />
-            <a href="#">Confiez-nous vos produits</a>
-          </div>
-          <div>
-            <h4>Paiment Orinoco</h4>
-            <a href="#">Les différents moyens de paiement</a><br />
-            <a href="#">Le paiement en plusieurs fois</a>
-          </div>
-          <div>
-            <h4>Toutes nos aides</h4>
-            <a href="#">Retours et remplacements</a><br />
-            <a href="#">Suivre ma commande</a><br />
-            <a href="#">Services clients</a><br />
-            <a href="#">Accessibilité</a>
+      <section>
+        <div class="row voffset-lg med-width-whitespace2">
+          <div class="col-sm-12">
+            <figure class="citation text-center">
+              <blockquote>
+                <p>
+                  <q>
+                    Codez toujours comme si la personne qui devra maintenir ce
+                    code était un violent psychopathe qui sait où vous vivez.
+                  </q>
+                </p>
+              </blockquote>
+              <figcaption>— John Woods</figcaption>
+            </figure>
           </div>
         </div>
       </section>
+      <!--citation END-->
+
       <!-- ScrollToTop Button -->
       <a href="#" class="btn btn-d scrollToTop"
         ><span class="fa fa-chevron-up"></span
@@ -343,46 +332,73 @@
 
       <!--footer-->
       <footer>
+        <div class="footer-body">
+          <div class="footer-title">
+            <div class="footer-border">
+              <div class="footer-in">
+                <div class="footer-b"></div>
+              </div>
+            </div>
+            <div class="spr"></div>
+            <div class="footer-title">
+              <a href="">
+                <div>RESTONS EN CONTACT</div>
+              </a>
+            </div>
+            <div class="spr"></div>
+            <div class="footer-border">
+              <div class="footer-in">
+                <div class="footer-b"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
         <nav>
-          <h3>Loïs Marcelin</h3>
-          <p>Website developed by Loïs Marcelin</p>
+          <h3>Site développé par Loïs Marcelin</h3>
           <ul>
-            <li>
+            <li class="social-right">
               <a href="https://github.com/Marcelin97">
                 <i class="fab fa-github"></i>
-                Ma page GitHub
+                Ma page GitHub.
               </a>
+              <span class="social-right-underline"></span>
             </li>
             <li>
               <a href="https://www.instagram.com/loismarcelin/">
                 <i class="fab fa-instagram"></i>
-                Suivez-moi sur Instagram 👋
+                Suivez-moi sur Instagram.
               </a>
+              <span></span>
             </li>
-            <li>
+            <li class="social-right">
               <a href="#">
                 <i class="fas fa-tools"></i>
                 Outils de production : VS Code, GitHub, SASS, Webpack,
                 Package.json
               </a>
+              <span></span>
             </li>
             <li>
               <a href="#">
                 <i class="fas fa-balance-scale-right"></i>
-                Mentions légales
+                Mentions légales.
               </a>
+              <span></span>
             </li>
-            <li>
-              <a href="lois_m@outlook.com">
+            <li class="social-right">
+              <a href="mailto: lois_m@outlook.com">
                 <i class="fas fa-paper-plane"></i>
                 Contact
               </a>
+              <span></span>
             </li>
             <li>
               <a href="#">
                 <i class="fas fa-sitemap"></i>
-                Plan du site
+                Plan du site.
               </a>
+              <span></span>
             </li>
           </ul>
         </nav>
@@ -400,6 +416,7 @@
       crossorigin="anonymous"
     />
     <!--Kits fontawesome pour les icônes-->
+    <script src="./assets/js/home.js" defer></script>
     <!--Scripts-->
 
     <!--end of body-->
