@@ -1,0 +1,47 @@
+.btn-contact{
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+}
+.btn{
+    color: white;
+    cursor: pointer;
+    position:relative;
+    padding: 10px 20px;
+    background: transparent;
+    font-size: 20px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    transition: all 1s;
+    box-shadow: 0 10px 20px blue;
+        &:hover{
+            border-top-right-radius: 0px;
+            border-bottom-left-radius: 0px;
+        }
+}
+.btn::after, .btn::before{
+    content: " ";
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    border: 0px solid white;
+    transition: all 1s;
+}
+.btn::after{
+    top: -1px;
+    left: -1px;
+    border-top: 5px solid #482ff7;
+    border-left: 5px solid #482ff7;
+}
+.btn::before{
+    bottom: -1px;
+    right: -1px;
+    border-bottom: 5px solid #482ff7;
+    border-right: 5px solid #482ff7;
+}
+.btn:hover::before, .btn:hover::after{
+    width: 102%;
+    height: 102%;
+}

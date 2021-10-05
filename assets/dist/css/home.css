@@ -52,7 +52,7 @@ table {
 /*display:flex et flex-direction:column*/
 * {
   font-family: 'inter', sans-serif;
-  color: black; }
+  color: white; }
 
 a {
   text-decoration: none; }
@@ -69,13 +69,59 @@ section {
 
 body {
   line-height: 1.5;
-  scroll-behavior: smooth; }
+  scroll-behavior: smooth;
+  background-color: #f0f0f0; }
+
+.btn-contact {
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30px; }
+
+.btn {
+  color: white;
+  cursor: pointer;
+  position: relative;
+  padding: 10px 20px;
+  background: transparent;
+  font-size: 20px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  transition: all 1s;
+  box-shadow: 0 10px 20px blue; }
+  .btn:hover {
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px; }
+
+.btn::after, .btn::before {
+  content: " ";
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  border: 0px solid white;
+  transition: all 1s; }
+
+.btn::after {
+  top: -1px;
+  left: -1px;
+  border-top: 5px solid #482ff7;
+  border-left: 5px solid #482ff7; }
+
+.btn::before {
+  bottom: -1px;
+  right: -1px;
+  border-bottom: 5px solid #482ff7;
+  border-right: 5px solid #482ff7; }
+
+.btn:hover::before, .btn:hover::after {
+  width: 102%;
+  height: 102%; }
 
 /*skills icon*/
 .icon-place-1, .icon-place-2 {
   position: absolute; }
   .icon-place-1 i, .icon-place-2 i {
-    font-size: 2em;
     position: absolute;
     transform: translateY(-50%); }
     .icon-place-1 i:first-child, .icon-place-2 i:first-child {
@@ -87,7 +133,11 @@ body {
       -webkit-text-fill-color: transparent;
       z-index: 1; }
   .icon-place-1:hover, .icon-place-2:hover {
-    cursor: pointer; }
+    cursor: pointer;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none; }
     .icon-place-1:hover i:first-child, .icon-place-2:hover i:first-child {
       transform: scale(1) translateY(-50%);
       transition: all 330ms ease-in-out; }
@@ -378,15 +428,14 @@ body {
 
 .footer-border {
   width: 100%;
-  height: 1px;
-  opacity: 0.15; }
+  height: 1px; }
 
 .footer-in {
   width: 100%;
   height: 100%;
   box-sizing: border-box;
   height: 2px;
-  background: black; }
+  background: #a30a61; }
 
 .footer-b {
   transform: scaleX(1); }
@@ -418,11 +467,13 @@ footer nav ul li {
   margin: 20px; }
 
 .social-right {
-  text-align: right; }
+  justify-content: right;
+  justify-self: right;
+  align-items: flex-end;
+  align-content: flex-end; }
 
 footer nav ul li {
-  position: relative;
-  display: inline; }
+  position: relative; }
 
 footer nav ul li a {
   text-decoration: none;
@@ -430,13 +481,13 @@ footer nav ul li a {
   display: inline-block;
   padding: 10px; }
   footer nav ul li a:hover {
-    color: #0088CC; }
+    color: #a30a61; }
 
 footer nav ul li span {
   display: block;
   width: 70px;
   height: 2px;
-  background: #0088CC;
+  background: #1a5cd5;
   position: absolute;
   left: 10px;
   bottom: -10px; }
@@ -444,7 +495,7 @@ footer nav ul li span {
 li a:hover ~ span {
   -webkit-animation: social 0.3s ease-out;
           animation: social 0.3s ease-out;
-  background: #333; }
+  background: #a30a61; }
 
 header {
   display: flex;
@@ -453,12 +504,11 @@ header {
   width: 100%; }
 
 .headernav {
-  background-color: #0d0d0d;
   height: 50px;
   width: 100%;
   padding: 10px; }
   .headernav i {
-    color: white;
+    color: #000;
     font-size: 2em;
     margin-left: 15px; }
 
@@ -586,6 +636,47 @@ header figure {
     .titlepage {
       margin-bottom: 300px; } }
 
+.backHome {
+  -webkit-animation: shake 2.2s infinite;
+          animation: shake 2.2s infinite;
+  font-size: 2em; }
+
+@-webkit-keyframes shake {
+  0% {
+    transform: rotate(-8deg); }
+  8% {
+    transform: rotate(8deg); }
+  16% {
+    transform: rotate(-8deg); }
+  24% {
+    transform: rotate(8deg); }
+  32% {
+    transform: rotate(-8deg); }
+  40% {
+    transform: rotate(8deg); }
+  48% {
+    transform: rotate(0); }
+  100% {
+    transform: rotate(0); } }
+
+@keyframes shake {
+  0% {
+    transform: rotate(-8deg); }
+  8% {
+    transform: rotate(8deg); }
+  16% {
+    transform: rotate(-8deg); }
+  24% {
+    transform: rotate(8deg); }
+  32% {
+    transform: rotate(-8deg); }
+  40% {
+    transform: rotate(8deg); }
+  48% {
+    transform: rotate(0); }
+  100% {
+    transform: rotate(0); } }
+
 .loader {
   margin-top: 100px;
   position: absolute;
@@ -675,10 +766,8 @@ img {
       opacity: 1; }
 
 #service {
-  background-color: #0d0d0d;
   margin-bottom: 50px; }
   #service div div div h2, #service p, #service span {
-    color: #fff;
     text-align: center; }
 
 #counter {
@@ -747,4 +836,66 @@ img {
 
 .counter-num p, span {
   color: white; }
+
+.containter-contact {
+  max-width: 1200px;
+  width: auto;
+  margin: 0 auto;
+  flex-grow: 1; }
+
+.box-contact {
+  border-radius: 12px;
+  padding: 3.5rem 2rem;
+  margin-top: -9rem;
+  background-color: #212121;
+  box-shadow: 0 4px 4px #f0f0f0; }
+
+.col-contact {
+  align-items: center;
+  justify-content: space-between;
+  margin: -0.75rem; }
+
+.title-contact {
+  display: block;
+  flex-basis: 0;
+  flex-grow: 1;
+  flex-shrink: 1;
+  padding: 0.75rem;
+  justify-content: center;
+  align-items: center; }
+  .title-contact h2 {
+    color: white;
+    margin-bottom: 0;
+    font-weight: 700;
+    font-size: 2em;
+    line-height: 1.2;
+    text-align: center; }
+  .title-contact p {
+    text-align: center;
+    color: white;
+    margin-bottom: 0; }
+  .title-contact a {
+    background-color: transparent;
+    border: 2px solid #7510F7;
+    color: white;
+    padding: 1.25em 2em;
+    height: 2.5em;
+    line-height: 1.5;
+    font-weight: 400;
+    border-width: 2px;
+    border-radius: 290486px;
+    font-size: 1.25rem;
+    text-align: center;
+    white-space: nowrap;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+    vertical-align: top;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none; }
+    .title-contact a:hover {
+      background-color: #7510F7; }
 

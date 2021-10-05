@@ -3,16 +3,14 @@ header {
   flex-direction: row;
   flex-wrap: wrap;
   width: 100%;
-
 }
 
 .headernav {
-    background-color: $Explosion-of-colored-5-hsla;
     height: 50px;
     width: 100%;
     padding: 10px;
     i{
-      color: white;
+      color: #000;
       font-size: 2em;
       margin-left: 15px;
     }
@@ -44,8 +42,7 @@ header figure {
   transition: color 0.3s ease;
 }
 
-#menu a li:hover,
- {
+#menu a li:hover {
   color: $Colored-powder-explosion-4-hsla;
 }
 

@@ -2,7 +2,6 @@
 .icon-place-1, .icon-place-2 {
   position: absolute;
   i {
-    font-size: 2em;
     position: absolute;
     transform: translateY(-50%);
       &:first-child {
@@ -24,6 +23,7 @@
 
   &:hover {
     cursor: pointer;
+    user-select: none;
       i:first-child {
         transform: scale(1) translateY(-50%);
         transition: all 330ms ease-in-out;
@@ -58,4 +58,5 @@
     width: 70px;
   }
 }
+
 

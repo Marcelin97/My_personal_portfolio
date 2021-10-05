@@ -15,6 +15,13 @@
             margin-bottom: 300px;
         }
 }
+
+//hands say hi
+.backHome {
+  @include back;
+  @include shakeHome;
+};
+
 .loader {
     margin-top: 100px;
   position: absolute;
@@ -121,10 +128,8 @@ img {
 
 //service
 #service{
-    background-color: $Colored-powder-explosion-5-hsla;
     margin-bottom: 50px;
     div div div h2, p, span {
-        color: #fff;
         text-align: center;
     }
 }
@@ -201,4 +206,70 @@ img {
 .counter-num p, span {
     color: white;
 }
+//counter-section
 
+//contact
+.containter-contact{
+    max-width: 1200px;
+    width: auto;
+    margin: 0 auto;
+    flex-grow: 1;
+}
+.box-contact{
+    border-radius: 12px;
+    padding: 3.5rem 2rem;
+    margin-top: -9rem;
+    background-color: hsl(0, 0%, 13%);
+    box-shadow: 0 4px 4px hsl(0, 0%, 94%);
+}
+.col-contact{
+    align-items: center;
+    justify-content: space-between;
+    margin: -0.75rem;
+}
+.title-contact{
+    display: block;
+    flex-basis: 0;
+    flex-grow: 1;
+    flex-shrink: 1;
+    padding: 0.75rem;
+    justify-content: center;
+    align-items: center;
+        h2{
+            color: white;
+            margin-bottom: 0;
+            font-weight: 700;
+            font-size: 2em;
+            line-height: 1.2;
+            text-align: center;
+        }
+        p{
+            text-align: center;
+            color: white;
+            margin-bottom: 0;
+        }
+        a{
+            background-color: transparent;
+    border: 2px solid #7510F7;
+        color: white;
+    padding: 1.25em 2em;
+    height: 2.5em;
+    line-height: 1.5;
+    font-weight: 400;
+    border-width: 2px;
+        border-radius: 290486px;
+            font-size: 1.25rem;
+            text-align: center;
+    white-space: nowrap;
+        justify-content: center;
+            align-items: center;
+        cursor: pointer;
+            position: relative;
+    vertical-align: top;
+        user-select: none;
+            &:hover{
+                background-color: #7510F7;
+            }
+        }
+}
+//contact
