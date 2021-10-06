@@ -126,63 +126,82 @@
 
       <!-- bloc-7 -->
       <section id="form">
-        <div class="container bloc-lg">
-          <div class="row">
-            <div class="col-sm-6">
-              <form
-                id="form_1"
-                novalidate
-                method="POST"
-                action="../includes/form_1.php"
-              >
-                <div class="form-group">
-                  <label for="name">Nom | Prénom</label>
-                  <input
-                    aria-required="true"
-                    id="name"
-                    class="form-control"
-                    required
-                  />
+        <div>
+          <div>
+              <form method="GET">
+                <h3>Finalisez votre commande</h3>
+                <div>
+                  <label for="last-name">
+                    <input
+                      type="text"
+                      placeholder=" "
+                      name="last-name"
+                      id="last-name"
+                    />
+                    <p>Nom</p>
+                    <span id="errorName" class="errorInput"></span>
+                  </label>
+
+                  <label for="first-name">
+                    <input
+                      type="text"
+                      placeholder=" "
+                      name="first-name"
+                      id="first-name"
+                    />
+                    <p>Prénom</p>
+                    <span id="errorFirstName" class="errorInput"></span>
+                  </label>
+
+                  <label class="label" for="address">
+                    <input
+                      type="text"
+                      placeholder=" "
+                      name="address"
+                      id="address"
+                    />
+                    <p>Adresse</p>
+                    <span id="errorAddress" class="errorInput"></span>
+                  </label>
+                  <label class="label" for="postal-code">
+                    <input
+                      type="number"
+                      placeholder=" "
+                      name="postal-code"
+                      id="postal-code"
+                    />
+                    <p>Code postal</p>
+                    <span id="errorPostalCode" class="errorInput"></span>
+                  </label>
+                  <label class="label" for="city">
+                    <input type="text" placeholder=" " name="city" id="city" />
+                    <p>Ville</p>
+                    <span id="errorCity" class="errorInput"></span>
+                  </label>
+                  <label class="label" for="phone">
+                    <input
+                      type="number"
+                      placeholder=" "
+                      name="phone"
+                      id="phone"
+                    />
+                    <p>Téléphone</p>
+                    <span id="errorPhone" class="errorInput"></span>
+                  </label>
+                  <label class="label" for="email">
+                    <input
+                      type="email"
+                      placeholder=" "
+                      name="email"
+                      id="email"
+                    />
+                    <p>E-mail</p>
+                    <span id="errorEmail" class="errorInput"></span>
+                  </label>
                 </div>
-                <div class="form-group">
-                  <label for="email">Adresse email</label>
-                  <input
-                    aria-required="true"
-                    id="email"
-                    class="form-control"
-                    type="email"
-                    required
-                  />
-                </div>
-                <div class="form-group">
-                  <label for="input_504">Comment m'avez-vous connu ?</label>
-                  <input
-                    class="form-control"
-                    type="text"
-                    required
-                    id="input_504"
-                  />
-                </div>
-                <div class="form-group">
-                  <label for="message"
-                    >Brief de votre projet (Ajoutez autant de détails que
-                    nécessaire)<br
-                  /></label>
-                  <textarea
-                    id="message"
-                    class="form-control"
-                    rows="4"
-                    cols="50"
-                    required
-                  >
-                  </textarea>
-                </div>
-                <button type="submit">
-                  <i class="fas fa-paper-plane plane"></i>
-                  <span class="text"></span>
-                </button>
               </form>
             </div>
+          <div>
             <h2 id="main-title">
               Travaillons ensemble
             </h2>
