@@ -1,66 +1,117 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
+  <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="description" content="Contactez-moi sur cette page pour tous vos projets web. Nous allons définir ensemble la meilleure stratégie." />
+    <meta
+      name="description"
+      content="Contactez-moi sur cette page pour tous vos projets web. Nous allons définir ensemble la meilleure stratégie."
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" type="text/css" href="../assets/css/contact.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="../assets/dist/css/contact.css"
+    />
 
     <title>Contactez Loïs Marcelin</title>
-<!--end of head-->
-</head>
-<body> 
-  <!-- main -->
+    <!--end of head-->
+  </head>
+  <body>
+    <!-- main -->
     <main>
-
-  <!-- header -->
-    <header>
-      <a class="headernav" href="../index.html"><i class="fas fa-home"></i></a>
-      <figure>
-          LM
-      </figure> 
-          <nav class="navigation" role="navigation">
-            <div id="menuToggle">
-              <input type="checkbox">
-                <span></span>
-                <span></span>
-                <span></span>
-              <ul id="menu">
-                  <a
-                    href="../index.html"
-                    ><li>Home</li></a>
-                  <a
-                    href="./realisation.html"
-                    ><li>Work</li></a>
-                  <a
-                    href="./curriculum-vitae.html"
-                    ><li>About me</li></a>
-                  <a
-                    href="./Contact.html"
-                    ><li>Contact</li></a>
-                  <a
-                    href="./accessibilite.html"
-                    ><li>Accessibilité</li></a>
-              </ul>
-            </div>
-          </nav>
-    </header>
-  <!--en of page header-->
+      <!-- header -->
+      <header>
+        <a class="headernav" href="../index.html"
+          ><i class="fas fa-home"></i
+        ></a>
+        <figure>LM</figure>
+        <nav class="navigation" role="navigation">
+          <div id="menuToggle">
+            <input type="checkbox" />
+            <span></span>
+            <span></span>
+            <span></span>
+            <ul id="menu">
+              <a href="../index.html"><li>Home</li></a>
+              <a href="./realisation.html"><li>Work</li></a>
+              <a href="./curriculum-vitae.html"><li>About me</li></a>
+              <a href="./news.html"><li>News</li></a>
+              <a href="./questions.html"><li>Questions</li></a>
+              <a href="./accessibilite.html"><li>Accessibilité</li></a>
+            </ul>
+          </div>
+        </nav>
+      </header>
+      <!--en of page header-->
 
       <!-- bloc-6 -->
-      <section
-        class="bloc bg-repeat bgc-atomic-tangerine d-bloc bloc-bg-texture"
-        id="bloc-6"
-      >
-        <div class="container bloc-lg">
-          <div class="row">
-            <div class="col-sm-12">
-              <h1 class="text-center tc-black" id="main-title">
+      <div class="app">
+        <div class="contacts-page">
+          <div class="contacts-page-col">
+            <div class="contacts-page-title">
+              <h1>Comment puis-je vous aider?</h1>
+            </div>
+            <div class="contacts-page-actions">
+              <a href="#form">
+                <div class="contacts-page-button">
+                  <span>Démarrer un projet</span>
+                </div>
+              </a>
+              <a href="#form">
+                <div class="contacts-page-button">
+                  <span>Démarrer une conversation</span>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="contacts-page-col">
+            <div class="contacts-page-address">
+              <h2>Sancy-les-cheminots</h2>
+              <p>
+                4 rue de la porte au pré<br />
+                FR - 02880 <br> Sancy-les-cheminots<br />
+                Tel: +33 7 84 57 45 12
+              </p>
+              <a
+                href="https://www.google.it/maps/place/Sancy-les-Cheminots/@49.4386419,3.4418144,13z/data=!3m1!4b1!4m5!3m4!1s0x47e850569996f0cb:0x40af13e8169d3e0!8m2!3d49.433068!4d3.471575"
+              >
+                Voir sur google map</a
+              >
+            </div>
+            <div class="contacts-page-address">
+              <h2>Coordonnées</h2>
+              <p>
+                E-mail :
+                    <a class="bold-link" href="mailto:lois_m@outlook.com">lois_m@outlook.com</a>
+              </p>
+              <h2>Horaires</h2>
+              <p>
+                    Ouvert de 9h30 à 18h,<br />
+                    du lundi au vendredi
+                  </p>
+            </div>
+            <div class="contacts-page-socials">
+              <a href="#socials">
+                <h2>socials</h2>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <section class="more-contact">
+        <div class="more-container">
+          <div>
+            <div>
+              <h2 id="main-title">
                 Parlons web !
-              </h1>
-              <h2>Envie de discuter d'une collaboration avec moi ? Je suis définitivement dans le game.</h2>
+              </h2>
+              <p>
+                Envie de discuter d'une collaboration avec moi ? Je suis
+                définitivement dans le game.
+              </p>
               <p class="text-center mg-lg tc-black">
                 Nous sommes ravis que vous souhaitiez collaborer avec notre
                 agence.<br />
@@ -74,10 +125,7 @@
       <!-- bloc-6 END -->
 
       <!-- bloc-7 -->
-      <section
-        class="bloc bgc-white l-bloc"
-        id="bloc-7"
-      >
+      <section id="form">
         <div class="container bloc-lg">
           <div class="row">
             <div class="col-sm-6">
@@ -129,109 +177,71 @@
                   >
                   </textarea>
                 </div>
-                <button
-                  class="
-                    bloc-button
-                    btn btn-lg btn-block
-                    cta-hero
-                    btn-atomic-tangerine
-                  "
-                  type="submit"
-                >
-                  Envoyer
+                <button type="submit">
+                  <i class="fas fa-paper-plane plane"></i>
+                  <span class="text"></span>
                 </button>
               </form>
             </div>
-            <h2 class="text-center tc-black" id="main-title">
-                Let's Work Together
-              </h2>
-            <div class="col-sm-6 text-center">
-              <div>
-                <h2>Le bureau</h2>
-                <div>
-                  <p class="contact">
-                    4 rue de la porte au pré<br />
-                    02880 Sancy-les-cheminots
-                  </p>
-                </div>
-              </div>
-              <div>
-                <h2>Coordonnées</h2>
-                <div>
-                  <p class="contact">
-                    E-mail :
-                    <a
-                      class="bold-link"
-                      href="mailto:lois_m@outlook.com"
-                      >lois_m@outlook.com</a
-                    >
-                  </p>
-                </div>
-              </div>
-              <div>
-                <h2>Horaires</h2>
-                <div>
-                  <p class="contact">
-                    Ouvert de 9h30 à 18h,<br />
-                    du lundi au vendredi
-                  </p>
-                </div>
-              </div>
-            </div>
+            <h2 id="main-title">
+              Travaillons ensemble
+            </h2>
           </div>
         </div>
       </section>
       <!-- bloc-7 END -->
 
-      <!-- ScrollToTop Button -->
-      <a
-        class="bloc-button btn btn-d scrollToTop"
-        onclick="scrollToTarget('1')"
-      >
-        <span class="fa fa-chevron-up"><!--flèche vers le haut--></span>
-      </a>
-      <!-- ScrollToTop Button END-->
-
-          <!--footer-->
-    <footer>
+      <!--footer-->
+      <footer id="socials">
         <nav>
-            <h3>Loïs Marcelin</h3>
-            <p>Website developed by Loïs Marcelin</p>
-            <ul>
-              <li>
-                <a href="https://github.com/Marcelin97">
-                    <i class="fab fa-github"></i>
-                    Ma page GitHub
-                </a>
-              </li>
-              <li>
-                <a href="https://www.instagram.com/loismarcelin/">
-                    <i class="fab fa-instagram"></i>
-                    Suivez-moi sur Instagram 👋
-                </a>
-              </li>
-              <li>
-                <a href="#"> 
-                    <i class="fas fa-tools"></i> 
-                    Outils de production : VS Code, GitHub, SASS, Webpack.config.js, Package.json 
-                </a>
-              </li>
-              <li>
-                  <a href="#">
-                    <i class="fas fa-balance-scale-right"></i>
-                    Mentions légales 
-                  </a>
-              </li> 
-              <li><a href="lois_m@outlook.com">
-                    <i class="fas fa-paper-plane"></i>
-                    Contact 
-                  </a>
-              </li>
-            </ul>
+          <h3>Site développé par Loïs Marcelin</h3>
+          <ul>
+            <li class="social-right">
+              <a href="https://github.com/Marcelin97">
+                <i class="fab fa-github"></i>
+                Ma page GitHub.
+              </a>
+              <span class="social-right-underline"></span>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/loismarcelin/">
+                <i class="fab fa-instagram"></i>
+                Suivez-moi sur Instagram.
+              </a>
+              <span></span>
+            </li>
+            <li class="social-right">
+              <a href="#">
+                <i class="fas fa-tools"></i>
+                Outils de production : VS Code, GitHub, SASS, Webpack,
+                Package.json
+              </a>
+              <span></span>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fas fa-balance-scale-right"></i>
+                Mentions légales.
+              </a>
+              <span></span>
+            </li>
+            <li class="social-right">
+              <a href="mailto: lois_m@outlook.com">
+                <i class="fas fa-paper-plane"></i>
+                Contact
+              </a>
+              <span></span>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fas fa-sitemap"></i>
+                Plan du site.
+              </a>
+              <span></span>
+            </li>
+          </ul>
         </nav>
       </footer>
-        <!--end of footer-->
-
     </main>
     <!-- Principal conteneur END -->
     <!--Kits fontawesome pour les icônes-->

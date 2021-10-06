@@ -51,8 +51,7 @@ table {
 /* Color Theme Swatches in HSLA */
 /*display:flex et flex-direction:column*/
 * {
-  font-family: 'inter', sans-serif;
-  color: white; }
+  font-family: 'inter', sans-serif; }
 
 a {
   text-decoration: none; }
@@ -69,8 +68,7 @@ section {
 
 body {
   line-height: 1.5;
-  scroll-behavior: smooth;
-  background-color: #f0f0f0; }
+  scroll-behavior: smooth; }
 
 .btn-contact {
   height: 40px;
@@ -448,7 +446,8 @@ body {
   .footer-title a div {
     letter-spacing: -.035em;
     font-size: 2rem;
-    font-weight: 700; }
+    font-weight: 700;
+    color: #333; }
 
 footer {
   display: flex;
@@ -460,11 +459,23 @@ footer nav {
   padding: 0 20px; }
   footer nav h3 {
     justify-content: center;
+    display: flex;
     font-style: oblique;
     font-size: 0.7em; }
 
+@media only screen and (min-width: 576px) {
+  footer nav ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; } }
+
 footer nav ul li {
-  margin: 20px; }
+  margin: 20px;
+  width: 100%; }
+  @media only screen and (min-width: 576px) {
+    footer nav ul li {
+      width: 30%;
+      flex-wrap: wrap; } }
 
 .social-right {
   justify-content: right;
@@ -489,8 +500,7 @@ footer nav ul li span {
   height: 2px;
   background: #1a5cd5;
   position: absolute;
-  left: 10px;
-  bottom: -10px; }
+  left: 10px; }
 
 li a:hover ~ span {
   -webkit-animation: social 0.3s ease-out;
@@ -508,13 +518,15 @@ header {
   width: 100%;
   padding: 10px; }
   .headernav i {
-    color: #000;
+    color: #023356;
     font-size: 2em;
     margin-left: 15px; }
+    .headernav i:hover {
+      color: red; }
 
 header figure {
-  background-color: #0d0d0d;
-  color: white;
+  background-color: #121212;
+  color: #ffffff;
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
@@ -535,10 +547,12 @@ header figure {
           user-select: none; }
 
 #menu a li {
-  transition: color 0.3s ease; }
+  transition: color 0.3s ease;
+  color: #95989a;
+  font-size: 1.2em; }
 
 #menu a li:hover {
-  color: #d58e0b; }
+  color: #ffffff; }
 
 #menuToggle input {
   display: block;
@@ -562,7 +576,7 @@ header figure {
   height: 4px;
   margin-bottom: 5px;
   position: relative;
-  background: #a30a61;
+  background: red;
   border-radius: 3px;
   z-index: 1;
   transform-origin: 4px 0px;
@@ -581,7 +595,7 @@ header figure {
 #menuToggle input:checked ~ span {
   opacity: 1;
   transform: rotate(45deg) translate(-2px, -1px);
-  background: black; }
+  background: #ffffff; }
 
 /*
  * But let's hide the middle one.
@@ -606,8 +620,8 @@ header figure {
   margin: -100px 0 0 -50px;
   padding: 100px 250px 50px 45px;
   border-bottom-right-radius: 400px;
-  border: 1px solid black;
-  background: #a30a61;
+  border: 1px solid red;
+  background: #121212;
   transform-origin: 0% 0%;
   transform: translate(-100%, 0);
   transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1); }
@@ -631,54 +645,17 @@ header figure {
   font-size: 1.7em;
   padding-top: 30px;
   padding-bottom: 80px;
-  margin-bottom: 220px; }
+  margin-bottom: 220px;
+  color: #333; }
   @media only screen and (min-width: 576px) {
     .titlepage {
       margin-bottom: 300px; } }
 
-.backHome {
-  -webkit-animation: shake 2.2s infinite;
-          animation: shake 2.2s infinite;
-  font-size: 2em; }
-
-@-webkit-keyframes shake {
-  0% {
-    transform: rotate(-8deg); }
-  8% {
-    transform: rotate(8deg); }
-  16% {
-    transform: rotate(-8deg); }
-  24% {
-    transform: rotate(8deg); }
-  32% {
-    transform: rotate(-8deg); }
-  40% {
-    transform: rotate(8deg); }
-  48% {
-    transform: rotate(0); }
-  100% {
-    transform: rotate(0); } }
-
-@keyframes shake {
-  0% {
-    transform: rotate(-8deg); }
-  8% {
-    transform: rotate(8deg); }
-  16% {
-    transform: rotate(-8deg); }
-  24% {
-    transform: rotate(8deg); }
-  32% {
-    transform: rotate(-8deg); }
-  40% {
-    transform: rotate(8deg); }
-  48% {
-    transform: rotate(0); }
-  100% {
-    transform: rotate(0); } }
+.titlepage div div div h1 {
+  margin-bottom: 30px; }
 
 .loader {
-  margin-top: 100px;
+  margin-top: 200px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -688,7 +665,7 @@ header figure {
   font-weight: 700;
   transform: translate(-50%, -50%); }
   .loader:after {
-    content: '_'; }
+    content: "_"; }
 
 .skills {
   margin-top: -1rem;
@@ -707,6 +684,7 @@ header figure {
     font-weight: normal;
     word-break: break-word;
     font-size: 1.2em;
+    color: white;
     background-color: #a30a61; }
 
 .global-skills {
@@ -719,7 +697,8 @@ header figure {
   border-top-left-radius: 90px;
   border-top-right-radius: 90px; }
 
-.skills-1, .skills-2 {
+.skills-1,
+.skills-2 {
   background-color: white;
   max-width: 900px;
   display: flex;
@@ -727,15 +706,18 @@ header figure {
   justify-content: center;
   flex-wrap: wrap;
   text-align: center; }
-  .skills-1 h3, .skills-2 h3 {
+  .skills-1 h3,
+  .skills-2 h3 {
     font-size: 1em;
     font-weight: bold;
     padding: 15px 40px;
     color: #a30a61; }
-  .skills-1 .paint-icon, .skills-2 .paint-icon {
+  .skills-1 .paint-icon,
+  .skills-2 .paint-icon {
     font-size: 3em;
     color: #d58e0b; }
-  .skills-1 p, .skills-2 p {
+  .skills-1 p,
+  .skills-2 p {
     padding: 50px; }
 
 img {
@@ -767,7 +749,9 @@ img {
 
 #service {
   margin-bottom: 50px; }
-  #service div div div h2, #service p, #service span {
+  #service div div div h2,
+  #service p,
+  #service span {
     text-align: center; }
 
 #counter {
@@ -834,7 +818,8 @@ img {
 .counter-icon span i {
   color: white; }
 
-.counter-num p, span {
+.counter-num p,
+span {
   color: white; }
 
 .containter-contact {
@@ -876,7 +861,7 @@ img {
     margin-bottom: 0; }
   .title-contact a {
     background-color: transparent;
-    border: 2px solid #7510F7;
+    border: 2px solid #7510f7;
     color: white;
     padding: 1.25em 2em;
     height: 2.5em;
@@ -897,5 +882,5 @@ img {
         -ms-user-select: none;
             user-select: none; }
     .title-contact a:hover {
-      background-color: #7510F7; }
+      background-color: #7510f7; }
 

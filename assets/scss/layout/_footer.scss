@@ -36,6 +36,7 @@
             letter-spacing: -.035em;
             font-size: 2rem;
             font-weight: 700;
+            color: #333;
         }
     }
 }
@@ -51,12 +52,25 @@ footer nav {
     padding: 0 20px;
     h3{
         justify-content: center;
+        display: flex;
         font-style: oblique;
         font-size: 0.7em;
     }
 }
+footer nav ul {
+    @media only screen and (min-width: 576px) {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        }
+}
 footer nav ul li{
     margin: 20px;
+    width: 100%;
+    @media only screen and (min-width: 576px) {
+        width: 30%;
+        flex-wrap: wrap;
+        }
 
 }
 .social-right{
@@ -87,7 +101,6 @@ footer nav ul li span {
   background:$Colored-powder-explosion-2-hsla;
   position:absolute;
   left:10px;
-  bottom:-10px;
 }
 
 li a:hover ~ span {
