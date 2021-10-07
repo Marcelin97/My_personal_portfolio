@@ -8,10 +8,13 @@
   justify-content: center;
   font-weight: bold;
   font-size: 1.7em;
-  padding-top: 30px;
+  text-transform: uppercase;
+    line-height: 2rem;
+    letter-spacing: .1rem;
   padding-bottom: 80px;
   margin-bottom: 220px;
-  color: #333;
+  color: $title;
+  padding-top: 0px;
   @media only screen and (min-width: 576px) {
     margin-bottom: 300px;
   }
@@ -34,7 +37,7 @@
 // }
 
 .loader {
-  margin-top: 200px;
+  margin-top: 100px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -42,10 +45,73 @@
   text-align: center;
   font-size: 1.5em;
   font-weight: 700;
-  //   text-transform: uppercase;
+  color: $green;
   transform: translate(-50%, -50%);
   &:after {
     content: "_";
+  }
+}
+
+
+//scroll down
+
+.center {
+  cursor: pointer;
+  position: absolute;
+  margin-left:77%;
+  z-index: 999;
+  bottom: 0px;
+  transform: translate(-50%, -50%);
+}
+
+.down {
+  position: relative;
+  width: 20px;
+  height: 40px;
+  border-radius: 25px;
+  background: transparent;
+  border: 2px solid black;
+  overflow: hidden;
+}
+
+.down:before {
+  content: '';
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: $green;
+  left: 50%;
+  top: 10px;
+  transform: translate(-50%, 0);
+  animation: animate 2s linear infinite;
+}
+
+.down:after {
+  content: '';
+  position: absolute;
+  width: 6px;
+  height: 15px;
+  border-radius: 50%;
+  background: black;
+  left: 50%;
+  top: 5px;
+  transform: translate(-50%, 0);
+  border-radius: 3px;
+}
+
+@keyframes animate {
+  0% {
+    transform: translate(-50%, 0px);
+    opacity: 0;
+  }
+  50% {
+    transform: translate(-50%, 40px);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(-50%, 80px);
+    opacity: 0;
   }
 }
 
@@ -56,9 +122,7 @@
   padding: 0;
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
   h2 {
-    display: flex;
     flex-wrap: wrap;
     justify-content: center;
     text-align: center;
@@ -67,8 +131,11 @@
     font-weight: normal;
     word-break: break-word;
     font-size: 1.2em;
-    color: white;
-    background-color: $Colored-powder-explosion-1-hsla;
+    color:$big-text;
+     text-transform: uppercase;
+    line-height: 2.5rem;
+    letter-spacing: .1rem;
+    background-color: $background-1;
   }
 }
 
@@ -84,7 +151,7 @@
 }
 .skills-1,
 .skills-2 {
-  background-color: white;
+  background-color: $background-2;
   max-width: 900px;
   display: flex;
   flex-direction: column;
@@ -92,17 +159,22 @@
   flex-wrap: wrap;
   text-align: center;
   h3 {
-    font-size: 1em;
     font-weight: bold;
     padding: 15px 40px;
-    color: $Colored-powder-explosion-1-hsla;
+    font-size: .825rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 1.5rem;
+    letter-spacing: .1rem;
+    color: $grey;
   }
   .paint-icon {
     font-size: 3em;
-    color: $Colored-powder-explosion-4-hsla;
+    color: $green;
   }
   p {
     padding: 50px;
+    color: $grey;
   }
 }
 

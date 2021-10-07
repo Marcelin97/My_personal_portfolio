@@ -19,7 +19,7 @@ section, header{
     align-items: flex-start;
     height: auto;
     padding: 5rem 2.5rem 0;
-    background-color: #121212;
+    background-color: $background-1;
         @media only screen and (min-width: 576px) {
         flex-flow: row nowrap;
         }
@@ -49,7 +49,6 @@ section, header{
 
 .contacts-page-col:nth-of-type(2){
     padding-left: 0;
-    padding-bottom: 6.25vw;
 }
 
 .contacts-page-title{
@@ -134,9 +133,11 @@ section, header{
     padding: 0;
     outline: none;
     position: relative;
-    margin-bottom: 5vw;
-        @media only screen and (min-width: 576px) {
-        margin-right: 60px;
+    margin-bottom: 3vw;
+    margin-left: 3vw;
+    flex-basis: 100%;
+        @media only screen and (min-width: 992px) {
+        flex-basis: 20%;
         }
 }
 .contacts-page-col h2 {
@@ -173,42 +174,40 @@ h2{
     transform: scaleX(0);
     transition: transform .3s cubic-bezier(.215,.61,.355,1);
 }
-.contacts-page-socials a h2::after{
-    content: "";
-    position: absolute;
-    bottom: 0.20rem;
-    left: 0;
-    right: 0;
-    height: 1px;
-    background-color: red;
-    transform-origin: 0 0;
-    transform: scaleX(0);
-    transition: transform .3s cubic-bezier(.215,.61,.355,1);
-}
-.contacts-page-address a:hover::after, .contacts-page-socials h2:hover::after {
+
+.contacts-page-address a:hover::after{
   visibility: visible;
   transform: scaleX(1);
 }
 
 
 //form
+#form, #more-contact, #plane{
+    outline: none;
+    box-sizing: border-box;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 2.5rem 0;  
+}
 
 
-
-//button send a
-button {
+//button send a form
+.form-send {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 0.75rem;
   height: 3.5rem;
-  width: 13rem;
+  width: 15rem;
   padding: 0 2.5rem 0 1.375rem;
   border: 0;
   border-radius: 1.75rem;
   color: black;
   background: white;
   cursor: pointer;
+ overflow: hidden;
 }
 
 .text {
@@ -234,33 +233,32 @@ button {
   margin-left: 0;
 }
 
-@keyframes textAnimation {
-  0% { transform: translate(0, -50%); }
-  9% { transform: translate(0, -50%); content: "Envoyer le message"; }
-  10% { transform: translate(0, -50%); content: "Envoi en cours ..."; }
-  30% { transform: translate(0, -50%); }
-  39.9% { transform: translate(0, 100px); }
-  40% { transform: translate(300px, 100px); content: "Envoi en cours ..."; }
-  40.1% { transform: translate(300px, -60px); content: "Envoyée"; }
-  40.2% { transform: translate(33px, -60px); }
-  45% { transform: translate(33px, -50%); }
-  95% { transform: translate(33px, -50%); content: "Envoyée"; }
-  100% { transform: translate(0, -50%); content: "Envoyer le message"; }
+//button send a form
+
+//motion path - paper plane
+.planePath {
+  stroke: #D9DADA;
+  stroke-width: .1%;
+  stroke-width: .5%;
+  stroke-dasharray: 1% 2%;
+  stroke-linecap: round;
+  fill: none;
 }
 
-@keyframes iconAnimation {
-  0% { transform: translate(0, 0) rotate(45deg);}
-  10% { transform: translate(0, 0) rotate(45deg); }
-  20% { transform: translate(-170px, 0)rotate(45deg); }
-  30% { transform: translate(-170px, 0) rotate(45deg); }
-  40% { transform: translate(200px, 0) rotate(45deg) scale(2); }
-  40.1% { transform: translate(200px, -60px) rotate(45deg) scale(1);}
-  40.2% { transform: translate(34px, -60px)rotate(45deg); }
-  45% { transform: translate(34px, 0) rotate(45deg); }
-  95% { transform: translate(34px, 0)rotate(45deg); }
-  100% { transform: translate(0, 0) rotate(45deg);}
+.fil1 {
+  fill: #D9DADA;
 }
 
-button {
-  overflow: hidden;
+.fil2 {
+  fill: #C5C6C6;
 }
+
+.fil4 {
+  fill: #9D9E9E;
+}
+
+.fil3 {
+  fill: #AEAFB0;
+}
+
+//motion path - paper plane

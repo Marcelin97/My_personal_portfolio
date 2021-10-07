@@ -47,6 +47,7 @@
   right: 35px;
 }
 
+//icons social footer
 @keyframes social {
  	0% { 
     width:0;
@@ -58,5 +59,34 @@
     width: 70px;
   }
 }
+//icons social footer
 
+//animation button send a form
+@keyframes textAnimation {
+  0% { transform: translate(0, -50%); }
+  9% { transform: translate(0, -50%); content: "Envoyer le message"; }
+  10% { transform: translate(0, -50%); content: "Envoi en cours ..."; }
+  30% { transform: translate(0, -50%); }
+  39.9% { transform: translate(0, 100px); }
+  40% { transform: translate(300px, 100px); content: "Envoi en cours ..."; }
+  40.1% { transform: translate(300px, -60px); content: "Envoyée"; }
+  40.2% { transform: translate(33px, -60px); }
+  45% { transform: translate(33px, -50%); }
+  95% { transform: translate(33px, -50%); content: "Envoyée"; }
+  100% { transform: translate(0, -50%); content: "Envoyer le message"; }
+}
+
+@keyframes iconAnimation {
+  0% { transform: translate(0, 0) rotate(45deg);}
+  10% { transform: translate(0, 0) rotate(45deg); }
+  20% { transform: translate(-170px, 0)rotate(45deg); }
+  30% { transform: translate(-170px, 0) rotate(45deg); }
+  40% { transform: translate(200px, 0) rotate(45deg) scale(2); }
+  40.1% { transform: translate(200px, -60px) rotate(45deg) scale(1);}
+  40.2% { transform: translate(34px, -60px)rotate(45deg); }
+  45% { transform: translate(34px, 0) rotate(45deg); }
+  95% { transform: translate(34px, 0)rotate(45deg); }
+  100% { transform: translate(0, 0) rotate(45deg);}
+}
+//animation button send a form
 
