@@ -25,7 +25,7 @@ eval("\n\n//# sourceURL=webpack://my_personal_portfolio/./assets/js/contact.js?"
   \****************************/
 /***/ (() => {
 
-eval("alert(\"bonjour\");\r\n\n\n//# sourceURL=webpack://my_personal_portfolio/./assets/js/index.js?");
+eval("\n\n//# sourceURL=webpack://my_personal_portfolio/./assets/js/index.js?");
 
 /***/ }),
 

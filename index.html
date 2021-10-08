@@ -241,55 +241,61 @@
       <!--counter section -->
 
       <!--portfolio -->
-      <section class="portfolio">
-        <h2>Portfolio</h2>
-        <div class="slider">
-          <a href="./pages/realisation.html"> 
-          <article
-            class="slide"
-            style="
-              background-image: url(./assets/images/projets/Extrait_maquette_reservia_P2_900w.jpg);
-            "
-          >
-            
-            <h3>Transformez une maquette en site web</h3>
-            <p>
-              J'ai réaliser le prototype de la maquette avec différentes
-              fonctionnalités et contraintes techniques.
-            </p>
-            </a>
-          </article>
-          <article
-            class="slide"
-            style="
-              background-image: url(./assets/images/projets/Extrait_maquette_Ohmyfood_P3_900w.jpg);
-            "
-          >
-            <a href="./pages/realisation.html"> </a>
-            <h3>Dynamisez une page web avec des animations CSS</h3>
-            <p>
-              L'objectif est de développer un site en utilisant l'approche
-              mobile-first qui répertorie les menus de restaurants
-              gastronomiques.<br />
-              Le site devra inclure des effets graphique et des animations.
-            </p>
-          </article>
-          <article
-            class="slide"
-            style="
-              background-image: url(./assets/images/projets/Extrait_maquette_LaChouetteAgence_P4_900w.jpg);
-            "
-          >
-            <a href="./pages/realisation.html"> </a>
-            <h3>Optimisez un site web existant</h3>
-            <p>
-              J'ai réalisé l'analyse de l'état actuel de SEO et d'accessibilité
-              du site fourni. J'ai optimisé chaque élément afin de me rapprocher
-              de la perfection.
-            </p>
-          </article>
+<section>
+<div>
+  <div class="carousel">
+    <ul class="slides">
+      <input type="radio" name="radio-buttons" id="img-1" checked />
+      <li class="slide-container">
+        <div class="slide-image">
+          <img src="./assets/images/projets/Extrait_maquette_reservia_P2_900w.jpg">
         </div>
-      </section>
+        <div class="carousel-controls">
+          <label for="img-3" class="prev-slide">
+            <span><i class="fas fa-chevron-left"></i></span>
+          </label>
+          <label for="img-2" class="next-slide">
+            <span><i class="fas fa-chevron-right"></i></span>
+          </label>
+        </div>
+      </li>
+      <input type="radio" name="radio-buttons" id="img-2" />
+      <li class="slide-container">
+        <div class="slide-image">
+          <img src="https://content.r9cdn.net/rimg/dimg/db/02/06b291e8-city-14912-171317ad83a.jpg?width=1750&height=1000&xhint=3040&yhint=2553&crop=true">
+        </div>
+        <div class="carousel-controls">
+          <label for="img-1" class="prev-slide">
+            <span><i class="fas fa-chevron-left"></i></span>
+          </label>
+          <label for="img-3" class="next-slide">
+            <span><i class="fas fa-chevron-right"></i></span>
+          </label>
+        </div>
+      </li>
+      <input type="radio" name="radio-buttons" id="img-3" />
+      <li class="slide-container">
+        <div class="slide-image">
+          <img src="https://speakzeasy.files.wordpress.com/2015/05/twa_blogpic_timisoara-4415.jpg">
+        </div>
+        <div class="carousel-controls">
+          <label for="img-2" class="prev-slide">
+            <span><i class="fas fa-chevron-left"></i></span>
+          </label>
+          <label for="img-1" class="next-slide">
+            <span><i class="fas fa-chevron-right"></i></span>
+          </label>
+        </div>
+      </li>
+      <div class="carousel-dots">
+        <label for="img-1" class="carousel-dot" id="img-dot-1"></label>
+        <label for="img-2" class="carousel-dot" id="img-dot-2"></label>
+        <label for="img-3" class="carousel-dot" id="img-dot-3"></label>
+      </div>
+    </ul>
+  </div>
+</div>
+</section>
       <!--portfolio END -->
       <!--cta -->
       <section class="container-contact">
@@ -418,7 +424,7 @@
       crossorigin="anonymous"
     />
     <!--Kits fontawesome pour les icônes-->
-    <script src="./assets/js/home.js" defer></script>
+    <script src="./assets/dist/js/home.js" defer></script>
     <!--Scripts-->
 
     <!--end of body-->
