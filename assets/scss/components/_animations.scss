@@ -90,3 +90,16 @@
 }
 //animation button send a form
 
+//scroll down
+@keyframes scroll {
+  0% {
+    transform: translate(-50%, 15px);
+  }
+  50% {
+    transform: translate(-50%, 0px);
+  }
+  100% {
+    transform: translate(-50%, 15px);
+  }
+}
+//scroll down

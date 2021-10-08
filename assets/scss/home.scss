@@ -9,11 +9,11 @@
   font-weight: bold;
   font-size: 1.7em;
   text-transform: uppercase;
-    line-height: 2rem;
-    letter-spacing: .1rem;
+  line-height: 2rem;
+  letter-spacing: 0.1rem;
   padding-bottom: 80px;
   margin-bottom: 220px;
-  color: $title;
+  color: $darkGrey;
   padding-top: 0px;
   @media only screen and (min-width: 576px) {
     margin-bottom: 300px;
@@ -36,6 +36,7 @@
 //   background: linear-gradient(45deg, #20fce2, #0679df);
 // }
 
+//letter animation
 .loader {
   margin-top: 100px;
   position: absolute;
@@ -51,17 +52,34 @@
     content: "_";
   }
 }
-
+//letter animation
 
 //scroll down
-
+.center1 {
+  margin-left: 90%;
+}
+.center2 {
+  margin-right: 90%;
+}
 .center {
   cursor: pointer;
   position: absolute;
-  margin-left:77%;
   z-index: 999;
-  bottom: 0px;
-  transform: translate(-50%, -50%);
+  bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  span {
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 0.425rem;
+    text-transform: uppercase;
+    line-height: 2rem;
+    letter-spacing: 0.1rem;
+    color: $grey;
+  }
 }
 
 .down {
@@ -69,51 +87,37 @@
   width: 20px;
   height: 40px;
   border-radius: 25px;
-  background: transparent;
-  border: 2px solid black;
+  background: $green;
+  border: 2px solid $darkGrey;
   overflow: hidden;
 }
 
 .down:before {
-  content: '';
+  content: "";
   position: absolute;
   width: 6px;
   height: 6px;
   border-radius: 50%;
-  background: $green;
+  background: transparent;
   left: 50%;
   top: 10px;
   transform: translate(-50%, 0);
-  animation: animate 2s linear infinite;
 }
 
 .down:after {
-  content: '';
+  content: "";
   position: absolute;
   width: 6px;
   height: 15px;
   border-radius: 50%;
-  background: black;
+  background: $darkGrey;
   left: 50%;
   top: 5px;
   transform: translate(-50%, 0);
   border-radius: 3px;
+  animation: scroll 3s linear infinite;
 }
-
-@keyframes animate {
-  0% {
-    transform: translate(-50%, 0px);
-    opacity: 0;
-  }
-  50% {
-    transform: translate(-50%, 40px);
-    opacity: 1;
-  }
-  100% {
-    transform: translate(-50%, 80px);
-    opacity: 0;
-  }
-}
+//scroll down
 
 //services
 .skills {
@@ -131,10 +135,10 @@
     font-weight: normal;
     word-break: break-word;
     font-size: 1.2em;
-    color:$big-text;
-     text-transform: uppercase;
+    color: $big-text;
+    text-transform: uppercase;
     line-height: 2.5rem;
-    letter-spacing: .1rem;
+    letter-spacing: 0.1rem;
     background-color: $background-1;
   }
 }
@@ -161,11 +165,11 @@
   h3 {
     font-weight: bold;
     padding: 15px 40px;
-    font-size: .825rem;
+    font-size: 0.825rem;
     font-weight: 700;
     text-transform: uppercase;
     line-height: 1.5rem;
-    letter-spacing: .1rem;
+    letter-spacing: 0.1rem;
     color: $grey;
   }
   .paint-icon {
@@ -181,7 +185,8 @@
 //portfolio
 img {
   height: 100vh;
-  width: 30%;
+  width: 80%;
+  height: 60%;
 }
 .portfolio {
   max-width: 900px;
@@ -190,13 +195,11 @@ img {
 .slider {
   display: flex;
   justify-items: center;
-  background: #000;
+  background: $background-1;
   .slide {
     height: 100vh;
     position: relative;
     z-index: 10;
-    border: solid #fff;
-    border-width: 1px;
     background-size: cover;
     background-position: center center;
     opacity: 0.25;
@@ -211,11 +214,21 @@ img {
 
 //service
 #service {
-  margin-bottom: 50px;
-  div div div h2,
-  p,
-  span {
-    text-align: center;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  background-color: $background-1;
+  h2 {
+    text-transform: uppercase;
+    color: $big-text;
+  }
+  ul {
+    color: $mini-text;
+    font-size: 0.625rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 1.5rem;
+    letter-spacing: 0.1rem;
   }
 }
 
@@ -302,7 +315,7 @@ span {
   border-radius: 12px;
   padding: 3.5rem 2rem;
   margin-top: -9rem;
-  background-color: hsl(0, 0%, 13%);
+  background-color: $background-1;
   box-shadow: 0 4px 4px hsl(0, 0%, 94%);
 }
 .col-contact {
@@ -319,40 +332,20 @@ span {
   justify-content: center;
   align-items: center;
   h2 {
-    color: white;
+    color: $big-text;
     margin-bottom: 0;
     font-weight: 700;
     font-size: 2em;
     line-height: 1.2;
     text-align: center;
+    
   }
   p {
     text-align: center;
-    color: white;
+    color: $mini-text;
     margin-bottom: 0;
-  }
-  a {
-    background-color: transparent;
-    border: 2px solid #7510f7;
-    color: white;
-    padding: 1.25em 2em;
-    height: 2.5em;
-    line-height: 1.5;
-    font-weight: 400;
-    border-width: 2px;
-    border-radius: 290486px;
-    font-size: 1.25rem;
-    text-align: center;
-    white-space: nowrap;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    position: relative;
-    vertical-align: top;
-    user-select: none;
-    &:hover {
-      background-color: #7510f7;
-    }
+    text-transform: uppercase;
+    font-size: .825rem;
   }
 }
 //contact

@@ -1,197 +1,199 @@
 @import "./main.scss";
 
-html{
-    color: #95989a;
+html {
+  color: #95989a;
 }
-section, header{
-    background-color: $background-1;
+section,
+header {
+  background-color: $background-1;
 }
 
-.contacts-page{
-    font-size: 14px;
-    line-height: 1.5rem;
-    margin: 0;
-    outline: none;
-    box-sizing: border-box;
+.contacts-page {
+  font-size: 14px;
+  line-height: 1.5rem;
+  margin: 0;
+  outline: none;
+  box-sizing: border-box;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  height: auto;
+  padding: 5rem 2.5rem 0;
+  background-color: $background-1;
+  @media only screen and (min-width: 576px) {
+    flex-flow: row nowrap;
+  }
+}
+
+.contacts-page-col {
+  width: 100%;
+  position: relative;
+  box-sizing: border-box;
+  @media only screen and (min-width: 576px) {
+    flex-direction: row;
     display: flex;
-    flex-flow: column nowrap;
-    justify-content: flex-start;
-    align-items: flex-start;
-    height: auto;
-    padding: 5rem 2.5rem 0;
-    background-color: $background-1;
-        @media only screen and (min-width: 576px) {
-        flex-flow: row nowrap;
-        }
+    width: fit-content;
+    flex-wrap: wrap;
+  }
+}
+.contacts-page-col:first-of-type {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  height: auto;
+  border-bottom: 1px solid hsla(0, 0%, 100%, 0.1);
+  padding-bottom: 10vh;
+  margin-bottom: 10vh;
 }
 
-.contacts-page-col{
-    width: 100%;
-    position: relative;
-    box-sizing: border-box;
-        @media only screen and (min-width: 576px) {
-        flex-direction: row;
-        display: flex;
-        width:fit-content;
-        flex-wrap: wrap;
-        }
-}
-.contacts-page-col:first-of-type{
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: flex-start;
-    align-items: flex-start;
-    height: auto;
-    border-bottom: 1px solid hsla(0,0%,100%,.1);
-    padding-bottom: 10vh;
-    margin-bottom: 10vh;    
+.contacts-page-col:nth-of-type(2) {
+  padding-left: 0;
 }
 
-.contacts-page-col:nth-of-type(2){
-    padding-left: 0;
+.contacts-page-title {
+  position: relative;
+  overflow: hidden;
 }
 
-.contacts-page-title{
-    position: relative;
-    overflow: hidden;
-}
-
-.contacts-page-col h1{
-    font-size: 3rem;
-    line-height: 4rem;
-    padding: 10vh 0;
-    min-height: inherit;
-    color: #fff;
-    font-weight: 400;
+.contacts-page-col h1 {
+  font-size: 3rem;
+  line-height: 4rem;
+  padding: 10vh 0;
+  min-height: inherit;
+  color: #fff;
+  font-weight: 400;
 }
 
 //buttons actions
-.contacts-page-actions{
-    width: 100%;
-    justify-content: space-between;
-    position: relative;
-    display: flex;
-    align-items: baseline;
-    flex-flow: row nowrap;
-    overflow: hidden;
+.contacts-page-actions {
+  width: 100%;
+  justify-content: space-between;
+  position: relative;
+  display: flex;
+  align-items: baseline;
+  flex-flow: row nowrap;
+  overflow: hidden;
 }
 
-.contacts-page-button{
-    padding: 0.5rem;
-    cursor: pointer;
-    line-height: 2.5rem;
-    font-size: .625rem;
-    font-weight: 700;
-    letter-spacing: 2px;
-    text-transform: uppercase;
+.contacts-page-button {
+  padding: 0.5rem;
+  cursor: pointer;
+  line-height: 2.5rem;
+  font-size: 0.625rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
 }
-.contacts-page-button:first-of-type{
-    margin-left: 0;
+.contacts-page-button:first-of-type {
+  margin-left: 0;
 }
 .contacts-page__actions .contacts-page__button {
-    margin-left: 3.125vw;
+  margin-left: 3.125vw;
 }
-.contacts-page-button span::before{
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background-color: #fff;
-    content: "";
-    -webkit-transform-origin: 50% 100%;
-    transform-origin: 50% 100%;
-    -webkit-transform: scaleY(.0277);
-    transform: scaleY(.0277);
-    transition: -webkit-transform .5s cubic-bezier(.645,.045,.355,1);
-    transition: transform .5s cubic-bezier(.645,.045,.355,1);
-    transition: transform .5s cubic-bezier(.645,.045,.355,1),-webkit-transform .5s cubic-bezier(.645,.045,.355,1);
+.contacts-page-button span::before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #fff;
+  content: "";
+  -webkit-transform-origin: 50% 100%;
+  transform-origin: 50% 100%;
+  -webkit-transform: scaleY(0.0277);
+  transform: scaleY(0.0277);
+  transition: -webkit-transform 0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: transform 0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: transform 0.5s cubic-bezier(0.645, 0.045, 0.355, 1),
+    -webkit-transform 0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 .contacts-page-button span {
-    -webkit-font-smoothing: antialiased;
-    -webkit-box-direction: normal;
-    font-size: .625rem;
-    font-weight: 700;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    cursor: pointer;
-    margin: 0;
-    padding: 0;
-    outline: none;
-    -webkit-tap-highlight-color: transparent;
-    position: relative;
-    display: block;
-    color: #fff;
-    transition: color .25s cubic-bezier(.645,.045,.355,1) .25s;
-    
+  -webkit-font-smoothing: antialiased;
+  -webkit-box-direction: normal;
+  font-size: 0.625rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  cursor: pointer;
+  margin: 0;
+  padding: 0;
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
+  position: relative;
+  display: block;
+  color: #fff;
+  transition: color 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0.25s;
 }
 
 //contact address
-.contacts-page-address{
-    line-height: 1.5rem;
-    margin: 0;
-    padding: 0;
-    outline: none;
-    position: relative;
-    margin-bottom: 3vw;
-    margin-left: 3vw;
-    flex-basis: 100%;
-        @media only screen and (min-width: 992px) {
-        flex-basis: 20%;
-        }
+.contacts-page-address {
+  line-height: 1.5rem;
+  margin: 0;
+  padding: 0;
+  outline: none;
+  position: relative;
+  margin-bottom: 3vw;
+  margin-left: 3vw;
+  flex-basis: 100%;
+  @media only screen and (min-width: 992px) {
+    flex-basis: 20%;
+  }
 }
 .contacts-page-col h2 {
-    color: #fff;
+  color: #fff;
 }
-h2, P{
-    margin-bottom: 1.5rem;
+h2,
+P {
+  margin-bottom: 1.5rem;
 }
-h2{
-    font-size: .625rem;
-    font-weight: 700;
-    text-transform: uppercase;
-    line-height: 1.5rem;
-    letter-spacing: .1rem;
+h2 {
+  font-size: 0.625rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 1.5rem;
+  letter-spacing: 0.1rem;
 }
 .contacts-page-address a {
-    position: relative;
-    color: #fff;
-    text-decoration: none;
-    font-size: .625rem;
-    font-weight: 700;
-    letter-spacing: 2px;
-    text-transform: uppercase;
+  position: relative;
+  color: #fff;
+  text-decoration: none;
+  font-size: 0.625rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
 }
-.contacts-page-address a::after{
-    content: "";
-    position: absolute;
-    bottom: -.75rem;
-    left: 0;
-    right: 0;
-    height: 1px;
-    background-color: red;
-    transform-origin: 0 0;
-    transform: scaleX(0);
-    transition: transform .3s cubic-bezier(.215,.61,.355,1);
+.contacts-page-address a::after {
+  content: "";
+  position: absolute;
+  bottom: -0.75rem;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background-color: red;
+  transform-origin: 0 0;
+  transform: scaleX(0);
+  transition: transform 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
-.contacts-page-address a:hover::after{
+.contacts-page-address a:hover::after {
   visibility: visible;
   transform: scaleX(1);
 }
 
-
 //form
-#form, #more-contact, #plane{
-    outline: none;
-    box-sizing: border-box;
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: center;
-    align-items: center;
-    padding: 2rem 2.5rem 0;  
+#form,
+#more-contact,
+#plane {
+  outline: none;
+  box-sizing: border-box;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 2.5rem 0;
 }
-
 
 //button send a form
 .form-send {
@@ -207,7 +209,7 @@ h2{
   color: black;
   background: white;
   cursor: pointer;
- overflow: hidden;
+  overflow: hidden;
 }
 
 .text {
@@ -237,28 +239,28 @@ h2{
 
 //motion path - paper plane
 .planePath {
-  stroke: #D9DADA;
-  stroke-width: .1%;
-  stroke-width: .5%;
+  stroke: #d9dada;
+  stroke-width: 0.1%;
+  stroke-width: 0.5%;
   stroke-dasharray: 1% 2%;
   stroke-linecap: round;
   fill: none;
 }
 
 .fil1 {
-  fill: #D9DADA;
+  fill: #d9dada;
 }
 
 .fil2 {
-  fill: #C5C6C6;
+  fill: #c5c6c6;
 }
 
 .fil4 {
-  fill: #9D9E9E;
+  fill: #9d9e9e;
 }
 
 .fil3 {
-  fill: #AEAFB0;
+  fill: #aeafb0;
 }
 
 //motion path - paper plane
