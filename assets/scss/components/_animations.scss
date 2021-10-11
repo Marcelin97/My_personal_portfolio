@@ -1,42 +1,105 @@
-/*spinner loader*/
+/*skills icon*/
+.icon-place-1, .icon-place-2 {
+  position: absolute;
+  i {
+    position: absolute;
+    transform: translateY(-50%);
+      &:first-child {
+        transform: scale(0) translateY(-50%);
+        background: -webkit-gradient(
+          linear,
+          left top,
+          left bottom,
+          from($Explosion-of-colored-4-hsla),
+          to($Explosion-of-colored-3-hsla)
+        );
+        background-clip: border-box;
+        background-clip: border-box;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        z-index: 1;
+      }
+  }
 
-@keyframes hidden {
-    0% {
-      opacity: 1;
-    }
-    50% {
-      opacity: 1;
-    }
-    100% {
-      opacity: 0;
-      visibility: hidden;
-    }
+  &:hover {
+    cursor: pointer;
+    user-select: none;
+      i:first-child {
+        transform: scale(1) translateY(-50%);
+        transition: all 330ms ease-in-out;
+      }
+      i:last-child {
+        transform: scale(0) translateY(-50%);
+        transition: all 330ms ease-in-out;
+      }
   }
-  /*apparition des bulles icones*/
-  @keyframes bubble {
-    from {
-      opacity: 1;
-      transform: translateY(70px);
-      color: $Explosion-of-colored-2-hsla;
-    }
-    to {
-      opacity: 0;
-      transform: translateY(0);
-      color: $Explosion-of-colored-3-hsla;
-    }
-  }
-@keyframes move {
-    0%{
-        transform: translate(-30%, 0);
-        text-shadow:0 25px 50px $Explosion-of-colored-4-hsla;
-    }
-    50%{
-        text-shadow:0 25px 50px $Explosion-of-colored-3-hsla;
-    }
-    100%{
-        transform: translate(30%, 0);
-        text-shadow:0 25px 50px $Explosion-of-colored-2-hsla;
-    }
 }
 
-/*spinner loader*/
+.icon-place-1 {
+  position: relative;
+  top: 20px;
+  right: 25px;
+}
+
+.icon-place-2 {
+  position: relative;
+  top: 20px;
+  right: 35px;
+}
+
+//icons social footer
+@keyframes social {
+ 	0% { 
+    width:0;
+  }
+  50% { 
+    width:30px;
+  }
+  100% { 
+    width: 70px;
+  }
+}
+//icons social footer
+
+//animation button send a form
+@keyframes textAnimation {
+  0% { transform: translate(0, -50%); }
+  9% { transform: translate(0, -50%); content: "Envoyer le message"; }
+  10% { transform: translate(0, -50%); content: "Envoi en cours ..."; }
+  30% { transform: translate(0, -50%); }
+  39.9% { transform: translate(0, 100px); }
+  40% { transform: translate(300px, 100px); content: "Envoi en cours ..."; }
+  40.1% { transform: translate(300px, -60px); content: "Envoyée"; }
+  40.2% { transform: translate(33px, -60px); }
+  45% { transform: translate(33px, -50%); }
+  95% { transform: translate(33px, -50%); content: "Envoyée"; }
+  100% { transform: translate(0, -50%); content: "Envoyer le message"; }
+}
+
+@keyframes iconAnimation {
+  0% { transform: translate(0, 0) rotate(45deg);}
+  10% { transform: translate(0, 0) rotate(45deg); }
+  20% { transform: translate(-170px, 0)rotate(45deg); }
+  30% { transform: translate(-170px, 0) rotate(45deg); }
+  40% { transform: translate(200px, 0) rotate(45deg) scale(2); }
+  40.1% { transform: translate(200px, -60px) rotate(45deg) scale(1);}
+  40.2% { transform: translate(34px, -60px)rotate(45deg); }
+  45% { transform: translate(34px, 0) rotate(45deg); }
+  95% { transform: translate(34px, 0)rotate(45deg); }
+  100% { transform: translate(0, 0) rotate(45deg);}
+}
+//animation button send a form
+
+//scroll down
+@keyframes scroll {
+  0% {
+    transform: translate(-50%, 15px);
+  }
+  50% {
+    transform: translate(-50%, 0px);
+  }
+  100% {
+    transform: translate(-50%, 15px);
+  }
+}
+//scroll down

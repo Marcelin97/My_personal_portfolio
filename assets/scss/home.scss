@@ -1,1 +1,464 @@
 @import "./main.scss";
+
+//présentation
+.titlepage {
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 1.7em;
+  text-transform: uppercase;
+  line-height: 2rem;
+  letter-spacing: 0.1rem;
+  padding-bottom: 80px;
+  margin-bottom: 220px;
+  color: $darkGrey;
+  padding-top: 0px;
+  @media only screen and (min-width: 576px) {
+    margin-bottom: 300px;
+  }
+}
+.titlepage div div div h1 {
+  margin-bottom: 30px;
+}
+
+//say hi
+// .backHome {
+//   @include back;
+//   @include shakeHome;
+// }
+// .myPicture {
+//   width: auto;
+//   height: 100px;
+//   padding: 4px;
+//   border-radius: 50%;
+//   background: linear-gradient(45deg, #20fce2, #0679df);
+// }
+
+//letter animation
+.loader {
+  margin-top: 100px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: auto;
+  text-align: center;
+  font-size: 1.5em;
+  font-weight: 700;
+  color: $green;
+  transform: translate(-50%, -50%);
+  &:after {
+    content: "_";
+  }
+}
+//letter animation
+
+//scroll down
+.center1 {
+  margin-left: 90%;
+}
+.center2 {
+  margin-right: 90%;
+}
+.center {
+  cursor: pointer;
+  position: absolute;
+  z-index: 999;
+  bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  span {
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 0.425rem;
+    text-transform: uppercase;
+    line-height: 2rem;
+    letter-spacing: 0.1rem;
+    color: $grey;
+  }
+}
+
+.down {
+  position: relative;
+  width: 20px;
+  height: 40px;
+  border-radius: 25px;
+  background: $green;
+  border: 2px solid $darkGrey;
+  overflow: hidden;
+}
+
+.down:before {
+  content: "";
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: transparent;
+  left: 50%;
+  top: 10px;
+  transform: translate(-50%, 0);
+}
+
+.down:after {
+  content: "";
+  position: absolute;
+  width: 6px;
+  height: 15px;
+  border-radius: 50%;
+  background: $darkGrey;
+  left: 50%;
+  top: 5px;
+  transform: translate(-50%, 0);
+  border-radius: 3px;
+  animation: scroll 3s linear infinite;
+}
+//scroll down
+
+//services
+.skills {
+  margin-top: -1rem;
+  padding-bottom: 1rem;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  h2 {
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 130px;
+    font-weight: normal;
+    word-break: break-word;
+    font-size: 1.2em;
+    color: $big-text;
+    text-transform: uppercase;
+    line-height: 2.5rem;
+    letter-spacing: 0.1rem;
+    background-color: $background-1;
+  }
+}
+
+.global-skills {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.skills-1 {
+  margin-top: -110px;
+  border-top-left-radius: 90px;
+  border-top-right-radius: 90px;
+}
+.skills-1,
+.skills-2 {
+  background-color: #fff;
+  max-width: 900px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+  text-align: center;
+  h3 {
+    font-weight: bold;
+    padding: 15px 40px;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 1.5rem;
+    letter-spacing: 0.1rem;
+    color: $darkGrey;
+  }
+  .paint-icon {
+    font-size: 3em;
+    color: $green;
+  }
+  p {
+    padding: 50px;
+    color: $darkGrey;
+    font-size: 0.825rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 1.5rem;
+    letter-spacing: 0.1rem;
+  }
+}
+
+//service
+#service {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  background-color: black;
+  h2 {
+    text-transform: uppercase;
+    color: $big-text;
+    padding-bottom: 30px;
+  }
+  ul {
+    color: $mini-text;
+    font-size: 0.825rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 1.5rem;
+    letter-spacing: 0.1rem;
+  }
+}
+
+//counter-section
+#counter {
+  height: 550px;
+  // margin: 30px 0;
+  // box-shadow: 0 5px 40px $background-1;
+  @media only screen and (min-width: 576px) {
+    height: 250px;
+  }
+}
+.paralax {
+  position: relative;
+  padding: 2rem;
+}
+.bg-image {
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center center;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.71);
+}
+.counter-container {
+  position: relative !important;
+}
+.counter-row {
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  width: 100%;
+  display: flex;
+  @media only screen and (min-width: 576px) {
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+.counter-col {
+  width: auto;
+  @media only screen and (min-width: 576px) {
+    width: 33%;
+  }
+}
+
+.counter-box {
+  text-align: center;
+  margin: 2rem;
+}
+.counter-icon {
+  margin-bottom: 30px;
+}
+.counter-icon span {
+  height: 60px;
+  width: 60px;
+  line-height: 1.5rem;
+  border-radius: 50%;
+  padding: 1rem;
+  text-align: center;
+  box-shadow: 0 0 0 4px white;
+}
+.counter-icon span i {
+  color: white;
+}
+.counter-num p,
+span {
+  color: white;
+}
+//counter-section
+
+//portfolio
+.glide {
+  position: relative;
+  width: 100%;
+  height: auto;
+  box-sizing: border-box;
+}
+.glide__track {
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+.glide__slides {
+  position: relative;
+  width: 100%;
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+  touch-action: pan-Y;
+  overflow: hidden;
+  white-space: nowrap;
+  display: flex;
+  flex-wrap: nowrap;
+  will-change: transform;
+  display: flex;
+}
+.glide__slides--dragging {
+  user-select: none;
+}
+.glide__slide {
+  width: 100%;
+  height: 100%;
+  flex-shrink: 0;
+  white-space: initial;
+  user-select: none;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s ease;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+  @media only screen and (min-width: 576px) {
+    height: 600px;
+  }
+}
+.content img {
+  border-radius: 15px 15px 0px 0px;
+  max-height: auto;
+  object-fit: cover;
+  width: 100%;
+  height: 70%;
+  object-position: 60% 55%;
+}
+.content div h3 {
+  color: $darkGrey;
+  padding: 30px;
+  text-transform: uppercase;
+  font-size: 0.725rem;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.btn-contact-slide {
+  padding-bottom: 80px;
+}
+.contact-slide {
+  color: $big-text;
+  background-color: $background-1;
+}
+//number of slides
+.glide__bullets {
+  user-select: none;
+}
+.glide--rtl {
+  direction: rtl;
+}
+.glide__bullets {
+  position: absolute;
+  z-index: 2;
+  left: 50%;
+  display: inline-flex;
+  list-style: none;
+  transform: translateX(-50%);
+  bottom: -1rem;
+}
+.glide__bullet {
+  padding: 0;
+  transition: all 300ms ease-in-out;
+  cursor: pointer;
+  box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.1);
+  color: $darkGrey;
+  line-height: 2.7em;
+  width: 2.7em;
+  height: 2.7em;
+  border-radius: 0;
+  &:hover,
+  &:focus {
+    border-bottom: 2px solid red;
+    color: $green;
+    transition-duration: 600ms;
+  }
+}
+
+.glide__bullet--active {
+  color: $green;
+  border-bottom: 2px solid red;
+}
+.glide--swipeable {
+  cursor: grab;
+}
+.glide--dragging {
+  cursor: grabbing;
+}
+
+//slide active
+.glide__slide--active {
+  transform: scale(1.075);
+  transition: all 0.1s ease;
+}
+
+
+//contact
+.containter-contact {
+  max-width: 1200px;
+  width: auto;
+  margin: 50px auto;
+  flex-grow: 1;
+}
+.box-contact {
+  border-radius: 12px;
+  padding: 3.5rem 2rem;
+  background-color: $background-1;
+  box-shadow: 0 4px 4px hsl(0, 0%, 94%);
+}
+.col-contact {
+  align-items: center;
+  justify-content: space-between;
+  margin: -0.75rem;
+}
+.title-contact {
+  display: block;
+  flex-basis: 0;
+  flex-grow: 1;
+  flex-shrink: 1;
+  padding: 0.75rem;
+  justify-content: center;
+  align-items: center;
+  h2 {
+    color: $big-text;
+    margin-bottom: 0;
+    font-weight: 700;
+    font-size: 2em;
+    line-height: 1.2;
+    text-align: center;
+  }
+  p {
+    text-align: center;
+    color: $mini-text;
+    margin-bottom: 0;
+    text-transform: uppercase;
+    font-size: 0.825rem;
+  }
+}
+//contact
+
+//citation
+.citation{
+    display: block;
+    margin-top: auto;
+    color: $grey;
+    text-align: center;
+    letter-spacing: 4px;
+    text-decoration: none;
+    cursor: crosshair;
+}
