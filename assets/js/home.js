@@ -104,3 +104,17 @@ randomWordLoop();
 
 //portfolio
 
+const glide = document.querySelector(".glide");
+      if (glide)
+        new Glide(glide, {
+          type: "carousel",
+          startAt: 0,
+          perView: 1,
+          focusAt: "center",
+          gap: 30,
+          hoverpause: true,
+          gap: 0,
+          autoplay: 2500,
+          animationDuration: 1000,
+          animationTimingFunc: "linear",
+        }).mount();

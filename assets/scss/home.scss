@@ -155,7 +155,7 @@
 }
 .skills-1,
 .skills-2 {
-  background-color: $background-2;
+  background-color: #fff;
   max-width: 900px;
   display: flex;
   flex-direction: column;
@@ -165,12 +165,11 @@
   h3 {
     font-weight: bold;
     padding: 15px 40px;
-    font-size: 0.825rem;
     font-weight: 700;
     text-transform: uppercase;
     line-height: 1.5rem;
     letter-spacing: 0.1rem;
-    color: $grey;
+    color: $darkGrey;
   }
   .paint-icon {
     font-size: 3em;
@@ -178,150 +177,29 @@
   }
   p {
     padding: 50px;
-    color: $grey;
+    color: $darkGrey;
+    font-size: 0.825rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 1.5rem;
+    letter-spacing: 0.1rem;
   }
 }
-
-//portfolio
-.carousel {
-    margin: 15%;
-}
-
-ul.slides {
-    display: block;
-    position: relative;
-    height: 500px;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    list-style: none;
-}
-
-.slides * {
-    user-select: none;
-}
-
-ul.slides input {
-    display: none; 
-}
-
-
-.slide-container { 
-    display: block; 
-}
-
-.slide-image {
-    display: block;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    opacity: 0;
-    transition: all .7s ease-in-out;
-}   
-
-.slide-image img {
-    width: auto;
-    min-width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.carousel-controls {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 999;
-    font-size: 100px;
-    line-height: 600px;
-    color: $green;
-}
-
-.carousel-controls label {
-    display: none;
-    position: absolute;
-    padding: 0 20px;
-    opacity: 0;
-    transition: opacity .2s;
-    cursor: pointer;
-}
-
-.slide-image:hover + .carousel-controls label{
-    opacity: 0.5;
-}
-
-.carousel-controls label:hover {
-    opacity: 1;
-}
-
-.carousel-controls .prev-slide {
-    width: 49%;
-    text-align: left;
-    left: 0;
-}
-
-.carousel-controls .next-slide {
-    width: 49%;
-    text-align: right;
-    right: 0;
-}
-
-.carousel-dots {
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 20px;
-    z-index: 999;
-    text-align: center;
-}
-
-.carousel-dots .carousel-dot {
-    display: inline-block;
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    background-color: red;
-    opacity: 0.5;
-    margin: 10px;
-}
-
-input:checked + .slide-container .slide-image {
-    opacity: 1;
-    transform: scale(1);
-    transition: opacity 1s ease-in-out;
-}
-
-input:checked + .slide-container .carousel-controls label {
-     display: block; 
-}
-
-input#img-1:checked ~ .carousel-dots label#img-dot-1,
-input#img-2:checked ~ .carousel-dots label#img-dot-2,
-input#img-3:checked ~ .carousel-dots label#img-dot-3,
-input#img-4:checked ~ .carousel-dots label#img-dot-4,
-input#img-5:checked ~ .carousel-dots label#img-dot-5,
-input#img-6:checked ~ .carousel-dots label#img-dot-6 {
-	opacity: 1;
-}
-
-
-input:checked + .slide-container .nav label { display: block; }
-
 
 //service
 #service {
   display: flex;
   justify-content: center;
   text-align: center;
-  background-color: $background-1;
+  background-color: black;
   h2 {
     text-transform: uppercase;
     color: $big-text;
+    padding-bottom: 30px;
   }
   ul {
     color: $mini-text;
-    font-size: 0.625rem;
+    font-size: 0.825rem;
     font-weight: 700;
     text-transform: uppercase;
     line-height: 1.5rem;
@@ -332,6 +210,8 @@ input:checked + .slide-container .nav label { display: block; }
 //counter-section
 #counter {
   height: 550px;
+  // margin: 30px 0;
+  // box-shadow: 0 5px 40px $background-1;
   @media only screen and (min-width: 576px) {
     height: 250px;
   }
@@ -401,17 +281,143 @@ span {
 }
 //counter-section
 
+//portfolio
+.glide {
+  position: relative;
+  width: 100%;
+  height: auto;
+  box-sizing: border-box;
+}
+.glide__track {
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+.glide__slides {
+  position: relative;
+  width: 100%;
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+  touch-action: pan-Y;
+  overflow: hidden;
+  white-space: nowrap;
+  display: flex;
+  flex-wrap: nowrap;
+  will-change: transform;
+  display: flex;
+}
+.glide__slides--dragging {
+  user-select: none;
+}
+.glide__slide {
+  width: 100%;
+  height: 100%;
+  flex-shrink: 0;
+  white-space: initial;
+  user-select: none;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s ease;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+  @media only screen and (min-width: 576px) {
+    height: 600px;
+  }
+}
+.content img {
+  border-radius: 15px 15px 0px 0px;
+  max-height: auto;
+  object-fit: cover;
+  width: 100%;
+  height: 70%;
+  object-position: 60% 55%;
+}
+.content div h3 {
+  color: $darkGrey;
+  padding: 30px;
+  text-transform: uppercase;
+  font-size: 0.725rem;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.btn-contact-slide {
+  padding-bottom: 80px;
+}
+.contact-slide {
+  color: $big-text;
+  background-color: $background-1;
+}
+//number of slides
+.glide__bullets {
+  user-select: none;
+}
+.glide--rtl {
+  direction: rtl;
+}
+.glide__bullets {
+  position: absolute;
+  z-index: 2;
+  left: 50%;
+  display: inline-flex;
+  list-style: none;
+  transform: translateX(-50%);
+  bottom: -1rem;
+}
+.glide__bullet {
+  padding: 0;
+  transition: all 300ms ease-in-out;
+  cursor: pointer;
+  box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.1);
+  color: $darkGrey;
+  line-height: 2.7em;
+  width: 2.7em;
+  height: 2.7em;
+  border-radius: 0;
+  &:hover,
+  &:focus {
+    border-bottom: 2px solid red;
+    color: $green;
+    transition-duration: 600ms;
+  }
+}
+
+.glide__bullet--active {
+  color: $green;
+  border-bottom: 2px solid red;
+}
+.glide--swipeable {
+  cursor: grab;
+}
+.glide--dragging {
+  cursor: grabbing;
+}
+
+//slide active
+.glide__slide--active {
+  transform: scale(1.075);
+  transition: all 0.1s ease;
+}
+
+
 //contact
 .containter-contact {
   max-width: 1200px;
   width: auto;
-  margin: 0 auto;
+  margin: 50px auto;
   flex-grow: 1;
 }
 .box-contact {
   border-radius: 12px;
   padding: 3.5rem 2rem;
-  margin-top: -9rem;
   background-color: $background-1;
   box-shadow: 0 4px 4px hsl(0, 0%, 94%);
 }
@@ -435,14 +441,24 @@ span {
     font-size: 2em;
     line-height: 1.2;
     text-align: center;
-    
   }
   p {
     text-align: center;
     color: $mini-text;
     margin-bottom: 0;
     text-transform: uppercase;
-    font-size: .825rem;
+    font-size: 0.825rem;
   }
 }
 //contact
+
+//citation
+.citation{
+    display: block;
+    margin-top: auto;
+    color: $grey;
+    text-align: center;
+    letter-spacing: 4px;
+    text-decoration: none;
+    cursor: crosshair;
+}

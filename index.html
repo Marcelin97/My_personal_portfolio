@@ -6,6 +6,22 @@
     <meta name="description" content="Loïs Marcelin, développeuse web." />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <!--glide.js-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/css/glide.core.min.css"
+      integrity="sha512-wYsVD8ho6rJOAo1Xf92gguhOGQ+aWgxuyKydjyEax4bnuEmHUt6VGwgpUqN8VlB4w50d0nt+ZL+3pgaFMAmdNQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/css/glide.theme.min.css"
+      integrity="sha512-wCwx+DYp8LDIaTem/rpXubV/C1WiNRsEVqoztV0NZm8tiTvsUeSlA/Uz02VTGSiqfzAHD4RnqVoevMcRZgYEcQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!--glide.js-->
     <link rel="stylesheet" href="./assets/dist/css/home.css" />
 
     <title>Créatrice de site internet à Soissons, Laon et Reims ❤️</title>
@@ -168,8 +184,8 @@
           <div>
             <div>
               <h2>
-                Je souhaite accompagner les entreprises à se développer et à connaître
-                le succès numérique.
+                Je souhaite accompagner les entreprises à se développer et à
+                connaître le succès numérique.
               </h2>
               <ul>
                 <li>étroite collaboration avec vous !</li>
@@ -241,62 +257,58 @@
       <!--counter section -->
 
       <!--portfolio -->
-<section>
-<div>
-  <div class="carousel">
-    <ul class="slides">
-      <input type="radio" name="radio-buttons" id="img-1" checked />
-      <li class="slide-container">
-        <div class="slide-image">
-          <img src="./assets/images/projets/Extrait_maquette_reservia_P2_900w.jpg">
-        </div>
-        <div class="carousel-controls">
-          <label for="img-3" class="prev-slide">
-            <span><i class="fas fa-chevron-left"></i></span>
-          </label>
-          <label for="img-2" class="next-slide">
-            <span><i class="fas fa-chevron-right"></i></span>
-          </label>
-        </div>
+<section class="glide">
+  <div class="glide__track" data-glide-el="track">
+    <ul class="glide__slides">
+      <li class="glide__slide">
+        <div class="content">
+                <img src="./assets/images/projets/Extrait_maquette_reservia_P2_900w.jpg" alt="" />
+                <div class="hero">
+                  <h3>
+                    Transformez une maquette en site web avec HTML & CSS
+                  </h3>
+                  <div class="btn-contact">
+                    <a href="#" class="btn contact-slide">Website</a>
+                  </div>
+                </div>
+              </div>
       </li>
-      <input type="radio" name="radio-buttons" id="img-2" />
-      <li class="slide-container">
-        <div class="slide-image">
-          <img src="https://content.r9cdn.net/rimg/dimg/db/02/06b291e8-city-14912-171317ad83a.jpg?width=1750&height=1000&xhint=3040&yhint=2553&crop=true">
-        </div>
-        <div class="carousel-controls">
-          <label for="img-1" class="prev-slide">
-            <span><i class="fas fa-chevron-left"></i></span>
-          </label>
-          <label for="img-3" class="next-slide">
-            <span><i class="fas fa-chevron-right"></i></span>
-          </label>
-        </div>
+      <li class="glide__slide">
+        <div class="content">
+                <img src="./assets/images/projets/Extrait_maquette_Ohmyfood_P3_900w.jpg" alt="" />
+                <div class="hero">
+                  <h3>
+                    Dynamisez une page web avec des animations CSS
+                  </h3>
+                  <div class="btn-contact">
+                    <a href="#" class="btn contact-slide">Website</a>
+                  </div>
+                </div>
+              </div>
       </li>
-      <input type="radio" name="radio-buttons" id="img-3" />
-      <li class="slide-container">
-        <div class="slide-image">
-          <img src="https://speakzeasy.files.wordpress.com/2015/05/twa_blogpic_timisoara-4415.jpg">
-        </div>
-        <div class="carousel-controls">
-          <label for="img-2" class="prev-slide">
-            <span><i class="fas fa-chevron-left"></i></span>
-          </label>
-          <label for="img-1" class="next-slide">
-            <span><i class="fas fa-chevron-right"></i></span>
-          </label>
-        </div>
+      <li class="glide__slide">
+        <div class="content">
+                <img src="./assets/images/projets/Extrait_maquette_LaChouetteAgence_P4_900w.jpg" alt="" />
+                <div class="hero">
+                  <h3>
+                    Optimisez un site web existant
+                  </h3>
+                  <div class="btn-contact btn-contact-slide">
+                    <a href="#" class="btn contact-slide">Website</a>
+                  </div>
+                </div>
+              </div>
       </li>
-      <div class="carousel-dots">
-        <label for="img-1" class="carousel-dot" id="img-dot-1"></label>
-        <label for="img-2" class="carousel-dot" id="img-dot-2"></label>
-        <label for="img-3" class="carousel-dot" id="img-dot-3"></label>
-      </div>
     </ul>
   </div>
-</div>
+  <div class="glide__bullets" data-glide-el="controls[nav]">
+    <button class="glide__bullet" data-glide-dir="=0">01</button>
+    <button class="glide__bullet" data-glide-dir="=1">02</button>
+    <button class="glide__bullet" data-glide-dir="=2">03</button>    
+  </div>
 </section>
-      <!--portfolio END -->
+     <!--portfolio END -->
+
       <!--cta -->
       <section class="container-contact">
         <div class="box-contact">
@@ -320,7 +332,7 @@
       </section>
       <!--cta END -->
       <!--citation-->
-      <section>
+      <section class="citation">
         <div class="row voffset-lg med-width-whitespace2">
           <div class="col-sm-12">
             <figure class="citation text-center">
@@ -411,7 +423,8 @@
           </ul>
         </nav>
       </footer>
-      <!--end of footer-->
+      <!--End of footer-->
+
     </main>
     <!--enf of main-->
 
@@ -424,7 +437,18 @@
       crossorigin="anonymous"
     />
     <!--Kits fontawesome pour les icônes-->
+
+    <!--glide.js-->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/glide.min.js"
+      integrity="sha512-BXASbMmKLu+RC5TDnkupyhvrjiOQXILh/5zgIS8k5JAC71a73lNweVEg/X+9XJQ7GK22PH9WpztY3zqrji+xrQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!--glide.js-->
+
     <script src="./assets/dist/js/home.js" defer></script>
+
     <!--Scripts-->
 
     <!--end of body-->
