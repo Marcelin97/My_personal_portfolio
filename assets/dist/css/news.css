@@ -50,6 +50,8 @@ table {
 /* Color Theme Swatches in HSLA */
 /* Color Theme Swatches in HSLA */
 /*display:flex et flex-direction:column*/
+/*animation slide*/
+/*end of animation slide*/
 * {
   font-family: 'inter', sans-serif; }
 
@@ -289,6 +291,23 @@ body {
   100% {
     transform: translate(-50%, 15px); } }
 
+/*slide*/
+@-webkit-keyframes slide-top {
+  0% {
+    transform: translateY(40px);
+    opacity: 0; }
+  100% {
+    transform: translateY(0);
+    opacity: 1; } }
+@keyframes slide-top {
+  0% {
+    transform: translateY(40px);
+    opacity: 0; }
+  100% {
+    transform: translateY(0);
+    opacity: 1; } }
+
+/*end of slide*/
 /*spinner loading*/
 #spinner_loader {
   width: 100%;

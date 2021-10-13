@@ -39,3 +39,15 @@
     }
   }
 }
+
+/*animation slide*/
+
+@mixin lazy-menu($j, $delay, $limit) {
+  @for $i from 1 through $limit {
+    #projects section:nth-of-type(#{$j}) article:nth-of-type(#{$i}) {
+      animation: slide-top 1s ease-out (0.2s * $i + $delay) both;
+    }
+  }
+}
+
+/*end of animation slide*/
