@@ -4,57 +4,60 @@
 //=============================>>
 .cursor-dot,
 .cursor-dot-outline {
-    pointer-events: none;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    border-radius: 50%;
-    opacity: 0;
-    transform: translate(-50%, -50%);
-    transition: opacity 0.3s ease-in-out,
-                transform 0.3s ease-in-out;
+  pointer-events: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius: 50%;
+  opacity: 0;
+  transform: translate(-50%, -50%);
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
 
 .cursor-dot {
-    $size: 20px;
-    width: $size;
-    height: $size;
-    border: 2px solid $green;
+  $size: 20px;
+  width: $size;
+  height: $size;
+  border: 2px solid $green;
 }
 
 .cursor-dot-outline {
-    width: $size;
-    height: $size;
-    border: 2px solid #fff;
-	box-shadow: 0 0 22px rgba(255, 255, 255, 0.6);
-
+  width: $size;
+  height: $size;
+  border: 2px solid #fff;
+  box-shadow: 0 0 22px rgba(255, 255, 255, 0.6);
 }
 // End of Cursor
 //=============================>>
 
-
-header{
+// Header
+//=============================>>
+header {
   background-color: $background-1;
 }
 $spacer: 1rem;
-$fast: .3s;
-$easing: cubic-bezier(.55, 0, .1, 1);
+$fast: 0.3s;
+$easing: cubic-bezier(0.55, 0, 0.1, 1);
+// End of header
+//=============================>>
 
-.super{
+// section up down
+//=============================>>
+.super {
   background-color: $background-1;
   color: white;
-  letter-spacing: .2rem;
+  letter-spacing: 0.2rem;
   margin: 0px;
   overflow: hidden;
   text-transform: uppercase;
 }
 
-.panel-wrap{
+.panel-wrap {
   height: 390px;
 }
 
-.panel{
-  h1{
+.panel {
+  h1 {
     left: 50%;
     line-height: 1;
     position: absolute;
@@ -62,16 +65,16 @@ $easing: cubic-bezier(.55, 0, .1, 1);
     top: 50%;
     transform: translateX(-50%) translateY(-50%);
     user-select: none;
-      font-size: 2rem;
-  margin-top: 50px;
+    font-size: 2rem;
+    margin-top: 50px;
   }
 }
 
 //view all
-.panel__zoom{
+.panel__zoom {
   cursor: pointer;
   left: 50%;
-  opacity: .2;
+  opacity: 0.2;
   position: absolute;
   top: 50%;
   transform: translateX(-50%) translateY(-50%) translateY(-12vmin);
@@ -79,64 +82,64 @@ $easing: cubic-bezier(.55, 0, .1, 1);
   user-select: none;
   z-index: 10;
   margin-top: 60px;
-  
-  &:hover{
+
+  &:hover {
     opacity: 1;
   }
 }
 
-.panel__nav{
+.panel__nav {
   cursor: pointer;
-  opacity: .2;
+  opacity: 0.2;
   position: absolute;
   transition: opacity $fast $easing;
   user-select: none;
   will-change: opacity;
   font-size: 0.525rem;
-  &--up{
+  &--up {
     left: 50%;
     transform: translateX(-50%);
   }
-  &--left{
+  &--left {
     left: $spacer;
     top: 50%;
     transform: translateY(-50%) rotate(-90deg) translateX(-100%);
     transform-origin: top left;
     margin-top: 50px;
   }
-  &--left-top{
+  &--left-top {
     left: $spacer;
   }
-  &--left-down{
+  &--left-down {
     bottom: $spacer;
     left: $spacer;
   }
-  &--right{
+  &--right {
     right: $spacer;
     top: 50%;
     transform: translateY(-50%) rotate(90deg) translateX(100%);
     transform-origin: top right;
     margin-top: 50px;
   }
-  &--right-top{
+  &--right-top {
     right: $spacer;
   }
-  &--right-down{
+  &--right-down {
     bottom: $spacer;
     right: $spacer;
   }
-  &--down{
+  &--down {
     bottom: $spacer;
     left: 50%;
     transform: translateX(-50%);
   }
-  &:hover{
+  &:hover {
     opacity: 1;
   }
 }
 
 //nav titre projets
-.projects-list{
+.projects-list {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -148,32 +151,124 @@ $easing: cubic-bezier(.55, 0, .1, 1);
   position: absolute;
   top: 65%;
   transform: translateX(-50%) translateY(-50%) translateY(14vmin);
-  span{
+  span {
     cursor: pointer;
-    opacity: .2;
+    opacity: 0.2;
     position: relative;
     transition: opacity $fast $easing;
     user-select: none;
     margin: 5px;
     //soulignement
-    &:after{
-      border-left: .3vmin solid transparent;
+    &:after {
+      border-left: 0.3vmin solid transparent;
       left: -5px;
       content: "";
       position: absolute;
       transition: border-color $fast $easing;
       height: 100%;
-    }    
+    }
     &.active,
-    &:hover{
+    &:hover {
       opacity: 1;
-      
-      &:after{
+
+      &:after {
         border-color: $green;
       }
     }
   }
 }
-a{
- color: $big-text;
+a {
+  color: $big-text;
 }
+// End of section up down
+//=============================>>
+
+// projet
+//=============================>>
+.container {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  padding: 0px;
+}
+
+.space-holder {
+  position: relative;
+  width: 100%;
+}
+
+.sticky {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  width: 100%;
+  overflow-x: hidden;
+  background-color: $background-1;
+}
+
+.horizontal {
+  position: absolute;
+  height: 100%;
+  will-change: transform;
+}
+
+.cards {
+  position: relative;
+  height: 100%;
+  padding: 0 0 0 150px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: $background-1;
+
+}
+
+.sample-card {
+  position: relative;
+  height: 600px;
+  width: 100%;
+  background-color: $background-1;
+  flex-shrink: 0;
+  overflow: hidden;
+}
+
+img {
+  width: 100%;
+  // 	transition: transform .4s cubic-bezier(0.71, 0.05, 0.29, 0.9);
+	// transform: rotateZ(0);
+}
+img:hover {
+  // transform: rotateZ(-5deg);
+}
+
+// description projet
+//=============================>>
+.description-projet{
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+}
+.bumper {
+  text-align: center;
+  padding: 0 20px 10px;
+  background-color: $background-2;
+  color: $darkGrey;
+ 
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+    h3{
+      color: $darkGrey;
+         font-size: 0.825rem;
+    }
+    ul{
+         font-size: 0.625rem;
+         color: $grey;
+    }
+}
+// End of description projet
+//=============================>>
+
+// End of projet
+//=============================>>
