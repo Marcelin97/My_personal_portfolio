@@ -1,191 +1,179 @@
 @import "./main.scss";
-main {
+
+// Cursor
+//=============================>>
+.cursor-dot,
+.cursor-dot-outline {
+    pointer-events: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 50%;
+    opacity: 0;
+    transform: translate(-50%, -50%);
+    transition: opacity 0.3s ease-in-out,
+                transform 0.3s ease-in-out;
+}
+
+.cursor-dot {
+    $size: 20px;
+    width: $size;
+    height: $size;
+    border: 2px solid $green;
+}
+
+.cursor-dot-outline {
+    width: $size;
+    height: $size;
+    border: 2px solid #fff;
+	box-shadow: 0 0 22px rgba(255, 255, 255, 0.6);
+
+}
+// End of Cursor
+//=============================>>
+
+
+header{
+  background-color: $background-1;
+}
+$spacer: 1rem;
+$fast: .3s;
+$easing: cubic-bezier(.55, 0, .1, 1);
+
+.super{
+  background-color: $background-1;
+  color: white;
+  letter-spacing: .2rem;
+  margin: 0px;
+  overflow: hidden;
+  text-transform: uppercase;
+}
+
+.panel-wrap{
+  height: 390px;
+}
+
+.panel{
+  h1{
+    left: 50%;
+    line-height: 1;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    user-select: none;
+      font-size: 2rem;
+  margin-top: 50px;
+  }
+}
+
+//view all
+.panel__zoom{
+  cursor: pointer;
+  left: 50%;
+  opacity: .2;
+  position: absolute;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%) translateY(-12vmin);
+  transition: opacity $fast $easing;
+  user-select: none;
+  z-index: 10;
+  margin-top: 60px;
+  
+  &:hover{
+    opacity: 1;
+  }
+}
+
+.panel__nav{
+  cursor: pointer;
+  opacity: .2;
+  position: absolute;
+  transition: opacity $fast $easing;
+  user-select: none;
+  will-change: opacity;
+  font-size: 0.525rem;
+  &--up{
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  &--left{
+    left: $spacer;
+    top: 50%;
+    transform: translateY(-50%) rotate(-90deg) translateX(-100%);
+    transform-origin: top left;
+    margin-top: 50px;
+  }
+  &--left-top{
+    left: $spacer;
+  }
+  &--left-down{
+    bottom: $spacer;
+    left: $spacer;
+  }
+  &--right{
+    right: $spacer;
+    top: 50%;
+    transform: translateY(-50%) rotate(90deg) translateX(100%);
+    transform-origin: top right;
+    margin-top: 50px;
+  }
+  &--right-top{
+    right: $spacer;
+  }
+  &--right-down{
+    bottom: $spacer;
+    right: $spacer;
+  }
+  &--down{
+    bottom: $spacer;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  &:hover{
+    opacity: 1;
+  }
+}
+
+//nav titre projets
+.projects-list{
   display: flex;
   justify-content: center;
-  position: relative;
-  figure {
-    height: 260px;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    position: absolute;
-    @media only screen and (min-width: 992px) {
-      height: 320px;
-      &::before {
-        content: "";
-        position: absolute;
-        left: 0;
-        top: 260px;
-        height: 200px;
-        width: 100%;
-        background: linear-gradient(
-          to bottom,
-          rgba(255, 255, 255, 0),
-          rgba(255, 255, 255, 1)
-        );
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 5px;
+  font-size: 0.625rem;
+  left: 50%;
+  position: absolute;
+  top: 65%;
+  transform: translateX(-50%) translateY(-50%) translateY(14vmin);
+  span{
+    cursor: pointer;
+    opacity: .2;
+    position: relative;
+    transition: opacity $fast $easing;
+    user-select: none;
+    margin: 5px;
+    //soulignement
+    &:after{
+      border-left: .3vmin solid transparent;
+      left: -5px;
+      content: "";
+      position: absolute;
+      transition: border-color $fast $easing;
+      height: 100%;
+    }    
+    &.active,
+    &:hover{
+      opacity: 1;
+      
+      &:after{
+        border-color: $green;
       }
     }
-    img {
-      object-fit: cover;
-      width: 100%;
-    }
   }
 }
-
-/*end of header*/
-/*menu*/
-
-#projects {
-  max-width: 992px;
-  margin: 0 auto;
-  background-color: #f6f6f6;
-  border-radius: 30px 30px 0 0;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  z-index: 1;
-  margin-top: 200px;
-  position: relative;
-  h1 {
-    font-size: 1.5em;
-    margin-top: 10px;
-    padding-left: 10px;
-  }
+a{
+ color: $big-text;
 }
-section {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  h2 {
-    text-transform: uppercase;
-    padding-left: 10px;
-    &::after {
-      /*souligne le titre en vert*/
-      content: "";
-      display: flex;
-      width: 40px;
-      height: 3px;
-      background-color: $green;
-      margin-top: 5px;
-      margin-bottom: 15px;
-    }
-  }
-}
-
-/*article with check animation*/
-
-article {
-  background-color: #fff;
-  border-radius: 20px;
-  margin-bottom: 15px;
-  display: flex;
-  justify-content: space-between;
-  height: 80px;
-  box-shadow: 0px 3px 8px $darkGrey;
-  padding-left: 15px;
-  padding-right: 15px;
-  position: relative;
-  overflow: hidden;
-    div:first-child {/*contient le H3 et P*/
-      display: flex;
-      flex-direction: column;
-      justify-content: space-evenly;
-      height: 100%;
-      min-width: 0;
-      overflow: hidden;
-      text-overflow: ellipsis;
-      white-space: nowrap;
-      flex-basis: 100%;
-        h3 {
-          font-weight: bold;
-          font-size: 1.1em;
-          text-overflow: ellipsis;
-          overflow: hidden;
-          white-space: nowrap;
-          width: 100%;
-        }
-        p {
-          margin-top: 5px;
-          font-weight: 300;
-          font-size: 1em;
-          text-overflow: ellipsis;
-          overflow: hidden;
-          white-space: nowrap;
-          width: 100%;
-          line-height: 1.1em;
-        }
-    }
-    > div:nth-child(2) {/*prix*/
-      padding: 0 10px 14px 0px;
-      top: 50px;
-      width: 20px;
-      display: flex;
-      align-items: flex-end;
-      font-weight: bold;
-      height: 100%;
-    }
-        &:hover > div:nth-child(2) {/*prix au survol*/
-          margin-left: 10px;
-        }
-    >div:nth-child(3) {/*check*/
-      background-color: $green;
-      border-radius: 0 15px 15px 0;
-      position: relative;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 0px;
-      left: 20px;
-      height: 80px;
-      transition: width 0.7s;
-        i {/*icone du check*/
-          color: white;
-          font-size: 1.5em;
-          animation: uncheck-rotate 0.7s ease forwards;
-        }
-    }
-    &:hover div:nth-child(3) {/*check au survol*/
-      display: flex;
-      left: 15px;
-      display: flex;
-      width: 80px;
-      transition: width 0.7s; 
-      height: 100%;
-        i{/*animation de l'icone du check*/
-          animation: check-rotate 0.7s ease forwards;
-        }
-    }
-}
-
-/*end of article with check animation*/
-/*slide animation*/
-
-@include lazy-menu (1,0,4);
-@include lazy-menu (2,0.6,3);
-@include lazy-menu (3,1.2,3);
-
-/*end of slide animation*/
-/*end of menu*/
-
-/*common to several element*/
-
-#menu_starter,
-#menu_dish,
-#menu_dessert {
-  padding-right: 0;
-  padding-left: 0;
-}
-section {
-  padding: 25px 15px 0px 15px;
-}
-
-/*common to several element*/
-/*button*/
-
-.btn {
-  margin-top: 35px;
-  margin-bottom: 80px;
-}
-
-/*end of button*/
