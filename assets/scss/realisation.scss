@@ -183,20 +183,39 @@ a {
 // End of section up down
 //=============================>>
 
-// projet card
+
+// Project
 //=============================>>
-.titre-projet {
-  text-transform: uppercase;
-  color: $green;
-  font-weight: bold;
-  letter-spacing: 2px;
-  font-size: 2rem ;
-  @media only screen and (min-width: 768px) {
-    transform: rotate(-180deg);
+
+// Resume project
+//=============================>>
+
+h2.prefix-titre {
+    position: relative;
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 1.5rem;
+    letter-spacing: .1rem;
+    color: $green;
+    height: 170px;
+}
+h2.prefix-titre:before {
+    content: attr(data-prefix);
+    position: relative;
+    left: 0;
+    margin-right: 1rem;
+      @media only screen and (min-width: 768px) {
+            position: absolute;
+            left: -15vw;
+            transform: rotate(-180deg);
     writing-mode: vertical-lr;
     text-orientation: mixed;
-  }
+      }
 }
+
+
 //size card
 $card-width: 310px;
 $card-height: 510px;
@@ -336,8 +355,118 @@ article.card {
   visibility: visible;
   transform: scaleX(1);
 }
-// description projet
+// End of resume project
 //=============================>>
+
+.content-two-columns__columns{
+      padding-left: 18.75vw;
+    padding-right: 12.5vw
+}
+
+.content-two-columns__column:first-child {
+  width: auto;
+      @media only screen and (min-width: 768px) {
+                width: 37.5vw;
+      }
+
+}
+.content-two-columns__column:last-child {
+    width: auto;
+      @media only screen and (min-width: 768px) {
+                width: 21.875vw;;
+      }
+}
+
+h6.prefix {
+    position: relative;
+    margin-bottom: 1.5rem;
+    font-size: .625rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 1.5rem;
+    letter-spacing: .1rem;
+}
+h6.prefix:before {
+    content: attr(data-prefix);
+    position: relative;
+    left: 0;
+    margin-right: 1rem;
+      @media only screen and (min-width: 768px) {
+            position: absolute;
+            left: -6.25vw;
+      }
+}
+
+.content-two-columns__column>div>div:last-child {
+  margin-bottom: 3rem;
+
+        @media only screen and (min-width: 768px) {
+               margin-bottom: 6rem;
+      }
+}
+.content-two-columns__column div>p:last-child {
+    margin-bottom: 0;
+    color: $mini-text;
+}
+.line-left {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 6.25vw;
+    width: 1px;
+    background-color: hsla(204,2%,59%,.3);
+    z-index: 91;
+    transform-origin: 0 0;
+}
+.line-right {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 6.25vw;
+    width: 1px;
+    background-color: hsla(204,2%,59%,.3);
+    z-index: 91;
+    transform-origin: 0 100%;
+}
+
+.projet-info{
+  position: relative;
+}
+
+
+// Tools
+//=============================>>
+.projet-spe{
+  background-color: #fff;
+}
+
+h2.prefix-outils {
+    position: relative;
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 1.5rem;
+    letter-spacing: .1rem;
+    color: $green;
+    text-align: center;
+}
+h2.prefix-outils:before {
+    content: attr(data-prefix);
+    position: relative;
+    left: 0;
+    margin-right: 1rem;
+      @media only screen and (min-width: 768px) {
+            position: absolute;
+            left: 5vw;
+            transform: rotate(-180deg);
+            writing-mode: vertical-lr;
+            text-orientation: mixed;
+                top: 200px;
+
+      }
+}
+
 .box-wrapper{
   display: flex;
   flex-direction: column;
@@ -475,35 +604,26 @@ article.card {
     .shape-box_half:hover>.after {
         opacity: 1;
     }
-// description projet
+// End of tools
 //=============================>>
 
-// description projet
-//=============================>>
-.description-projet {
-  display: flex;
-  flex-direction: column;
-  padding: 0;
-}
-.bumper {
-  text-align: center;
-  padding: 0 20px 10px;
-  background-color: $background-2;
-  color: $darkGrey;
-  font-weight: 700;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  h3 {
-    color: $darkGrey;
-    font-size: 0.825rem;
-  }
-  ul {
-    font-size: 0.625rem;
-    color: $grey;
-  }
-}
-// End of description projet
-//=============================>>
 
 // End of projet
 //=============================>>
+
+// Citation with auto rotating text
+//=============================>>
+.rotating-text{
+  color: #fff;
+  transform: translateX(-80px);
+    p{
+      display: inline-flex;
+      margin: 0;
+      vertical-align: top;
+    }
+}
+.word{
+  position: absolute;
+  display: flex;
+  opacity: 0;
+}

@@ -84,11 +84,11 @@
         </div>
       </section>
 
-      <!--Photos du projet-->
+      <!--Resume du projet-->
       <section class="container-card">
         <!--Titre du projet-->
-        <h2 class="titre-projet">Projet 1</h2>
-        <!--Présentation du projet-->
+        <h2 data-prefix="Projet-1" class="prefix-titre"></h2>
+
         <article class="card" id="Projet-1">
           <div class="thumb">
             <img
@@ -117,9 +117,35 @@
           </div>
         </article>
       </section>
-      <!--Fin Présentation du projet-->
+      <!--Fin resume du projet-->
+
+<section class="projet-info">
+  <div class="line-right"></div>
+  <div class="line-left"></div>
+  <div>
+    <div class="content-two-columns__columns">
+      <div class="content-two-columns__column">
+        <div>
+          <h6 data-prefix="Client" class="prefix"></h6>
+          <div>
+            <p>
+              Durisch+Nolli is an award-winning Swiss architecture studio, specialized in public utility works, heritage conservation and urban city projects.
+            </p>
+          </div>
+        </div>
+        <div></div>
+        <div></div>
+      </div>
+      <div class="content-two-columns__column">
+
+      </div>
+    </div>
+  </div>
+</section>
+
       <!--les outils du projet-->
-      <section>
+      <section class="projet-spe">
+        <h2 data-prefix="outils" class="prefix-outils"></h2>
         <div class="box-wrapper">
           <figure class="shape-box shape-box_half">
             <img src="../assets/images/logos/html-5.png" alt="logo HTML 5" />
@@ -159,96 +185,22 @@
             </figcaption>
             <span class="after"></span>
           </figure>
-          <figure class="shape-box shape-box_half">
-            <img
-              src="https://images.unsplash.com/photo-1498075702571-ecb018f3752d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=757&q=80"
-            />
-            <figcaption>
-              <div class="show-cont">
-                <h3 class="card-no">03</h3>
-                <h4 class="card-main-title">RESEARCH</h4>
-              </div>
-              <p class="card-content">
-                Customer interactions, study and analysis of company branding
-                through creative briefs. Creation of mock-up designs by using UI
-                tools that simulate actions and pre-visualize the reactions.
-              </p>
-              <a href="#" class="read-more-btn">Read More</a>
-            </figcaption>
-            <span class="after"></span>
-          </figure>
-          <figure class="shape-box shape-box_half">
-            <img
-              src="https://images.unsplash.com/photo-1534669740902-e09e38a6a29f?ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80"
-            />
-            <figcaption>
-              <div class="show-cont">
-                <h3 class="card-no">04</h3>
-                <h4 class="card-main-title">PROMOTION</h4>
-              </div>
-              <p class="card-content">
-                Customer interactions, study and analysis of company branding
-                through creative briefs. Creation of mock-up designs by using UI
-                tools that simulate actions and pre-visualize the reactions.
-              </p>
-              <a href="#" class="read-more-btn">Read More</a>
-            </figcaption>
-            <span class="after"></span>
-          </figure>
+         
         </div>
       </section>
       <!--Fin les outils du projet-->
 
-      <!--description du projet-->
-      <section class="description-projet">
-        <div class="bumper">
-          <h3>Mission</h3>
-          <ul>
-            <li>créer ce prototype en intégrant la maquette en HTML et CSS.</li>
-          </ul>
-        </div>
-        <div class="bumper">
-          <h3>Spécifications techniques</h3>
-          <ul>
-            <li>créer ce prototype en intégrant la maquette en HTML et CSS.</li>
-          </ul>
-        </div>
-        <div class="bumper">
-          <h3>Contraintes fonctionnelles</h3>
-          <ul>
-            <li>
-              Le champ de recherche est un champ de saisie, le texte doit donc
-              pouvoir être édité par l’utilisateur.
-            </li>
-            <li>
-              Chaque carte d’hébergement ou d’activité devra être cliquable dans
-              son intégralité (pas uniquement le titre). Pour l’instant, les
-              liens sont vides. On peut utiliser un attribut `href=”#”` pour
-              simuler la présence d’un lien.
-            </li>
-            <li>Les filtres doivent changer d’apparence au survol.</li>
-            <li>
-              Les textes “Hébergements” et “Activités”, situés dans l’en-tête,
-              sont des liens. Ils doivent mener respectivement vers la section
-              “Hébergements à Marseille” et “Activités à Marseille”.
-            </li>
-          </ul>
-        </div>
-      </section>
 
       <!--citation-->
-      <section>
-        <div class="row voffset-lg med-width-whitespace2">
-          <div class="col-sm-12">
-            <figure class="citation text-center">
-              <blockquote>
-                <p>
-                  <q> Every programmer is an author. </q>
-                </p>
-              </blockquote>
-              <figcaption>— Sercan Leylek</figcaption>
-            </figure>
-          </div>
+      <section class="rotating-text">
+        <div>
+          <p>Every programmer is </p>
+          <p>
+            <span class="word">an author. </span>
+            <span class="word">an artist. </span>
+            <span class="word">an compositor. </span>
+            <span class="word">an driven</span>
+          </p>
         </div>
       </section>
       <!--citation END-->
