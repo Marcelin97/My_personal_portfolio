@@ -845,7 +845,7 @@ header figure {
   cursor: pointer;
   position: absolute;
   z-index: 999;
-  bottom: 10px;
+  bottom: 70px;
   display: flex;
   flex-direction: column;
   align-items: center; }
