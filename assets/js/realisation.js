@@ -113,9 +113,23 @@ cursor.init();
 // Cursor
 //=============================>>
 
-// Projet card
+
+// Citation
 //=============================>>
+import gsap from "gsap";
 
+function timeline() {
+  var transform = gsap.timeline({ repeat: 100 });
 
-// End of projet card
+  transform.from("#line", { scaleX: 0, transformOrigin: "right center" });
+  // tl.from("#upper", { duration: 0.75, y: 30 }, "text");
+  transform.from("#lower", { duration: 8, y: -200 }, "text");
+  transform.to(
+    "#line, #upper, #lower",
+    { duration: 1, opacity: 0, ease: "none" },
+    "+=5"
+  );
+}
+timeline();
+// End of citation
 //=============================>>
