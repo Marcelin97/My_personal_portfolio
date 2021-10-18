@@ -1,4 +1,33 @@
 @import "./main.scss";
+// Cursor
+//=============================>>
+.cursor-dot,
+.cursor-dot-outline {
+  pointer-events: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius: 50%;
+  opacity: 0;
+  transform: translate(-50%, -50%);
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.cursor-dot {
+  $size: 20px;
+  width: $size;
+  height: $size;
+  border: 2px solid $green;
+}
+
+.cursor-dot-outline {
+  width: $size;
+  height: $size;
+  border: 2px solid #fff;
+  box-shadow: 0 0 22px rgba(255, 255, 255, 0.6);
+}
+// End of Cursor
+//=============================>>
 
 //présentation
 .titlepage {
@@ -65,7 +94,7 @@
   cursor: pointer;
   position: absolute;
   z-index: 999;
-  bottom: 10px;
+  bottom: 70px;
   display: flex;
   flex-direction: column;
   align-items: center;

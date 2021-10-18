@@ -4,154 +4,825 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta
-      name="desciption"
+      name="description"
       content="Mes réalisations web de l'intégration à la réalisation."
     />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <!--glide.js-->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/css/glide.core.min.css"
-      integrity="sha512-wYsVD8ho6rJOAo1Xf92gguhOGQ+aWgxuyKydjyEax4bnuEmHUt6VGwgpUqN8VlB4w50d0nt+ZL+3pgaFMAmdNQ=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/css/glide.theme.min.css"
-      integrity="sha512-wCwx+DYp8LDIaTem/rpXubV/C1WiNRsEVqoztV0NZm8tiTvsUeSlA/Uz02VTGSiqfzAHD4RnqVoevMcRZgYEcQ=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <!--glide.js-->
 
     <link rel="stylesheet" href="../assets/dist/css/realisation.css" />
 
     <title>Mes réalisations web</title>
     <!--end of head-->
   </head>
-  <body>
-    <!-- main -->
-    <main>
-      <!-- header -->
-      <header>
-        <a class="headernav" href="../index.html"
-          ><i class="fas fa-home"></i
-        ></a>
-        <figure>LM</figure>
-        <nav class="navigation" role="navigation">
-          <div id="menuToggle">
-            <input type="checkbox" />
-            <span></span>
-            <span></span>
-            <span></span>
-            <ul id="menu">
-              <a href="../index.html"><li>Home</li></a>
-              <a href="./curriculum-vitae.html"><li>About me</li></a>
-              <a href="./news.html"><li>News</li></a>
-              <a href="./questions.html"><li>Questions</li></a>
-              <a href="./Contact.html"><li>Contact</li></a>
-              <a href="./accessibilite.html"><li>Accessibilité</li></a>
-            </ul>
-          </div>
-        </nav>
-      </header>
-      <!--en of page header-->
 
-      <!--citation-->
-      <section>
-        <div class="row voffset-lg med-width-whitespace2">
-          <div class="col-sm-12">
-            <figure class="citation text-center">
-              <blockquote>
-                <p>
-                  <q> Every programmer is an author. </q>
-                </p>
-              </blockquote>
-              <figcaption>— Sercan Leylek</figcaption>
-            </figure>
+  <body>
+    <!-- header -->
+    <header>
+      <a class="headernav" href="../index.html"><i class="fas fa-home"></i></a>
+      <figure>LM</figure>
+      <nav class="navigation" role="navigation">
+        <div id="menuToggle">
+          <input type="checkbox" />
+          <span></span>
+          <span></span>
+          <span></span>
+          <ul id="menu">
+            <a href="../index.html"><li>Home</li></a>
+            <a href="./curriculum-vitae.html"><li>About me</li></a>
+            <a href="./news.html"><li>News</li></a>
+            <a href="./questions.html"><li>Questions</li></a>
+            <a href="./Contact.html"><li>Contact</li></a>
+            <a href="./accessibilite.html"><li>Accessibilité</li></a>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <!--en of page header-->
+
+    <main class="smooth-wrapper">
+      <div class="cursor-dot-outline"></div>
+      <div class="cursor-dot"></div>
+
+      <section class="super">
+        <div class="site-wrap">
+          <div class="panel-wrap animate--none">
+            <div class="panel">
+              <span class="panel__nav panel__nav--up js-up">up</span>
+              <span class="panel__nav panel__nav--right-top js-up js-right"
+                >up/right</span
+              >
+              <span class="panel__nav panel__nav--left-top js-up js-left"
+                >up/left</span
+              >
+              <span class="panel__nav panel__nav--left js-left">left</span>
+              <span class="panel__nav panel__nav--right js-right">right</span>
+              <span class="panel__nav panel__nav--right-down js-down js-right"
+                >down/right</span
+              >
+              <span class="panel__nav panel__nav--left-down js-down js-left"
+                >down/left</span
+              >
+              <span class="panel__nav panel__nav--down js-down">down</span>
+              <span class="panel__zoom">View All</span>
+              <h1>Projets</h1>
+              <div class="projects-list">
+                <a href="#Projet-1"
+                  ><span class="js-animation active">Projet 1</span></a
+                >
+                <a href="#Projet-2"
+                  ><span class="js-animation">Projet 2</span></a
+                >
+                <a href="#Projet-3"
+                  ><span class="js-animation">Projet 3</span></a
+                >
+                <a href="#Projet-4"
+                  ><span class="js-animation">Projet 4</span></a
+                >
+              </div>
+            </div>
           </div>
         </div>
       </section>
-      <!--citation END-->
 
-<!--footer-->
-      <footer>
-        <div class="footer-body">
-          <div class="footer-title">
-            <div class="footer-border">
-              <div class="footer-in">
-                <div class="footer-b"></div>
+      <!--Resume du projet-->
+      <section class="container-card">
+        <!--Titre du projet-->
+        <h2 data-prefix="Projet-1" class="prefix-titre"></h2>
+
+        <article class="card" id="Projet-1">
+          <div class="thumb">
+            <img
+              src="../assets/images/projets/Transformez_une_maquette_en_site_web_avec_HTML_&_CSS.png"
+              alt=""
+            />
+          </div>
+          <div class="infos">
+            <h3 class="title">Transformez une maquette en site web</h3>
+            <h3 class="date">Février 2021</h3>
+            <h3 class="scenario">Scénario</h3>
+            <p class="txt">
+              C'est votre premier stage en tant que développeur web chez
+              Reservia, une petite entreprise proposant un outil de
+              planification de vacances. <br />
+            </p>
+            <span class="link-website"
+              ><a href="https://marcelin97.github.io/LoisMarcelin_2_08022021/"
+                >visite le site</a
+              ></span
+            >
+          </div>
+        </article>
+      </section>
+      <!--Fin resume du projet-->
+
+      <section class="projet-info">
+        <div class="line-right"></div>
+        <div class="line-left"></div>
+        <div>
+          <div class="content-two-columns__columns">
+            <div class="content-two-columns__column">
+              <div>
+                <h6 data-prefix="Client" class="prefix"></h6>
+                <div>
+                  <p>
+                    Reservia, une petite entreprise proposant un outil de
+                    planification de vacances. Leur site permet aux usagers de
+                    trouver des hébergements et des activités dans la ville de
+                    leur choix.
+                  </p>
+                </div>
               </div>
             </div>
-            <div class="spr"></div>
-            <div class="footer-title">
-              <a href="">
-                <div>RESTONS EN CONTACT</div>
-              </a>
-            </div>
-            <div class="spr"></div>
-            <div class="footer-border">
-              <div class="footer-in">
-                <div class="footer-b"></div>
-              </div>
-            </div>
+            <div class="content-two-columns__column"></div>
           </div>
         </div>
 
-        <nav>
-          <h3>Site développé par Loïs Marcelin.</h3>
-          <ul>
-            <li class="social-right">
-              <a href="https://github.com/Marcelin97">
-                <i class="fab fa-github"></i>
-                GitHub.
-              </a>
-              <span class="social-right-underline"></span>
-            </li>
-            <li>
-              <a href="https://www.instagram.com/loismarcelin/">
-                <i class="fab fa-instagram"></i>
-                Instagram.
-              </a>
-              <span></span>
-            </li>
-            <li class="social-right">
-              <a href="#">
-                <i class="fas fa-tools"></i>
-                VS Code, GitHub, SASS, Node.
-              </a>
-              <span></span>
-            </li>
-            <li>
-              <a href="#">
-                <i class="fas fa-balance-scale-right"></i>
-                Mentions légales.
-              </a>
-              <span></span>
-            </li>
-            <li class="social-right">
-              <a href="mailto: lois_m@outlook.com">
-                <i class="fas fa-paper-plane"></i>
-                E-mail.
-              </a>
-              <span></span>
-            </li>
-            <li>
-              <a href="#">
-                <i class="fas fa-sitemap"></i>
-                Plan du site.
-              </a>
-              <span></span>
-            </li>
-          </ul>
-        </nav>
-      </footer>
-      <!--End of footer-->
+        <div class="line-right"></div>
+        <div class="line-left"></div>
+        <div>
+          <div class="content-two-columns__columns">
+            <div class="content-two-columns__column">
+              <div>
+                <h6 data-prefix="Challenge" class="prefix"></h6>
+                <div>
+                  <p>
+                    La première étape consiste à intégrer la maquette responsive
+                    en HTML et CSS.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="content-two-columns__column"></div>
+          </div>
+        </div>
 
+        <div class="line-right"></div>
+        <div class="line-left"></div>
+        <div>
+          <div class="content-two-columns__columns">
+            <div class="content-two-columns__column">
+              <div>
+                <h6 data-prefix="Spécifications" class="prefix"></h6>
+                <div>
+                  <p>
+                    Les couleurs de la charte sont le bleu #0065FC, et sa
+                    version plus claire #DEEBFF ainsi que le gris pour le fond
+                    #F2F2F2.<br />
+                    La police du site est Raleway.<br />
+                    Le site devra également être adapté aux tablettes.<br />
+                    Le champ de recherche est un champ de saisie, dont le texte
+                    peut être édité par l’usager. En revanche, à ce stade, le
+                    bouton de recherche n'est pas fonctionnel.<br />
+                    Chaque carte d’hébergement ou d’activité est cliquable dans
+                    son intégralité. Pour l’instant les liens sont vides.<br />
+                    Les filtres ne sont pas fonctionnels pour cette version, en
+                    revanche, ils changent d’apparence au survol.<br />
+                    Dans le menu, les liens “Hébergements” et “Activités” sont
+                    des ancres qui mène aux sections de la page.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="content-two-columns__column"></div>
+          </div>
+        </div>
+      </section>
+
+      <!--les outils du projet-->
+      <section class="projet-spe">
+        <h2 data-prefix="outils" class="prefix-outils"></h2>
+        <div class="box-wrapper">
+          <figure class="shape-box shape-box_half">
+            <img src="../assets/images/logos/html-5.png" alt="logo HTML 5" />
+            <figcaption>
+              <div class="show-cont">
+                <h3 class="card-no">01</h3>
+                <h4 class="card-main-title">HTML 5</h4>
+              </div>
+              <ul class="card-content">
+                <li>Utilisation des balises sémantiques.</li>
+                <li>Validateur W3C HTML.</li>
+                <li>Maquette responsive (Mobile first).</li>
+              </ul>
+              <a
+                href="https://marcelin97.github.io/LoisMarcelin_2_08022021/"
+                class="read-more-btn"
+                >visite du site</a
+              >
+            </figcaption>
+            <span class="after"></span>
+          </figure>
+          <figure class="shape-box shape-box_half">
+            <img src="../assets/images/logos/css3.png" />
+            <figcaption>
+              <div class="show-cont">
+                <h3 class="card-no">02</h3>
+                <h4 class="card-main-title">CSS 3</h4>
+              </div>
+              <ul class="card-content">
+                <li>
+                  Coder from scratch (Pas de framework ou pré-compilateur CSS)
+                </li>
+                <li>Icônes Font Awesome</li>
+                <li>Flexbox</li>
+                <li>Validateur W3C CSS</li>
+              </ul>
+              <a
+                href="https://marcelin97.github.io/LoisMarcelin_2_08022021/"
+                class="read-more-btn"
+                >visite du site</a
+              >
+            </figcaption>
+            <span class="after"></span>
+          </figure>
+        </div>
+      </section>
+      <!--Fin les outils du projet-->
+
+      <!--Resume du projet-->
+      <section class="container-card">
+        <!--Titre du projet-->
+        <h2 data-prefix="Projet-2" class="prefix-titre"></h2>
+
+        <article class="card" id="Projet-2">
+          <div class="thumb">
+            <img
+              src="../assets/images/projets/Dynamisez_une_page_web_avec_des_animations_CSS.png"
+              alt=""
+            />
+          </div>
+          <div class="infos">
+            <h3 class="title">
+              Dynamisez une page web avec des animations CSS
+            </h3>
+            <h3 class="date">Avril 2021</h3>
+            <h3 class="scenario">Scénario</h3>
+            <p class="txt">
+              Vous venez d’être recruté chez Ohmyfood!, en tant que développeur
+              junior. Félicitations !<br />
+              Ohmyfood! est une jeune startup qui voudrait s'imposer sur le
+              marché de la restauration.<br />
+            </p>
+            <span class="link-website"
+              ><a href="https://marcelin97.github.io/LoisMarcelin_3_04042021/"
+                >visite le site</a
+              ></span
+            >
+          </div>
+        </article>
+      </section>
+      <!--Fin resume du projet-->
+
+      <section class="projet-info">
+        <div class="line-right"></div>
+        <div class="line-left"></div>
+        <div>
+          <div class="content-two-columns__columns">
+            <div class="content-two-columns__column">
+              <div>
+                <h6 data-prefix="Client" class="prefix"></h6>
+                <div>
+                  <p>
+                    Ohmyfood! est une entreprise de commande de repas en ligne.
+                    Notre concept permet aux utilisateurs de composer leur
+                    propre menu et réduire leur temps d’attente dans les
+                    restaurants car leur menu est préparé à l’avance. Plus de
+                    perte de temps à consulter la carte !
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="content-two-columns__column"></div>
+          </div>
+        </div>
+
+        <div class="line-right"></div>
+        <div class="line-left"></div>
+        <div>
+          <div class="content-two-columns__columns">
+            <div class="content-two-columns__column">
+              <div>
+                <h6 data-prefix="Challenge" class="prefix"></h6>
+                <div>
+                  <p>
+                    L'entreprise souhaite se positionné sur un marché de niche,
+                    avec les restaurants luxueux des villes dans lesquelles ils
+                    sont établis. Ils souhaitent être identifiés comme une
+                    entreprise proposant des services haut de gamme.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="content-two-columns__column"></div>
+          </div>
+        </div>
+
+        <div class="line-right"></div>
+        <div class="line-left"></div>
+        <div>
+          <div class="content-two-columns__columns">
+            <div class="content-two-columns__column">
+              <div>
+                <h6 data-prefix="Spécifications" class="prefix"></h6>
+                <div>
+                  <p>
+                    Les couleurs de la charte sont :<br />
+                    Primaire : #9356DC <br />
+                    Secondaire : #FF79DA <br />
+                    Tertiaire : #99E2D0 <br />
+                    La police pour le logo et les titres est : Shrikhand <br />
+                    La police pour le text est : Roboto <br />
+                    Une section contenant les 4 menus sous forme cartes. Au clic
+                    sur la carte, l’utilisateur est redirigé vers la page du
+                    menu <br />
+                    4 pages contenant chacune le menu d’un restaurant <br />
+                    Le footer est identique sur toutes les pages<br />
+                    Au clic sur “Contact”, un renvoi vers une adresse mail est
+                    effectué <br />
+                    Le header est présent sur toutes les pages <br />
+                    ● Sur la page d’accueil, il contient le logo du site <br />
+                    ● Sur les pages de menu, il contient en plus un bouton de
+                    retour vers la page d’accueil <br />
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="content-two-columns__column"></div>
+          </div>
+        </div>
+
+        <div class="line-right"></div>
+        <div class="line-left"></div>
+        <div>
+          <div class="content-two-columns__columns">
+            <div class="content-two-columns__column">
+              <div>
+                <h6 data-prefix="Animations" class="prefix"></h6>
+                <div>
+                  <p>
+                    Un “loading spinner” quand on arrive sur la page
+                    d'accueil<br />
+                    Au survol, la couleur de fond des boutons principaux devra
+                    légèrement s’éclaircir <br />
+                    L’ombre portée devra également être plus visible <br />
+                    À terme, les visiteurs pourront sauvegarder leurs menus
+                    préférés. Pour ça, un bouton "J’aime" en forme de cœur est
+                    présent sur la maquette. Au survol, il devra se remplir
+                    progressivement <br />
+                    À l’arrivée sur la page, les plats devront apparaître
+                    progressivement avec un léger décalage dans le temps <br />
+                    Le visiteur peut ajouter les plats qu'il souhaite à sa
+                    commande en cliquant dessus. Cela fait apparaître une petite
+                    coche à droite du plat
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="content-two-columns__column"></div>
+          </div>
+        </div>
+      </section>
+
+      <!--les outils du projet-->
+      <section class="projet-spe">
+        <h2 data-prefix="outils" class="prefix-outils"></h2>
+        <div class="box-wrapper">
+          <figure class="shape-box shape-box_half">
+            <img src="../assets/images/logos/html-5.png" alt="logo HTML 5" />
+            <figcaption>
+              <div class="show-cont">
+                <h3 class="card-no">01</h3>
+                <h4 class="card-main-title">HTML 5</h4>
+              </div>
+              <ul class="card-content">
+                <li>Utilisation des balises sémantiques</li>
+                <li>Validateur W3C HTML</li>
+                <li>Maquette responsive (Mobile first)</li>
+              </ul>
+              <a
+                href="https://marcelin97.github.io/LoisMarcelin_3_04042021/"
+                class="read-more-btn"
+                >visite du site</a
+              >
+            </figcaption>
+            <span class="after"></span>
+          </figure>
+          <figure class="shape-box shape-box_half">
+            <img src="../assets/images/logos/css3.png" />
+            <figcaption>
+              <div class="show-cont">
+                <h3 class="card-no">02</h3>
+                <h4 class="card-main-title">CSS 3</h4>
+              </div>
+              <ul class="card-content">
+                <li>Icônes Font Awesome</li>
+                <li>Flexbox</li>
+                <li>Validateur W3C CSS</li>
+              </ul>
+              <a
+                href="https://marcelin97.github.io/LoisMarcelin_3_04042021/"
+                class="read-more-btn"
+                >visite du site</a
+              >
+            </figcaption>
+            <span class="after"></span>
+          </figure>
+          <figure class="shape-box shape-box_half">
+            <img src="../assets/images/logos/sass.png" />
+            <figcaption>
+              <div class="show-cont">
+                <h3 class="card-no">03</h3>
+                <h4 class="card-main-title">SASS</h4>
+              </div>
+              <ul class="card-content">
+                <li>Précompilateur SASS</li>
+              </ul>
+              <a
+                href="https://marcelin97.github.io/LoisMarcelin_3_04042021/"
+                class="read-more-btn"
+                >visite du site</a
+              >
+            </figcaption>
+            <span class="after"></span>
+          </figure>
+        </div>
+      </section>
+      <!--Fin les outils du projet-->
+      <!--FIN PROJET 2-->
+
+      <!--RESUME PROJET 3-->
+      <section class="container-card">
+        <!--Titre du projet-->
+        <h2 data-prefix="Projet-3" class="prefix-titre"></h2>
+
+        <article class="card" id="Projet-3">
+          <div class="thumb">
+            <img
+              src="../assets/images/projets/Extrait_maquette_LaChouetteAgence_P4_900w.jpg"
+              alt=""
+            />
+          </div>
+          <div class="infos">
+            <h3 class="title">Optimisez un site web existant</h3>
+            <h3 class="date">Juin 2021</h3>
+            <h3 class="scenario">Scénario</h3>
+            <p class="txt">
+              Vous travaillez pour La chouette agence, une grande agence de web
+              design basée à Lyon.<br />
+              L’activité de l’entreprise a bien démarré mais aujourd’hui, elle
+              est en perte de vitesse. <br />
+              Eh oui, la concurrence est rude.
+            </p>
+            <span class="link-website"
+              ><a href="https://www.lois.anthony-cecconato.fr/"
+                >visite le site</a
+              ></span
+            >
+          </div>
+        </article>
+      </section>
+      <!--Fin resume du projet-->
+
+      <section class="projet-info">
+        <div class="line-right"></div>
+        <div class="line-left"></div>
+        <div>
+          <div class="content-two-columns__columns">
+            <div class="content-two-columns__column">
+              <div>
+                <h6 data-prefix="Client" class="prefix"></h6>
+                <div>
+                  <p>
+                    La chouette agence est une entreprise de web design basé à
+                    Lyon. Le site de l'agence doit être amélioré.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="content-two-columns__column"></div>
+          </div>
+        </div>
+
+        <div class="line-right"></div>
+        <div class="line-left"></div>
+        <div>
+          <div class="content-two-columns__columns">
+            <div class="content-two-columns__column">
+              <div>
+                <h6 data-prefix="Challenge" class="prefix"></h6>
+                <div>
+                  <p>
+                    La fondatrice de l’entreprise, Sophie, cherche une solution
+                    pour faire repartir l’activité. <br />
+                    En tapant “Entreprise web design Lyon” sur Internet, elle
+                    s’aperçoit que le site de l’agence apparaît seulement en
+                    deuxième page des moteurs de recherche.<br />
+                    Sophie souhaites que le référencement soit amélioré. <br />
+                    Par chance, un de vos collègues, Martin, lui a dit que vous
+                    étiez un spécialiste en référencement.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="content-two-columns__column"></div>
+          </div>
+        </div>
+
+        <div class="line-right"></div>
+        <div class="line-left"></div>
+        <div>
+          <div class="content-two-columns__columns">
+            <div class="content-two-columns__column">
+              <div>
+                <h6 data-prefix="site non optimisé" class="prefix"></h6>
+                <div>
+                  <a
+                    href="https://github.com/Marcelin97/LoisMarcelin_4_17052021-nonoptimise"
+                  >
+                    https://github.com/Marcelin97/LoisMarcelin_4_17052021-nonoptimise
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="content-two-columns__column"></div>
+          </div>
+        </div>
+
+        <div class="line-right"></div>
+        <div class="line-left"></div>
+        <div>
+          <div class="content-two-columns__columns">
+            <div class="content-two-columns__column">
+              <div>
+                <h6 data-prefix="Analyse actuel" class="prefix"></h6>
+                <div>
+                  <p>
+                    Optimisation de la structure HTML<br />
+                    Optimisation de la balise "head"<br />
+                    Optimiser le CSS<br />
+                    Optimiser les hyperliens<br />
+                    Optimisation du contenu<br />
+                    Rendre le site accessible<br />
+                    Alléger la taille du site<br />
+                    Augmenter la vitesse de chargement<br />
+                    Créer des fichiers à la racine<br />
+                    Optimiser le serveur<br />
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="content-two-columns__column"></div>
+          </div>
+        </div>
+
+        <div class="line-right"></div>
+        <div class="line-left"></div>
+        <div>
+          <div class="content-two-columns__columns">
+            <div class="content-two-columns__column">
+              <div>
+                <h6 data-prefix="Création" class="prefix"></h6>
+                <div>
+                  <p>
+                    Ajout de json-ld schema.org <br>
+                    Ajout d’un sitemap.xml <br>
+                    Ajout manifest.json<br> 
+                    Ajout du fichier .htaccess<br>
+                    Ajout robots.txt<br>
+                    Ajout d’une page d’accessibilité<br>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="content-two-columns__column"></div>
+          </div>
+        </div>
+
+        <div class="line-right"></div>
+        <div class="line-left"></div>
+        <div>
+          <div class="content-two-columns__columns">
+            <div class="content-two-columns__column">
+              <div>
+                <h6 data-prefix="Optimisation" class="prefix"></h6>
+                <div>
+                  <p>
+                    Minification des fichiers CSS et JS<br />
+                    Convertir et compresser les images<br />
+                    Redimmensionnement des images<br />
+                    Chargement des images en “lazy”<br />
+                    Chargement des fichiers Javascript en “defer<br />
+                    Chargement des ressources externs via un CDN<br />
+                    Placement des scripts avant la balise de fermeture body du
+                    HTML<br />
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="content-two-columns__column"></div>
+          </div>
+        </div>
+
+        <div class="line-right"></div>
+        <div class="line-left"></div>
+        <div>
+          <div class="content-two-columns__columns">
+            <div class="content-two-columns__column">
+              <div>
+                <h6 data-prefix="Outils d'analyse" class="prefix"></h6>
+                <div>
+                  <p>
+                    Lighthouse <br />
+                    Dareboost <br />
+                    GTMetrix<br />
+                    axe DevTools<br />
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="content-two-columns__column"></div>
+          </div>
+        </div>
+
+        <div class="line-right"></div>
+        <div class="line-left"></div>
+        <div>
+          <div class="content-two-columns__columns">
+            <div class="content-two-columns__column">
+              <div>
+                <h6 data-prefix="site optimisé" class="prefix"></h6>
+                <div>
+                  <a
+                    href="https://www.lois.anthony-cecconato.fr/"
+                  >
+                    https://www.lois.anthony-cecconato.fr/
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="content-two-columns__column"></div>
+          </div>
+        </div>
+      </section>
+
+      <!--les outils du projet-->
+      <section class="projet-spe">
+        <h2 data-prefix="outils" class="prefix-outils"></h2>
+        <div class="box-wrapper">
+          <figure class="shape-box shape-box_half">
+            <img src="../assets/images/logos/html-5.png" alt="logo HTML 5" />
+            <figcaption>
+              <div class="show-cont">
+                <h3 class="card-no">01</h3>
+                <h4 class="card-main-title">HTML 5</h4>
+              </div>
+              <ul class="card-content">
+                <li>Utilisation des balises sémantiques</li>
+                <li>Validateur W3C HTML</li>
+                <li>Maquette responsive (Mobile first)</li>
+              </ul>
+              <a
+                href="https://marcelin97.github.io/LoisMarcelin_3_04042021/"
+                class="read-more-btn"
+                >visite du site</a
+              >
+            </figcaption>
+            <span class="after"></span>
+          </figure>
+          <figure class="shape-box shape-box_half">
+            <img src="../assets/images/logos/css3.png" />
+            <figcaption>
+              <div class="show-cont">
+                <h3 class="card-no">02</h3>
+                <h4 class="card-main-title">CSS 3</h4>
+              </div>
+              <ul class="card-content">
+                <li>Icônes Font Awesome</li>
+                <li>Flexbox</li>
+                <li>Validateur W3C CSS</li>
+              </ul>
+              <a
+                href="https://marcelin97.github.io/LoisMarcelin_3_04042021/"
+                class="read-more-btn"
+                >visite du site</a
+              >
+            </figcaption>
+            <span class="after"></span>
+          </figure>
+          <figure class="shape-box shape-box_half">
+            <img src="../assets/images/logos/sass.png" />
+            <figcaption>
+              <div class="show-cont">
+                <h3 class="card-no">03</h3>
+                <h4 class="card-main-title">SASS</h4>
+              </div>
+              <ul class="card-content">
+                <li>Précompilateur SASS</li>
+              </ul>
+              <a
+                href="https://marcelin97.github.io/LoisMarcelin_3_04042021/"
+                class="read-more-btn"
+                >visite du site</a
+              >
+            </figcaption>
+            <span class="after"></span>
+          </figure>
+        </div>
+      </section>
+      <!--Fin les outils du projet-->
+
+      <!--citation-->
+      <section class="rotating-text">
+        <div id="upperWrap">
+          <div>Every programmer is</div>
+        </div>
+
+        <div id="line"></div>
+
+        <div id="lowerWrap">
+          <div id="lower">an author</div>
+          <div id="lower">an compositor</div>
+          <div id="lower">an artist</div>
+        </div>
+      </section>
+
+      <!--citation END-->
     </main>
     <!--End of main-->
+
+    <!--footer-->
+    <footer>
+      <div class="footer-body">
+        <div class="footer-title">
+          <div class="footer-border">
+            <div class="footer-in">
+              <div class="footer-b"></div>
+            </div>
+          </div>
+          <div class="spr"></div>
+          <div class="footer-title">
+            <a href="">
+              <div>RESTONS EN CONTACT</div>
+            </a>
+          </div>
+          <div class="spr"></div>
+          <div class="footer-border">
+            <div class="footer-in">
+              <div class="footer-b"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <nav>
+        <h3>Site développé par Loïs Marcelin.</h3>
+        <ul>
+          <li class="social-right">
+            <a href="https://github.com/Marcelin97">
+              <i class="fab fa-github"></i>
+              GitHub.
+            </a>
+            <span class="social-right-underline"></span>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/loismarcelin/">
+              <i class="fab fa-instagram"></i>
+              Instagram.
+            </a>
+            <span></span>
+          </li>
+          <li class="social-right">
+            <a href="#">
+              <i class="fas fa-tools"></i>
+              VS Code, GitHub, SASS, Node.
+            </a>
+            <span></span>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fas fa-balance-scale-right"></i>
+              Mentions légales.
+            </a>
+            <span></span>
+          </li>
+          <li class="social-right">
+            <a href="mailto: lois_m@outlook.com">
+              <i class="fas fa-paper-plane"></i>
+              E-mail.
+            </a>
+            <span></span>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fas fa-sitemap"></i>
+              Plan du site.
+            </a>
+            <span></span>
+          </li>
+        </ul>
+      </nav>
+    </footer>
+    <!--End of footer-->
 
     <!--Scripts-->
     <!--Kits fontawesome pour les icônes-->
@@ -162,15 +833,6 @@
       crossorigin="anonymous"
     />
     <!--Kits fontawesome pour les icônes-->
-
-    <!--glide.js-->
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/glide.min.js"
-      integrity="sha512-BXASbMmKLu+RC5TDnkupyhvrjiOQXILh/5zgIS8k5JAC71a73lNweVEg/X+9XJQ7GK22PH9WpztY3zqrji+xrQ=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
-    <!--glide.js-->
 
     <script src="../assets/dist/js/realisation.js" defer></script>
 
