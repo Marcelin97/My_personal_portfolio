@@ -49,9 +49,6 @@ table {
 
 /* Color Theme Swatches in HSLA */
 /* Color Theme Swatches in HSLA */
-/*display:flex et flex-direction:column*/
-/*animation slide*/
-/*end of animation slide*/
 * {
   font-family: 'inter', sans-serif; }
 
@@ -118,7 +115,6 @@ body {
   width: 102%;
   height: 102%; }
 
-/*skills icon*/
 .icon-place-1, .icon-place-2 {
   position: absolute; }
   .icon-place-1 i, .icon-place-2 i {
@@ -291,23 +287,22 @@ body {
   100% {
     transform: translate(-50%, 15px); } }
 
-/*slide*/
-@-webkit-keyframes slide-top {
+@-webkit-keyframes load {
   0% {
-    transform: translateY(40px);
-    opacity: 0; }
+    stroke-dashoffset: 628; }
+  50% {
+    stroke-dashoffset: 400; }
   100% {
-    transform: translateY(0);
-    opacity: 1; } }
-@keyframes slide-top {
-  0% {
-    transform: translateY(40px);
-    opacity: 0; }
-  100% {
-    transform: translateY(0);
-    opacity: 1; } }
+    stroke-dashoffset: 628; } }
 
-/*end of slide*/
+@keyframes load {
+  0% {
+    stroke-dashoffset: 628; }
+  50% {
+    stroke-dashoffset: 400; }
+  100% {
+    stroke-dashoffset: 628; } }
+
 /*spinner loading*/
 #spinner_loader {
   width: 100%;
@@ -837,7 +832,7 @@ header {
   line-height: 4rem;
   padding: 10vh 0;
   min-height: inherit;
-  color: #fff;
+  color: #ffffff;
   font-weight: 400; }
 
 .contacts-page-actions {
@@ -889,7 +884,7 @@ header {
   -webkit-tap-highlight-color: transparent;
   position: relative;
   display: block;
-  color: #fff;
+  color: #ffffff;
   transition: color 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0.25s; }
 
 .contacts-page-address {
@@ -906,7 +901,7 @@ header {
       flex-basis: 20%; } }
 
 .contacts-page-col h2 {
-  color: #fff; }
+  color: #ffffff; }
 
 h2,
 P {
@@ -921,7 +916,7 @@ h2 {
 
 .contacts-page-address a {
   position: relative;
-  color: #fff;
+  color: #ffffff;
   text-decoration: none;
   font-size: 0.625rem;
   font-weight: 700;

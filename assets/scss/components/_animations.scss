@@ -1,4 +1,6 @@
-/*skills icon*/
+//=============================>>
+// HOMEPAGE - SERVICE - ICONE CHANGE HOVER
+//=============================>>
 .icon-place-1, .icon-place-2 {
   position: absolute;
   i {
@@ -46,8 +48,13 @@
   top: 20px;
   right: 35px;
 }
+//=============================>>
+// HOMEPAGE - SERVICE - ICONE CHANGE HOVER
+//=============================>>
 
-//icons social footer
+//=============================>>
+// FOOTER - ICONE SOCIAL
+//=============================>>
 @keyframes social {
  	0% { 
     width:0;
@@ -59,9 +66,13 @@
     width: 70px;
   }
 }
-//icons social footer
+//=============================>>
+// FOOTER - ICONE SOCIAL
+//=============================>>
 
-//animation button send a form
+//=============================>>
+// CONTACT PAGE - ANIMATION BUTTON SEND FORM
+//=============================>>
 @keyframes textAnimation {
   0% { transform: translate(0, -50%); }
   9% { transform: translate(0, -50%); content: "Envoyer le message"; }
@@ -88,9 +99,13 @@
   95% { transform: translate(34px, 0)rotate(45deg); }
   100% { transform: translate(0, 0) rotate(45deg);}
 }
-//animation button send a form
+//=============================>>
+// CONTACT PAGE - ANIMATION BUTTON SEND FORM
+//=============================>>
 
-//scroll down
+//=============================>>
+// HOME PAGE - ANIMATION SCROLL DOWN
+//=============================>>
 @keyframes scroll {
   0% {
     transform: translate(-50%, 15px);
@@ -102,19 +117,24 @@
     transform: translate(-50%, 15px);
   }
 }
-//scroll down
+//=============================>>
+// HOME PAGE - ANIMATION SCROLL DOWN
+//=============================>>
 
-/*slide*/
-
-@keyframes slide-top {
+//=============================>>
+// ABOUT-ME PAGE - ANIMATION SKILLS
+//=============================>>
+@keyframes load {
   0% {
-    transform: translateY(40px);
-    opacity: 0;
+    stroke-dashoffset: 628;
+  }
+  50% {
+    stroke-dashoffset: 400;
   }
   100% {
-    transform: translateY(0);
-    opacity: 1;
+    stroke-dashoffset: 628;
   }
 }
-
-/*end of slide*/
+//=============================>>
+// ABOUT-ME PAGE - ANIMATION SKILLS
+//=============================>>

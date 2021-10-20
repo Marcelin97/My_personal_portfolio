@@ -1,53 +1,10 @@
-/*display:flex et flex-direction:column*/
-
+//=============================>>
+// DISPLAY FLEX & FLEX DIRECTION COLUMN
+//=============================>>
 @mixin dflex_col {
-    display: flex;
-    flex-direction: column;
-  }
-
-//header hands say hi
-@mixin back {
-  animation: shake 2.2s infinite;
-  font-size: 2em;
+  display: flex;
+  flex-direction: column;
 }
-
-@mixin shakeHome {
-  @keyframes shake {
-    0% {
-      transform: rotate(-8deg);
-    }
-    8% {
-      transform: rotate(8deg);
-    }
-    16% {
-      transform: rotate(-8deg);
-    }
-    24% {
-      transform: rotate(8deg);
-    }
-    32% {
-      transform: rotate(-8deg);
-    }
-    40% {
-      transform: rotate(8deg);
-    }
-    48% {
-      transform: rotate(0);
-    }
-    100% {
-      transform: rotate(0);
-    }
-  }
-}
-
-/*animation slide*/
-
-@mixin lazy-menu($j, $delay, $limit) {
-  @for $i from 1 through $limit {
-    #projects section:nth-of-type(#{$j}) article:nth-of-type(#{$i}) {
-      animation: slide-top 1s ease-out (0.2s * $i + $delay) both;
-    }
-  }
-}
-
-/*end of animation slide*/
+//=============================>>
+// DISPLAY FLEX & FLEX DIRECTION COLUMN
+//=============================>>

@@ -1,40 +1,53 @@
-$dark-grey: #023356 ;
-$courbe: cubic-bezier(
-  0.39,
-  0.575,
-  0.28,
-  0.995
-); //pour l'appartition des bulles icones - utilisation dans les animations
+// $dark-grey: #023356 ;
+
+//=============================>>
+// LOADING BUBBLE HOMEPAGE
+//=============================>>
+//pour l'apparition des bulles icônes - utilisation dans les animations
+$courbe: cubic-bezier(0.39, 0.575, 0.28, 0.995);
+//=============================>>
+// LOADING BUBBLE HOMEPAGE
+//=============================>>
 
 /* Color Theme Swatches in HSLA */
-$Explosion-of-colored-1-hsla: hsla(331, 60, 46, 1);
 $Explosion-of-colored-2-hsla: hsla(44, 96, 43, 1);
 $Explosion-of-colored-3-hsla: hsla(28, 96, 48, 1);
 $Explosion-of-colored-4-hsla: hsla(0, 68, 51, 1);
-$Explosion-of-colored-5-hsla: hsla(0, 0, 5, 1);
 
 /* Color Theme Swatches in HSLA */
 $Colored-powder-explosion-1-hsla: hsla(326, 88, 34, 1);
 $Colored-powder-explosion-2-hsla: hsla(219, 78, 47, 1);
-$Colored-powder-explosion-3-hsla: hsla(50, 94, 43, 1);
 $Colored-powder-explosion-4-hsla: hsla(39, 90, 44, 1);
-$Colored-powder-explosion-5-hsla: hsla(0, 0, 5, 1);
 
+//=============================>>
+// TEXT COLOR
+//=============================>>
+$darkGrey: #333;
 
-$gold: #FFC745;
+$big-text: #ffffff; //compatible avec background 1
+$mini-text: #95989a; //compatible avec background 1
 
-
-$darkGrey:#333;
-
-
-$big-text:#ffffff; //compatible avec background 1
-$mini-text:#95989a; //compatible avec background 1
-
-
-$grey:#676767; //compatible avec background 1 et 2
+$grey: #676767; //compatible avec background 1 et 2
 $green: #467302; //compatible avec background 1 et 2
+//=============================>>
+// TEXT COLOR
+//=============================>>
 
-$background-1:#121212;
-$background-2:#f1f1f1;
+//=============================>>
+// BACKGROUND-COLOR
+//=============================>>
+$background-1: #121212;
+$background-2: #f1f1f1;
+//=============================>>
+// BACKGROUND-COLOR
+//=============================>>
+
+//=============================>>
+// SKILLS ABOUT ME
+//=============================>>
+$gold: #ffc745;
+//=============================>>
+// SKILLS ABOUT ME
+//=============================>>
 
 $size: 40px;

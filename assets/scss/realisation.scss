@@ -1,6 +1,6 @@
 @import "./main.scss";
-
-// Cursor
+//=============================>>
+// CURSOR
 //=============================>>
 .cursor-dot,
 .cursor-dot-outline {
@@ -27,22 +27,29 @@
   border: 2px solid #fff;
   box-shadow: 0 0 22px rgba(255, 255, 255, 0.6);
 }
-// End of Cursor
+//=============================>>
+// End of CURSOR
 //=============================>>
 
-// Header
+//=============================>>
+// HEADER
 //=============================>>
 header {
   background-color: $background-1;
 }
+
+//=============================>>
+// End of HEADER
+//=============================>>
+
+//=============================>>
+// SECTION UP DOWN
+//=============================>>
+
 $spacer: 1rem;
 $fast: 0.3s;
 $easing: cubic-bezier(0.55, 0, 0.1, 1);
-// End of header
-//=============================>>
 
-// section up down
-//=============================>>
 .super {
   background-color: $background-1;
   color: white;
@@ -82,10 +89,9 @@ $easing: cubic-bezier(0.55, 0, 0.1, 1);
   user-select: none;
   z-index: 10;
   margin-top: 60px;
-
-  &:hover {
-    opacity: 1;
-  }
+    &:hover {
+      opacity: 1;
+    }
 }
 
 .panel__nav {
@@ -177,19 +183,21 @@ $easing: cubic-bezier(0.55, 0, 0.1, 1);
     }
   }
 }
+
 a {
   color: $big-text;
 }
-// End of section up down
+//=============================>>
+// End of section UP DOWN
 //=============================>>
 
-
-// Project
+//=============================>>
+// PROJETS
 //=============================>>
 
-// Resume project
 //=============================>>
-
+// CARD
+//=============================>>
 h2.prefix-titre {
     position: relative;
     margin-bottom: 1.5rem;
@@ -201,6 +209,7 @@ h2.prefix-titre {
     color: $green;
     height: 200px;
 }
+
 h2.prefix-titre:before {
     content: attr(data-prefix);
     position: relative;
@@ -215,13 +224,12 @@ h2.prefix-titre:before {
       }
 }
 
-
 //size card
 $card-width: 310px;
 $card-height: 455px;
 //size image
 $thumb-height: 330px;
-
+//animation card
 $transition: cubic-bezier(0.17, 0.67, 0.5, 1.03);
 $timing-1: 0.4s 0.15s;
 $timing-2: 0.5s 0.25s;
@@ -242,7 +250,6 @@ $timing-2: 0.5s 0.25s;
     bottom: $bottom;
   }
 }
-
 @mixin size($width, $height) {
   width: $width;
   height: $height;
@@ -256,6 +263,7 @@ $timing-2: 0.5s 0.25s;
     flex-direction: row;
   }
 }
+
 article.card {
   @include size($card-width, $card-height);
   border-radius: 10px 10px 0px 0px;
@@ -353,9 +361,13 @@ article.card {
   visibility: visible;
   transform: scaleX(1);
 }
-// End of resume project
+//=============================>>
+// End of CARD
 //=============================>>
 
+//=============================>>
+// DESCRIPTION PROJETS
+//=============================>>
 .content-two-columns__columns{
       padding-left: 18.75vw;
     padding-right: 12.5vw
@@ -366,8 +378,8 @@ article.card {
       @media only screen and (min-width: 992px) {
                 width: 37.5vw;
       }
-
 }
+
 .content-two-columns__column:last-child {
     width: auto;
       @media only screen and (min-width: 992px) {
@@ -384,6 +396,7 @@ h6.prefix {
     line-height: 1.5rem;
     letter-spacing: .1rem;
 }
+
 h6.prefix:before {
     content: attr(data-prefix);
     position: relative;
@@ -392,21 +405,21 @@ h6.prefix:before {
       @media only screen and (min-width: 992px) {
             position: absolute;
             left: -13.25vw;
-            
       }
 }
 
 .content-two-columns__column>div>div:last-child {
   margin-bottom: 3rem;
-
         @media only screen and (min-width: 992px) {
                margin-bottom: 2rem;
       }
 }
+
 .content-two-columns__column div>p:last-child {
     margin-bottom: 0;
     color: $mini-text;
 }
+
 .line-left {
     position: absolute;
     top: 0;
@@ -417,6 +430,7 @@ h6.prefix:before {
     z-index: 91;
     transform-origin: 0 0;
 }
+
 .line-right {
     position: absolute;
     top: 0;
@@ -435,8 +449,12 @@ h6.prefix:before {
 .projet-info a{
   color: $mini-text;
 }
+//=============================>>
+// End of DESCRIPTION PROJETS
+//=============================>>
 
-// Tools
+//=============================>>
+// TOOLS PROJETS
 //=============================>>
 .projet-spe{
   background-color: #fff;
@@ -453,6 +471,7 @@ h2.prefix-outils {
     color: $green;
     text-align: center;
 }
+
 h2.prefix-outils:before {
     content: attr(data-prefix);
     position: relative;
@@ -465,7 +484,6 @@ h2.prefix-outils:before {
             writing-mode: vertical-lr;
             text-orientation: mixed;
                 top: 200px;
-
       }
 }
 
@@ -478,149 +496,156 @@ h2.prefix-outils:before {
             flex-direction: row;
           }
 }
-    .shape-box {
-        position: relative;
-        z-index: 1;
-        max-width: 300px;
-        height: 430px;
-        margin: 30px 10px 30px;
-        box-shadow: 0 6px 30px 0 rgba(0, 0, 0, .12);
-        overflow: hidden;
-        // width: 23.333%;
-    }
+.shape-box {
+    position: relative;
+    z-index: 1;
+    max-width: 300px;
+    height: 430px;
+    margin: 30px 10px 30px;
+    box-shadow: 0 6px 30px 0 rgba(0, 0, 0, .12);
+    overflow: hidden;
+    // width: 23.333%;
+}
 
-    .shape-box_half {
-        overflow: hidden;
-        text-align: left;
-    }
+.shape-box_half {
+    overflow: hidden;
+    text-align: left;
+}
 
-    .shape-box_half:before {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        transform: skewY(63deg);
-        transform-origin: top left;
-        transition: \transform .4s;
-        background:$background-2;
-        z-index: 1;
-    }
-
-    .shape-box>img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-    }
-
-    .shape-box_half figcaption {
-        position: absolute;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        padding: 0 30px 30px;
-        transition: \transform .4s;
-        transform: translateY(100%);
-        z-index: 3;
-    }
-
-    .shape-box_half figcaption .show-cont {
-        position: absolute;
-        bottom: calc(100% + 30px);
-        left: 30px;
-        right: 30px;
-        transition: bottom .4s;
-    }
-
-    .card-no {
-        font-size: 36px;
-        color: $darkGrey;
-        padding: 0;
-        margin: 10px 0;
-    }
-
-    .card-main-title {
-        margin-top: 8px;
-        font-weight: 700;
-        font-size: 24px;
-        text-transform: uppercase;
-        color: $green;
-    }
-
-    .card-content {
-        color: $grey;
-        margin-top: 20px;
-        line-height: 22px;
-        font-size: 15px;
-    }
-
-    .read-more-btn {
-        font-size: 14px;
-        cursor: pointer;
-        padding: 10px 20px;
-        display: inline-block;
-        text-transform: uppercase;
-        letter-spacing: .08em;
-        font-weight: 600;
-        position: relative;
-        transition: all 0.3s;
-        color: $darkGrey;
-        border-radius: 2px;
-        margin-top: 25px;
-        text-decoration: none;
-    }
-    .read-more-btn::before{
-      content: " ";
-       position: absolute;
-  bottom: 0;
-  right: 0;
-  width: 0;
-  height: 2px;
-  background-color: red;
-  transition: width 0.6s cubic-bezier(0.25, 1, 0.5, 1);
-    }
-   .read-more-btn:hover::before{
+.shape-box_half:before {
+    content: '';
+    position: absolute;
+    top: 0;
     left: 0;
-    right: auto;
+    right: 0;
+    bottom: 0;
+    transform: skewY(63deg);
+    transform-origin: top left;
+    transition: \transform .4s;
+    background:$background-2;
+    z-index: 1;
+}
+
+.shape-box>img {
     width: 100%;
-  }
+    height: 100%;
+    object-fit: cover;
+}
 
-    .shape-box_half>.after {
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background: $green;
-        opacity: 0;
-        transition: opacity .4s;
-    }
+.shape-box_half figcaption {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 0 30px 30px;
+    transition: \transform .4s;
+    transform: translateY(100%);
+    z-index: 3;
+}
 
-    /*On hover*/
-    .shape-box_half:hover:before {
-        transform: skewY(10deg);
-    }
+.shape-box_half figcaption .show-cont {
+    position: absolute;
+    bottom: calc(100% + 30px);
+    left: 30px;
+    right: 30px;
+    transition: bottom .4s;
+}
 
-    .shape-box_half:hover figcaption {
-        transform: translateY(0);
-    }
+.card-no {
+    font-size: 36px;
+    color: $darkGrey;
+    padding: 0;
+    margin: 10px 0;
+}
 
-    .shape-box_half:hover figcaption .show-cont {
-        bottom: 100%;
-    }
+.card-main-title {
+    margin-top: 8px;
+    font-weight: 700;
+    font-size: 24px;
+    text-transform: uppercase;
+    color: $green;
+}
 
-    .shape-box_half:hover>.after {
-        opacity: 1;
-    }
-// End of tools
+.card-content {
+    color: $grey;
+    margin-top: 20px;
+    line-height: 22px;
+    font-size: 15px;
+}
+
+.read-more-btn {
+    font-size: 14px;
+    cursor: pointer;
+    padding: 10px 20px;
+    display: inline-block;
+    text-transform: uppercase;
+    letter-spacing: .08em;
+    font-weight: 600;
+    position: relative;
+    transition: all 0.3s;
+    color: $darkGrey;
+    border-radius: 2px;
+    margin-top: 25px;
+    text-decoration: none;
+}
+
+.read-more-btn::before{
+    content: " ";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 0;
+    height: 2px;
+    background-color: red;
+    transition: width 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.read-more-btn:hover::before{
+left: 0;
+right: auto;
+width: 100%;
+}
+
+.shape-box_half>.after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: $green;
+    opacity: 0;
+    transition: opacity .4s;
+}
+
+/*On hover*/
+.shape-box_half:hover:before {
+    transform: skewY(10deg);
+}
+
+.shape-box_half:hover figcaption {
+    transform: translateY(0);
+}
+
+.shape-box_half:hover figcaption .show-cont {
+    bottom: 100%;
+}
+
+.shape-box_half:hover>.after {
+    opacity: 1;
+}
+//=============================>>
+// End of TOOLS PROJETS
 //=============================>>
 
-// End of projet
+//=============================>>
+// End of PROJETS
 //=============================>>
 
+
+//=============================>>
 // Citation with auto rotating text
 //=============================>>
+
 .rotating-text{
   padding: 0;
   margin: 0;
@@ -634,6 +659,7 @@ h2.prefix-outils:before {
   align-items: center;
   justify-content: center;
 }
+
 #upperWrap, #lowerWrap {
   overflow: hidden;
   height: 30px;
@@ -652,5 +678,6 @@ h2.prefix-outils:before {
   height: 1px;
   background: white;
 }
+//=============================>>
 // End of Citation with auto rotating text
 //=============================>>

@@ -62,7 +62,7 @@ header {
   line-height: 4rem;
   padding: 10vh 0;
   min-height: inherit;
-  color: #fff;
+  color: $big-text;
   font-weight: 400;
 }
 
@@ -121,7 +121,7 @@ header {
   -webkit-tap-highlight-color: transparent;
   position: relative;
   display: block;
-  color: #fff;
+  color: $big-text;
   transition: color 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0.25s;
 }
 
@@ -140,7 +140,7 @@ header {
   }
 }
 .contacts-page-col h2 {
-  color: #fff;
+  color: $big-text;
 }
 h2,
 P {
@@ -155,7 +155,7 @@ h2 {
 }
 .contacts-page-address a {
   position: relative;
-  color: #fff;
+  color: $big-text;
   text-decoration: none;
   font-size: 0.625rem;
   font-weight: 700;
