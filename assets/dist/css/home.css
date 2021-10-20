@@ -806,12 +806,12 @@ header figure {
   line-height: 2rem;
   letter-spacing: 0.1rem;
   padding-bottom: 80px;
-  margin-bottom: 220px;
   color: #333;
-  padding-top: 0px; }
+  padding-top: 0px;
+  height: 450px; }
   @media only screen and (min-width: 576px) {
     .titlepage {
-      margin-bottom: 300px; } }
+      height: 500px; } }
 
 .titlepage div div div h1 {
   margin-bottom: 30px; }

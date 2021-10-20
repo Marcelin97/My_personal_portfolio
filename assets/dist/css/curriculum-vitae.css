@@ -943,7 +943,19 @@ circle {
   stroke-dasharray: 800 628; }
 
 .JS {
-  stroke: yellowgreen;
+  stroke: #efd81d;
+  stroke-dasharray: 650 628; }
+
+.Git {
+  stroke: #e84d31;
+  stroke-dasharray: 650 628; }
+
+.GitHub {
+  stroke: #1a1e22;
+  stroke-dasharray: 650 628; }
+
+.Figma {
+  stroke: #f76e5f;
   stroke-dasharray: 650 628; }
 
 .text-skills {

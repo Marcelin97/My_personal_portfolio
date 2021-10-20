@@ -41,11 +41,11 @@
   line-height: 2rem;
   letter-spacing: 0.1rem;
   padding-bottom: 80px;
-  margin-bottom: 220px;
   color: $darkGrey;
   padding-top: 0px;
+  height: 450px;
   @media only screen and (min-width: 576px) {
-    margin-bottom: 300px;
+    height: 500px;
   }
 }
 .titlepage div div div h1 {
