@@ -115,42 +115,6 @@ body {
   width: 102%;
   height: 102%; }
 
-.icon-place-1, .icon-place-2 {
-  position: absolute; }
-  .icon-place-1 i, .icon-place-2 i {
-    position: absolute;
-    transform: translateY(-50%); }
-    .icon-place-1 i:first-child, .icon-place-2 i:first-child {
-      transform: scale(0) translateY(-50%);
-      background: -webkit-gradient(linear, left top, left bottom, from(#d72d2d), to(#f07305));
-      background-clip: border-box;
-      background-clip: border-box;
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      z-index: 1; }
-  .icon-place-1:hover, .icon-place-2:hover {
-    cursor: pointer;
-    -webkit-user-select: none;
-       -moz-user-select: none;
-        -ms-user-select: none;
-            user-select: none; }
-    .icon-place-1:hover i:first-child, .icon-place-2:hover i:first-child {
-      transform: scale(1) translateY(-50%);
-      transition: all 330ms ease-in-out; }
-    .icon-place-1:hover i:last-child, .icon-place-2:hover i:last-child {
-      transform: scale(0) translateY(-50%);
-      transition: all 330ms ease-in-out; }
-
-.icon-place-1 {
-  position: relative;
-  top: 20px;
-  right: 25px; }
-
-.icon-place-2 {
-  position: relative;
-  top: 20px;
-  right: 35px; }
-
 @-webkit-keyframes social {
   0% {
     width: 0; }

@@ -115,42 +115,6 @@ body {
   width: 102%;
   height: 102%; }
 
-.icon-place-1, .icon-place-2 {
-  position: absolute; }
-  .icon-place-1 i, .icon-place-2 i {
-    position: absolute;
-    transform: translateY(-50%); }
-    .icon-place-1 i:first-child, .icon-place-2 i:first-child {
-      transform: scale(0) translateY(-50%);
-      background: -webkit-gradient(linear, left top, left bottom, from(#d72d2d), to(#f07305));
-      background-clip: border-box;
-      background-clip: border-box;
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      z-index: 1; }
-  .icon-place-1:hover, .icon-place-2:hover {
-    cursor: pointer;
-    -webkit-user-select: none;
-       -moz-user-select: none;
-        -ms-user-select: none;
-            user-select: none; }
-    .icon-place-1:hover i:first-child, .icon-place-2:hover i:first-child {
-      transform: scale(1) translateY(-50%);
-      transition: all 330ms ease-in-out; }
-    .icon-place-1:hover i:last-child, .icon-place-2:hover i:last-child {
-      transform: scale(0) translateY(-50%);
-      transition: all 330ms ease-in-out; }
-
-.icon-place-1 {
-  position: relative;
-  top: 20px;
-  right: 25px; }
-
-.icon-place-2 {
-  position: relative;
-  top: 20px;
-  right: 35px; }
-
 @-webkit-keyframes social {
   0% {
     width: 0; }
@@ -1055,64 +1019,21 @@ header figure {
   text-decoration: none;
   cursor: pointer; }
 
-.global-skills {
+.row-service {
   display: flex;
-  flex-direction: column;
-  align-items: center; }
-
-.skills-1 {
-  margin-top: -110px;
-  border-top-left-radius: 90px;
-  border-top-right-radius: 90px; }
-
-.skills-1,
-.skills-2 {
-  background-color: #fff;
-  max-width: 900px;
-  display: flex;
-  flex-direction: column;
   justify-content: center;
+  align-items: center;
   flex-wrap: wrap;
-  text-align: center; }
-  .skills-1 h3,
-  .skills-2 h3 {
-    font-weight: bold;
-    padding: 15px 40px;
-    font-weight: 700;
-    text-transform: uppercase;
-    line-height: 1.5rem;
-    letter-spacing: 0.1rem;
-    color: #333; }
-  .skills-1 .paint-icon,
-  .skills-2 .paint-icon {
-    font-size: 3em;
-    color: #467302; }
-  .skills-1 p,
-  .skills-2 p {
-    padding: 50px;
-    color: #333;
-    font-size: 0.825rem;
-    font-weight: 700;
-    text-transform: uppercase;
-    line-height: 1.5rem;
-    letter-spacing: 0.1rem; }
+  margin-top: 40px; }
 
-#service {
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  background-color: black; }
-  #service h2 {
-    text-transform: uppercase;
-    color: #ffffff;
-    padding-bottom: 30px; }
-  #service ul {
-    color: #95989a;
-    font-size: 0.825rem;
-    font-weight: 700;
-    text-transform: uppercase;
-    line-height: 1.5rem;
-    letter-spacing: 0.1rem; }
+.card-bg {
+  width: 250px;
+  margin: 10px;
+  background-color: rebeccapurple; }
+
+.card-service {
+  border: 3px #007bff solid;
+  padding: 10px; }
 
 #counter {
   height: 550px; }
