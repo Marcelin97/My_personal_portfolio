@@ -156,10 +156,12 @@
 .skills {
   overflow: hidden;
   width: 100%;
+  height: 600px;
     @media only screen and (min-width: 768px) {
     width: 50%;
     margin-left: 40vw;
     margin-right: auto;
+    height: auto;
     }
   h2 {
     overflow: hidden;
@@ -224,6 +226,68 @@
 //=============================>>
 // OPEN MODAL
 //=============================>>
+.text {
+  position: absolute;
+  top: 950px;
+  left: 20px;
+    @media only screen and (min-width: 768px) {
+      top: 700px;
+    }
+}
+
+.text article {
+  position: relative;
+  overflow: hidden;
+  transform: translateZ(0);
+  display: flex;
+  align-items: center;
+  width: 15.5rem;
+  height: 5.5rem;
+  padding-left: 5.25rem;
+  border-radius: 1rem;
+  background: $background-2;
+  cursor: pointer;
+}
+
+.background {
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: -230px;
+  transform: translate(-3.5rem, -50%);
+  width: 300px;
+  height: 300px;
+  background: #8f44fd;
+  transition: 0.3s all;
+}
+
+.icon {
+  position: absolute;
+  top: 50%;
+  left: 1.5rem;
+  z-index: 2;
+  transform: translate(0.75rem, -50%);
+  font-size: 1.5rem;
+  transition: 0s all;
+  visibility: hidden;
+}
+
+.content-modal {
+  font-size: 1.25rem;
+  color: $darkGrey;
+}
+
+.text article:hover .background {
+  border-radius: 50%;
+  transform: translate(0, -50%);
+}
+
+.text article:hover .icon {
+  transform: translate(0, -50%);
+  color: #ffffff;
+  visibility: visible;
+}
+
 /* The Modal (background) */
 .modal {
   display: none; /* Hidden by default */
