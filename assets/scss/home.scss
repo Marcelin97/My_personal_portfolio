@@ -44,14 +44,14 @@
   padding-bottom: 80px;
   color: $darkGrey;
   padding-top: 0px;
-  height: 850px;
-  @media only screen and (min-width: 576px) {
-    height: 650px;
+  height: 740px;
+  @media only screen and (min-width: 768px) {
+    height: 530px;
   }
 }
 
 .titlepage div div div h1 {
-  margin-bottom: 30px;
+  margin-top: 60px;
 }
 //=============================>>
 // TITLE PAGE
@@ -156,12 +156,13 @@
 .skills {
   overflow: hidden;
   width: 100%;
-  height: 600px;
+  height: 300px;
+  margin-top: 50px;
     @media only screen and (min-width: 768px) {
     width: 50%;
     margin-left: 40vw;
+    margin-top: 130px;
     margin-right: auto;
-    height: auto;
     }
   h2 {
     overflow: hidden;
@@ -227,11 +228,13 @@
 // OPEN MODAL
 //=============================>>
 .text {
-  position: absolute;
-  top: 950px;
-  left: 20px;
-    @media only screen and (min-width: 768px) {
-      top: 700px;
+display: flex;
+justify-content: center;
+align-items: center;
+      @media only screen and (min-width: 768px) {
+    width: 50%;
+    margin-left: 40vw;
+    margin-right: auto;
     }
 }
 
@@ -241,7 +244,7 @@
   transform: translateZ(0);
   display: flex;
   align-items: center;
-  width: 15.5rem;
+  width: 13rem;
   height: 5.5rem;
   padding-left: 5.25rem;
   border-radius: 1rem;
@@ -257,7 +260,7 @@
   transform: translate(-3.5rem, -50%);
   width: 300px;
   height: 300px;
-  background: #8f44fd;
+  background: $green;
   transition: 0.3s all;
 }
 
@@ -273,8 +276,12 @@
 }
 
 .content-modal {
-  font-size: 1.25rem;
   color: $darkGrey;
+  text-transform: uppercase;
+  line-height: 2.5rem;
+  font-size: 0.625rem;
+  font-weight: 700;
+  letter-spacing: 2px;
 }
 
 .text article:hover .background {
@@ -284,7 +291,6 @@
 
 .text article:hover .icon {
   transform: translate(0, -50%);
-  color: #ffffff;
   visibility: visible;
 }
 
@@ -304,16 +310,16 @@
 
 /* Modal Content/Box */
 .modal-content {
-  background-color: #fefefe;
+  background-color: $background-2;
   margin: 15% auto; /* 15% from the top and centered */
   padding: 20px;
-  border: 1px solid #888;
+  border: 1px solid $grey;
   width: 80%; /* Could be more or less, depending on screen size */
 }
 
 /* The Close Button */
 .close {
-  color: #aaa;
+  color: $grey;
   float: right;
   font-size: 28px;
   font-weight: bold;
@@ -321,7 +327,7 @@
 
 .close:hover,
 .close:focus {
-  color: black;
+  color: red;
   text-decoration: none;
   cursor: pointer;
 }
