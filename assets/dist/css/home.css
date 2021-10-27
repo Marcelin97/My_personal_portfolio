@@ -275,8 +275,8 @@ body {
   justify-content: center;
   align-items: center;
   display: flex;
-  -webkit-animation: hidden 0ms ease-in-out forwards;
-          animation: hidden 0ms ease-in-out forwards;
+  -webkit-animation: hidden 5000ms ease-in-out forwards;
+          animation: hidden 5000ms ease-in-out forwards;
   position: fixed;
   z-index: 9999;
   top: 0px;
