@@ -58,6 +58,13 @@ a {
 .bold {
   font-weight: bold; }
 
+small {
+  color: #467302;
+  padding-left: 40px;
+  text-transform: uppercase;
+  font-size: 0.625rem;
+  font-weight: 300; }
+
 * {
   box-sizing: border-box;
   /* réinitialise le modèle de boîte à border-box pour tous les éléments HTML*/ }
@@ -1023,7 +1030,7 @@ header figure {
 
 /* The Close Button */
 .close {
-  color: #676767;
+  color: #121212;
   float: right;
   font-size: 28px;
   font-weight: bold; }
@@ -1044,13 +1051,25 @@ header figure {
   padding-left: 40px;
   font-weight: 700;
   color: #333;
-  font-size: x-large;
+  font-size: large;
   line-height: 2rem;
   letter-spacing: 0.2rem; }
 
 .row-service {
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  @media only screen and (min-width: 768px) {
+    .row-service {
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-items: stretch; } }
+
+.card-bg {
+  padding: 24px;
+  min-height: 300px;
+  width: 300px; }
 
 .card-right-line {
   position: absolute;

@@ -238,7 +238,7 @@
 display: flex;
 justify-content: center;
 align-items: center;
-      @media only screen and (min-width: 768px) {
+    @media only screen and (min-width: 768px) {
     width: 50%;
     margin-left: 40vw;
     margin-right: auto;
@@ -326,7 +326,7 @@ align-items: center;
 
 /* The Close Button */
 .close {
-  color: $grey;
+  color: $background-1;
   float: right;
   font-size: 28px;
   font-weight: bold;
@@ -356,7 +356,7 @@ align-items: center;
   padding-left: $size;
   font-weight: 700;
   color: $darkGrey;
-  font-size: x-large;
+  font-size: large;
   line-height: 2rem;
   letter-spacing: 0.2rem;
 }
@@ -364,9 +364,24 @@ align-items: center;
 .row-service{
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+      @media only screen and (min-width: 768px) {
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items:stretch;
+      }
 }
 
+.card-bg{
+      padding: 24px;
+      min-height: 300px;
+      width: 300px;
+        @media only screen and (min-width: 768px) {
+        }
+}
 
+//les bordures
 .card-right-line{
   position: absolute;
   left: auto;
