@@ -56,9 +56,19 @@ footer nav {
     h3{
         justify-content: center;
         display: flex;
-        font-style: oblique;
-        font-size: 0.7em;
+        align-items: center;
+        font-size: 0.7rem;
         color: $green;
+        text-transform: uppercase;
+    }
+    p{
+        color: $mini-text;
+        font-size: 0.625rem;
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        text-transform: uppercase;
+
     }
 }
 footer nav ul {

@@ -275,8 +275,8 @@ body {
   justify-content: center;
   align-items: center;
   display: flex;
-  -webkit-animation: hidden 5000ms ease-in-out forwards;
-          animation: hidden 5000ms ease-in-out forwards;
+  -webkit-animation: hidden 0ms ease-in-out forwards;
+          animation: hidden 0ms ease-in-out forwards;
   position: fixed;
   z-index: 9999;
   top: 0px;
@@ -561,9 +561,17 @@ footer nav {
   footer nav h3 {
     justify-content: center;
     display: flex;
-    font-style: oblique;
-    font-size: 0.7em;
-    color: #467302; }
+    align-items: center;
+    font-size: 0.7rem;
+    color: #467302;
+    text-transform: uppercase; }
+  footer nav p {
+    color: #95989a;
+    font-size: 0.625rem;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase; }
 
 @media only screen and (min-width: 576px) {
   footer nav ul {
@@ -764,11 +772,12 @@ header figure {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  font-weight: bold;
-  font-size: 1.7em;
+  font-weight: 700;
+  font-size: x-large;
   line-height: 2rem;
-  letter-spacing: 0.1rem;
+  letter-spacing: 0.2rem;
   padding-bottom: 80px;
+  text-transform: uppercase;
   color: #333;
   padding-top: 0px;
   height: 740px; }
@@ -873,6 +882,9 @@ header figure {
     font-weight: 700;
     margin-top: 0;
     padding-left: 3px; }
+    @media only screen and (min-width: 568px) {
+      .skills h2 {
+        padding-left: 6px; } }
 
 .skills-details {
   box-sizing: border-box;
@@ -896,9 +908,12 @@ header figure {
   .skills-title h3 {
     font-weight: 700;
     font-size: 21px;
-    padding-left: 3px;
+    padding-left: 2px;
     color: #c92200;
     letter-spacing: -.3px; }
+    @media only screen and (min-width: 568px) {
+      .skills-title h3 {
+        padding-left: 6px; } }
 
 .skills-desc {
   flex: 1;
@@ -1019,20 +1034,98 @@ header figure {
   text-decoration: none;
   cursor: pointer; }
 
+.service {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.container-service h3 {
+  text-transform: uppercase;
+  padding-left: 40px;
+  font-weight: 700;
+  color: #333;
+  font-size: x-large;
+  line-height: 2rem;
+  letter-spacing: 0.2rem; }
+
 .row-service {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  margin-top: 40px; }
+  flex-direction: column; }
+
+.card-right-line {
+  position: absolute;
+  left: auto;
+  top: -1px;
+  right: 0px;
+  bottom: -1px;
+  width: 1px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch; }
+
+.vertical-line-fill {
+  top: auto;
+  left: 0px;
+  right: 0px;
+  z-index: 555;
+  width: 100%;
+  height: 24px;
+  position: relative;
+  background-color: red; }
+
+.left {
+  left: 0px;
+  right: -1px; }
+
+.blank {
+  position: relative;
+  background-color: #121212;
+  opacity: 1;
+  left: -1px;
+  right: 0px; }
+
+.card-left-line {
+  position: absolute;
+  left: -1px;
+  top: -1px;
+  right: auto;
+  bottom: -1px;
+  display: flex;
+  width: 1px;
+  flex-direction: column;
+  justify-content: space-between; }
+
+.card-bottom-line {
+  position: absolute;
+  left: -1px;
+  top: auto;
+  right: -1px;
+  bottom: -1px;
+  display: flex;
+  height: 1px;
+  justify-content: space-between; }
+
+.card-top-line {
+  position: absolute;
+  left: -1px;
+  top: -1px;
+  right: -1px;
+  bottom: auto;
+  display: flex;
+  height: 1px;
+  justify-content: space-between; }
+
+.horizontal-line-fill {
+  width: 24px;
+  height: 100%;
+  background-color: #121212; }
 
 .card-bg {
-  width: 250px;
   margin: 10px;
-  background-color: rebeccapurple; }
+  position: relative; }
 
 .card-service {
-  border: 3px #007bff solid;
   padding: 10px; }
 
 #counter {
