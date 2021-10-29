@@ -1091,7 +1091,7 @@ header figure {
   width: 100%;
   height: 24px;
   position: relative;
-  background-color: red; }
+  background-color: #121212; }
 
 .left {
   left: 0px;
@@ -1119,8 +1119,8 @@ header figure {
   position: absolute;
   left: -1px;
   top: auto;
-  right: -1px;
-  bottom: -1px;
+  right: 1px;
+  bottom: -2px;
   display: flex;
   height: 1px;
   justify-content: space-between; }
@@ -1137,7 +1137,7 @@ header figure {
 
 .horizontal-line-fill {
   width: 24px;
-  height: 100%;
+  height: 90%;
   background-color: #121212; }
 
 .card-bg {
