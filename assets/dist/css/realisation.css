@@ -81,7 +81,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 30px; }
+  margin: 0 30px; }
 
 .btn {
   color: #ffffff;

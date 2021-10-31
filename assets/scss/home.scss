@@ -252,10 +252,10 @@ align-items: center;
   display: flex;
   align-items: center;
   width: 13rem;
-  height: 5.5rem;
+  height: 3.5rem;
   padding-left: 5.25rem;
   border-radius: 1rem;
-  background: $background-2;
+  background: white;
   cursor: pointer;
 }
 
@@ -381,7 +381,8 @@ align-items: center;
         }
 }
 
-//les bordures
+//BORDERS CARDS
+//=============================>>
 .card-right-line{
   position: absolute;
   left: auto;
@@ -454,16 +455,40 @@ align-items: center;
     height: 90%;
     background-color: $background-1;
 }
-
-
+// END OF BORDERS CARDS
+//=============================>>
+html{
+  background: $background-2;
+}
 .card-bg{
   margin: 10px;
-  position: relative;
+  position: relative;  
 }
 
-.card-service {
-  padding: 10px;
+.card-service{
+
+
 }
+
+.card-body{
+  display: flex;
+  flex-direction: column;
+    h2{
+    text-transform: uppercase;
+    color: $darkGrey;
+    text-align: center;
+    }
+    small{
+      position: absolute;
+      top: 8px;
+      left: -25px;
+    }
+    p{
+      color: $grey;
+      text-align: center;
+    }
+}
+
 
 //=============================>>
 // END OF CARDS SERVICE
@@ -618,12 +643,9 @@ span {
   text-align: center;
 }
 .btn-contact-slide {
-  padding-bottom: 80px;
+  padding-bottom: 90px;
 }
-.contact-slide {
-  color: $big-text;
-  background-color: $background-1;
-}
+
 //number of slides
 .glide__bullets {
   user-select: none;

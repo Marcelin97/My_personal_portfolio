@@ -250,73 +250,245 @@ h2.prefix:before {
   padding: 50px;
   @media only screen and (min-width: 768px) {
     flex-direction: row;
-    height: 300px;
+    // height: 300px;
   }
 }
 
-.wrapper {
+//TIMELINE
+//=============================>>
+
+.cd-timeline {
   position: relative;
-  width: 200px;
-  height: 200px;
+  padding: 2em 0;
+  margin-top: 2em;
+  margin-bottom: 2em;
 }
-
-.rail {
+.cd-timeline::before {
+  content: " ";
   position: absolute;
-  width: 200px;
-  height: 200px;
-  fill: none;
-  z-index: 1;
-  background-color: initial;
+  top: 0;
+  left: 25px;
+  height: 100%;
+  width: 4px;
+  background: $green;
 }
 
-//largeur de la barre de progression animé
-circle {
-  stroke-width: 20;
-  stroke-linecap: round;
-  stroke-dashoffset: 0;
-  animation: load 10s infinite;
+.cd-timeline-block {
+  position: relative;
+  margin: 2em 0;
 }
 
-.HTML {
-  stroke: #27a4d8;
-  stroke-dasharray: 850 628;
+.cd-timeline-block:after {
+  content: "";
+  display: table;
+  clear: both;
 }
+//Ligne du temps
+//=============================>>
 
-.CSS {
-  stroke: red;
-  stroke-dasharray: 800 628;
-}
-
-.JS {
-  stroke: #efd81d;
-  stroke-dasharray: 650 628;
-}
-
-.Git {
-  stroke: #e84d31;
-  stroke-dasharray: 720 628;
-}
-
-.GitHub {
-  stroke: #1a1e22;
-  stroke-dasharray: 750 628;
-}
-
-.Figma {
-  stroke: #f76e5f;
-  stroke-dasharray: 650 628;
-}
-.text-skills {
+//le point rond
+//=============================>>
+.cd-timeline-img {
   position: absolute;
-  transform: translateX(-50%);
-  left: 50%;
-  top: 50%;
-  text-transform: uppercase;
-  font-size: 0.825rem;
-  font-weight: 700;
-  letter-spacing: 2px;
-  text-align: center;
+  top: 8px;
+  left: 12px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  box-shadow: 0 0 0 4px red, inset 0 2px 0 rgba(0, 0, 0, 0.08),
+    0 3px 0 4px rgba(0, 0, 0, 0.05);
 }
+.cd-timeline-img {
+  background: #846caf;
+}
+
+//le point rond
 //=============================>>
-// SKILLS - ANIMATION RINGS
+
+.cd-timeline-content {
+  position: relative;
+  margin-left: 60px;
+  margin-right: 30px;
+  border-radius: 2px;
+  padding: 1em;
+
+  h2 {
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 0.625rem;
+    @media only screen and (min-width: 768px) {
+      font-size: 20px;
+      font-size: 1.25rem;
+    }
+  }
+}
+.timeline-content-info {
+  background: #2b343a;
+  padding: 5px 10px;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 12px;
+  box-shadow: inset 0 2px 0 rgba(0, 0, 0, 0.08);
+  border-radius: 2px;
+  width: 300px;
+}
+
+.cd-timeline-content:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+//la petite pointe
 //=============================>>
+.cd-timeline-content::before {
+  content: "";
+  position: absolute;
+  top: 16px;
+  right: 100%;
+  height: 0;
+  width: 0;
+  border: 7px solid transparent;
+  border-right: 7px solid blue;
+}
+
+//END OF TIMELINE
+//=============================>>
+
+//SKILLS BAR
+//=============================>>
+$li-padding: 5px;
+
+// colors
+$background-color: #1a1a1a;
+$progressbar-title-color: #fff;
+
+$red: #c0392b;
+$blue: #1199ff;
+$purple: #9b59b6;
+$orange: #ffa500;
+$green: #27ae60;
+
+$animation-delay: 0.7s;
+
+@mixin border-radius($radius) {
+  border-radius: $radius;
+}
+
+li {
+  position: relative;
+  width: 100%;
+  padding: $li-padding;
+  margin-bottom: 10px;
+
+  .progressbar-title {
+    color: $progressbar-title-color;
+    h3 {
+      display: inline-block;
+    }
+    .percent {
+      position: absolute;
+      right: $li-padding;
+    }
+  } // end progressbar-title
+
+  .bar-container {
+    background: #555;
+    position: relative;
+    width: 100%;
+    height: 5px;
+    margin-top: 5px;
+    display: block;
+    @include border-radius(5px);
+
+    .progressbar {
+      position: absolute;
+      width: 0%;
+      height: 100%;
+      @include border-radius(5px);
+      animation-duration: 2s;
+      animation-timing-function: ease-out;
+      animation-fill-mode: both;
+    }
+    #progress-html {
+      animation-name: progress-html;
+      animation-delay: $animation-delay;
+    }
+
+    #progress-css {
+      animation-name: progress-css;
+      animation-delay: $animation-delay * 2;
+    }
+
+    #progress-javascript {
+      animation-name: progress-javascript;
+      animation-delay: $animation-delay * 3;
+    }
+
+    #progress-php {
+      animation-name: progress-php;
+      animation-delay: $animation-delay * 4;
+    }
+
+    #progress-angular {
+      animation-name: progress-angular;
+      animation-delay: $animation-delay * 5;
+    }
+  } // end bar-container
+}
+
+.progressred {
+  background-color: $red;
+}
+.progressblue {
+  background-color: $blue;
+}
+.progresspurple {
+  background-color: $purple;
+}
+.progressorange {
+  background-color: $orange;
+}
+.progressgreen {
+  background-color: $green;
+}
+
+@keyframes progress-html {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 90%;
+  }
+}
+@keyframes progress-css {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 90%;
+  }
+}
+@keyframes progress-javascript {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 70%;
+  }
+}
+@keyframes progress-php {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 55%;
+  }
+}
+@keyframes progress-angular {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 65%;
+  }
+}

@@ -81,7 +81,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 30px; }
+  margin: 0 30px; }
 
 .btn {
   color: #ffffff;
@@ -954,10 +954,10 @@ header figure {
   display: flex;
   align-items: center;
   width: 13rem;
-  height: 5.5rem;
+  height: 3.5rem;
   padding-left: 5.25rem;
   border-radius: 1rem;
-  background: #f1f1f1;
+  background: white;
   cursor: pointer; }
 
 .background {
@@ -1140,12 +1140,27 @@ header figure {
   height: 90%;
   background-color: #121212; }
 
+html {
+  background: #f1f1f1; }
+
 .card-bg {
   margin: 10px;
   position: relative; }
 
-.card-service {
-  padding: 10px; }
+.card-body {
+  display: flex;
+  flex-direction: column; }
+  .card-body h2 {
+    text-transform: uppercase;
+    color: #333;
+    text-align: center; }
+  .card-body small {
+    position: absolute;
+    top: 8px;
+    left: -25px; }
+  .card-body p {
+    color: #676767;
+    text-align: center; }
 
 #counter {
   height: 550px; }
@@ -1292,11 +1307,7 @@ span {
   text-align: center; }
 
 .btn-contact-slide {
-  padding-bottom: 80px; }
-
-.contact-slide {
-  color: #ffffff;
-  background-color: #121212; }
+  padding-bottom: 90px; }
 
 .glide__bullets {
   -webkit-user-select: none;
