@@ -258,22 +258,6 @@ body {
   100% {
     transform: translate(-50%, 15px); } }
 
-@-webkit-keyframes load {
-  0% {
-    stroke-dashoffset: 628; }
-  50% {
-    stroke-dashoffset: 400; }
-  100% {
-    stroke-dashoffset: 628; } }
-
-@keyframes load {
-  0% {
-    stroke-dashoffset: 628; }
-  50% {
-    stroke-dashoffset: 400; }
-  100% {
-    stroke-dashoffset: 628; } }
-
 /*spinner loading*/
 #spinner_loader {
   width: 100%;
@@ -1065,29 +1049,39 @@ li {
               animation-timing-function: ease-out;
       -webkit-animation-fill-mode: both;
               animation-fill-mode: both; }
-    li .bar-container #progress-html {
-      -webkit-animation-name: progress-html;
-              animation-name: progress-html;
+    li .bar-container #progress-git {
+      -webkit-animation-name: progressGit;
+              animation-name: progressGit;
       -webkit-animation-delay: 0.7s;
               animation-delay: 0.7s; }
-    li .bar-container #progress-css {
-      -webkit-animation-name: progress-css;
-              animation-name: progress-css;
+    li .bar-container #progress-vsc {
+      -webkit-animation-name: progressVSC;
+              animation-name: progressVSC;
       -webkit-animation-delay: 1.4s;
               animation-delay: 1.4s; }
-    li .bar-container #progress-javascript {
-      -webkit-animation-name: progress-javascript;
-              animation-name: progress-javascript;
+    li .bar-container #progress-photoshop {
+      -webkit-animation-name: progress-photoshop;
+              animation-name: progress-photoshop;
       -webkit-animation-delay: 2.1s;
               animation-delay: 2.1s; }
-    li .bar-container #progress-php {
-      -webkit-animation-name: progress-php;
-              animation-name: progress-php;
+    li .bar-container #progress-figma {
+      -webkit-animation-name: progressFigma;
+              animation-name: progressFigma;
       -webkit-animation-delay: 2.8s;
               animation-delay: 2.8s; }
-    li .bar-container #progress-angular {
-      -webkit-animation-name: progress-angular;
-              animation-name: progress-angular;
+    li .bar-container #progress-html {
+      -webkit-animation-name: progressHtml;
+              animation-name: progressHtml;
+      -webkit-animation-delay: 3.5s;
+              animation-delay: 3.5s; }
+    li .bar-container #progress-sass {
+      -webkit-animation-name: progressSass;
+              animation-name: progressSass;
+      -webkit-animation-delay: 3.5s;
+              animation-delay: 3.5s; }
+    li .bar-container #progress-js {
+      -webkit-animation-name: progressJS;
+              animation-name: progressJS;
       -webkit-animation-delay: 3.5s;
               animation-delay: 3.5s; }
 
@@ -1106,63 +1100,87 @@ li {
 .progressgreen {
   background-color: #27ae60; }
 
-@-webkit-keyframes progress-html {
+@-webkit-keyframes progressGit {
   0% {
     width: 0%; }
   100% {
     width: 90%; } }
 
-@keyframes progress-html {
+@keyframes progressGit {
   0% {
     width: 0%; }
   100% {
     width: 90%; } }
 
-@-webkit-keyframes progress-css {
-  0% {
-    width: 0%; }
-  100% {
-    width: 90%; } }
-
-@keyframes progress-css {
-  0% {
-    width: 0%; }
-  100% {
-    width: 90%; } }
-
-@-webkit-keyframes progress-javascript {
+@-webkit-keyframes progressVSC {
   0% {
     width: 0%; }
   100% {
     width: 70%; } }
 
-@keyframes progress-javascript {
+@keyframes progressVSC {
   0% {
     width: 0%; }
   100% {
     width: 70%; } }
 
-@-webkit-keyframes progress-php {
+@-webkit-keyframes progress-photoshop {
   0% {
     width: 0%; }
   100% {
-    width: 55%; } }
+    width: 40%; } }
 
-@keyframes progress-php {
+@keyframes progress-photoshop {
   0% {
     width: 0%; }
   100% {
-    width: 55%; } }
+    width: 40%; } }
 
-@-webkit-keyframes progress-angular {
+@-webkit-keyframes progressFigma {
   0% {
     width: 0%; }
   100% {
     width: 65%; } }
 
-@keyframes progress-angular {
+@keyframes progressFigma {
   0% {
     width: 0%; }
   100% {
     width: 65%; } }
+
+@-webkit-keyframes progressHtml {
+  0% {
+    width: 0%; }
+  100% {
+    width: 90%; } }
+
+@keyframes progressHtml {
+  0% {
+    width: 0%; }
+  100% {
+    width: 90%; } }
+
+@-webkit-keyframes progressSass {
+  0% {
+    width: 0%; }
+  100% {
+    width: 70%; } }
+
+@keyframes progressSass {
+  0% {
+    width: 0%; }
+  100% {
+    width: 70%; } }
+
+@-webkit-keyframes progressJS {
+  0% {
+    width: 0%; }
+  100% {
+    width: 70%; } }
+
+@keyframes progressJS {
+  0% {
+    width: 0%; }
+  100% {
+    width: 70%; } }
 

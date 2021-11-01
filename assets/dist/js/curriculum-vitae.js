@@ -15,7 +15,7 @@
   \***************************************/
 /***/ (() => {
 
-eval("var lang = {\r\n  html: \"100%\",\r\n  css: \"90%\",\r\n  javascript: \"70%\",\r\n  php: \"55%\",\r\n  angular: \"65%\",\r\n};\r\n\r\nvar multiply = 4;\r\n\r\n$.each(lang, function (language, pourcent) {\r\n  var delay = 700;\r\n\r\n  setTimeout(function () {\r\n    $(\"#\" + language + \"-pourcent\").html(pourcent);\r\n  }, delay * multiply);\r\n\r\n  multiply++;\r\n});\r\n\n\n//# sourceURL=webpack://my_personal_portfolio/./assets/js/curriculum-vitae.js?");
+eval("\n\n//# sourceURL=webpack://my_personal_portfolio/./assets/js/curriculum-vitae.js?");
 
 /***/ }),
 

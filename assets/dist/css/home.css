@@ -258,22 +258,6 @@ body {
   100% {
     transform: translate(-50%, 15px); } }
 
-@-webkit-keyframes load {
-  0% {
-    stroke-dashoffset: 628; }
-  50% {
-    stroke-dashoffset: 400; }
-  100% {
-    stroke-dashoffset: 628; } }
-
-@keyframes load {
-  0% {
-    stroke-dashoffset: 628; }
-  50% {
-    stroke-dashoffset: 400; }
-  100% {
-    stroke-dashoffset: 628; } }
-
 /*spinner loading*/
 #spinner_loader {
   width: 100%;

@@ -409,28 +409,37 @@ li {
       animation-timing-function: ease-out;
       animation-fill-mode: both;
     }
-    #progress-html {
-      animation-name: progress-html;
+
+    #progress-git {
+      animation-name: progressGit;
       animation-delay: $animation-delay;
     }
 
-    #progress-css {
-      animation-name: progress-css;
+    #progress-vsc {
+      animation-name: progressVSC;
       animation-delay: $animation-delay * 2;
     }
 
-    #progress-javascript {
-      animation-name: progress-javascript;
+    #progress-photoshop {
+      animation-name: progress-photoshop;
       animation-delay: $animation-delay * 3;
     }
 
-    #progress-php {
-      animation-name: progress-php;
+    #progress-figma {
+      animation-name: progressFigma;
       animation-delay: $animation-delay * 4;
     }
 
-    #progress-angular {
-      animation-name: progress-angular;
+    #progress-html {
+      animation-name: progressHtml;
+      animation-delay: $animation-delay * 5;
+    }
+    #progress-sass {
+      animation-name: progressSass;
+      animation-delay: $animation-delay * 5;
+    }
+    #progress-js {
+      animation-name: progressJS;
       animation-delay: $animation-delay * 5;
     }
   } // end bar-container
@@ -452,7 +461,7 @@ li {
   background-color: $green;
 }
 
-@keyframes progress-html {
+@keyframes progressGit {
   0% {
     width: 0%;
   }
@@ -460,15 +469,8 @@ li {
     width: 90%;
   }
 }
-@keyframes progress-css {
-  0% {
-    width: 0%;
-  }
-  100% {
-    width: 90%;
-  }
-}
-@keyframes progress-javascript {
+
+@keyframes progressVSC {
   0% {
     width: 0%;
   }
@@ -476,19 +478,44 @@ li {
     width: 70%;
   }
 }
-@keyframes progress-php {
+
+@keyframes progress-photoshop {
   0% {
     width: 0%;
   }
   100% {
-    width: 55%;
+    width: 40%;
   }
 }
-@keyframes progress-angular {
+@keyframes progressFigma {
   0% {
     width: 0%;
   }
   100% {
     width: 65%;
+  }
+}
+@keyframes progressHtml {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 90%;
+  }
+}
+@keyframes progressSass {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 70%;
+  }
+}
+@keyframes progressJS {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 70%;
   }
 }
