@@ -15,7 +15,7 @@
   \***************************************/
 /***/ (() => {
 
-eval("\n\n//# sourceURL=webpack://my_personal_portfolio/./assets/js/curriculum-vitae.js?");
+eval("//=============================>>\r\n// MODAL\r\n//=============================>>\r\n\r\n// Get the modal\r\nvar modal = document.getElementById(\"myModal\");\r\n\r\n// Get the button that opens the modal\r\nvar btn = document.getElementById(\"myBtn\");\r\n\r\n// Get the <span> element that closes the modal\r\nvar span = document.getElementsByClassName(\"close\")[0];\r\n\r\n// When the user clicks on the button, open the modal\r\nbtn.onclick = function () {\r\n  modal.style.display = \"block\";\r\n};\r\n\r\n// When the user clicks on <span> (x), close the modal\r\nspan.onclick = function () {\r\n  modal.style.display = \"none\";\r\n};\r\n\r\n// When the user clicks anywhere outside of the modal, close it\r\nwindow.onclick = function (event) {\r\n  if (event.target == modal) {\r\n    modal.style.display = \"none\";\r\n  }\r\n};\r\n//=============================>>\r\n// MODAL\r\n//=============================>>\r\n\n\n//# sourceURL=webpack://my_personal_portfolio/./assets/js/curriculum-vitae.js?");
 
 /***/ }),
 

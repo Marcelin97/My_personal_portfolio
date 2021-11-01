@@ -38,13 +38,123 @@
 }
 
 #container h1 {
-  color: $darkGrey;
+  color: $big-text;
   padding: 50px 40px 50px 40px;
   letter-spacing: 4px;
   text-transform: uppercase;
   font-size: 1rem;
 }
+//=============================>>
+// MODAL
+//=============================>>
+.text {
+display: flex;
+justify-content: center;
+align-items: center;
+    @media only screen and (min-width: 768px) {
+    width: 50%;
+    margin-left: 40vw;
+    margin-right: auto;
+    }
+}
 
+.text article {
+  position: relative;
+  overflow: hidden;
+  transform: translateZ(0);
+  display: flex;
+  align-items: center;
+  width: 13rem;
+  height: 3.5rem;
+  padding-left: 5.25rem;
+  border-radius: 1rem;
+  background: white;
+  cursor: pointer;
+}
+
+.background {
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: -230px;
+  transform: translate(-3.5rem, -50%);
+  width: 300px;
+  height: 300px;
+  background: $green;
+  transition: 0.3s all;
+}
+
+.icon {
+  position: absolute;
+  top: 50%;
+  left: 1.5rem;
+  z-index: 2;
+  transform: translate(0.75rem, -50%);
+  font-size: 1.5rem;
+  transition: 0s all;
+  visibility: hidden;
+}
+
+.content-modal {
+  color: $darkGrey;
+  text-transform: uppercase;
+  line-height: 2.5rem;
+  font-size: 0.625rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.text article:hover .background {
+  border-radius: 50%;
+  transform: translate(0, -50%);
+}
+
+.text article:hover .icon {
+  transform: translate(0, -50%);
+  visibility: visible;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: $background-2;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid $grey;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+  color: $background-1;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+//=============================>>
+// END OF MODAL
+//=============================>>
 #grid {
   max-width: 100%;
   margin: 0 auto;
